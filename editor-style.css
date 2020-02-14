@@ -1,0 +1,31 @@
+/*
+Theme Name: Twenty Twelve Guelph
+Description: Used to style the TinyMCE and Gutenberg editor.
+*/
+
+tr th {
+		text-transform: none;
+}
+
+/* fonts */
+body {
+color: #474747;
+font-size:16px;
+font-weight:400;
+}
+
+/* Main column width */
+.wp-block {
+    max-width: none;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: none;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}
+
