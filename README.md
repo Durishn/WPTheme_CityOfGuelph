@@ -21,10 +21,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Nic Durish** - [Nic Durish](https://github.com/Durishn)
+* **[Nic Durish](https://github.com/Durishn)**
 
 See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who participated in this project.
 
 ## License
-This project is licensed under the GNU V3 General License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details
 
