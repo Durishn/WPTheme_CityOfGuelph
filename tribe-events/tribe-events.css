@@ -1,0 +1,11 @@
+#tribe-events-pg-template .tribe-events-content ol li, #tribe-events-pg-template .tribe-events-content ul li, .tribe-events-after-html ol li, .tribe-events-after-html ul li, .tribe-events-before-html ol li, .tribe-events-before-html ul li {
+    margin: 0 0 0 20px !important;
+}
+
+#tribe-events-pg-template .tribe-events-content ul, .tribe-events-after-html ul, .tribe-events-before-html ul {
+margin-bottom: 20px !important;
+}
+
+.tribe-events-event-meta address.tribe-events-address, .tribe-events-list .tribe-events-venue-details {
+    font-style: normal;
+}

@@ -22,15 +22,13 @@
 
 ?>
 
-</div>
+<!--</div>-->
 <?php if (get_the_modified_time() != get_the_time()) : ?>
-
-        <p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p><p class="well">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
-
-    <?php else: ?>
-
-        <p>Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p><p class="well">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
-
+  <p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p>
+  <p class="well">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
+<?php else: ?>
+  <p>Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p>
+  <p class="well">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
 <?php endif; ?>
 </div>
 
@@ -38,47 +36,47 @@
 
 <div id="footer-wrapper">
 
-<footer id="colophon" role="contentinfo">
+  <footer id="colophon" class="cogFooter">
 
-<?php
+    <?php
 
 /* footer sidebar */
 
 if ( ! is_404() ) : ?>
 
-<div id="footer-widgets">
+    <div id="footer-widgets">
 
-<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+      <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
 
-<?php dynamic_sidebar( 'sidebar-4' ); ?>
+      <?php dynamic_sidebar( 'sidebar-4' ); ?>
 
-<?php endif; ?>
+      <?php endif; ?>
 
-<?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
+      <?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
 
-<?php dynamic_sidebar( 'sidebar-5' ); ?>
+      <?php dynamic_sidebar( 'sidebar-5' ); ?>
 
-<?php endif; ?>
+      <?php endif; ?>
 
-<?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
+      <?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
 
-<?php dynamic_sidebar( 'sidebar-6' ); ?>
+      <?php dynamic_sidebar( 'sidebar-6' ); ?>
 
-<?php endif; ?>
+      <?php endif; ?>
+
+    </div>
+
+    <?php endif; ?>
+
+    <div>
+
+    </div>
+
+  </footer>
 
 </div>
 
-<?php endif; ?>
-
-<div>
-
-</div>
-
-</footer>
-
-</div>
-
-<?php wp_footer(); ?>
+<aside aria-label="FooterWidgets"><?php wp_footer(); ?></aside>
 
 <!-- Twitter universal website tag code
 <script>
