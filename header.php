@@ -114,7 +114,7 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 		</div>
-		<!-- .alignright -->
+		<!-- .alignright ddd-->
 	</div>
 			
 	</div>
