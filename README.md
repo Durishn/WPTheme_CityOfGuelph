@@ -26,5 +26,3 @@ See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/
 
 ## License
 Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details
-
-Testing
