@@ -2,29 +2,28 @@
 This repository holds all the code for the custom-built WordPress theme which runs the City of Guelph municipal website. The theme was built as a child theme of the popular Twenty Twelve wordpress theme
 
 ## Installation
-To use this theme, simply download and unzip this repository and drop it into the themes folder for your WordPress site. Activate the theme via your wordpress dashboard, and voila!
+Download this theme via WP Pusher or by pulling the repository and dropping it in the themes folder along with the twenty twelve theme.
 
 ## Development
-- Explain how to develop
-- Branching
-- NEVER PUSH TO MASTER ALWAYS MERGE FROM WORKING BRANCH
+While changes can indeed be made by editing files directly within this window, it should be done with caution. Significant changes should be performed within a development branch before being merged into master(prod). Once in master, this change is available to all sites that use the twentytwelve-cityofguelph theme. 
 
 ## Testing
-- Explain how to run the automated tests for this system
+- We don't have any tests or lints currently, but in the future merges into master may require passing automated tests. Each test will be explained in more detail as it is added.
 
 ## Publishing
-- Explain how to publish new versions of theme
-
+Once changes are in master, they can be pulled into Guelphs Wordpress installations by 'updating' the theme.
 
 ## Versioning
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/tags). 
+We aim to use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/tags). 
 
 ## Authors
 
-* **[Nic Durish](https://github.com/Durishn)**
+* **[Durish, Nic](https://github.com/Durishn)**
+* **Hahn, Greg**
+* **Lawrence, Kim**
 
-See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who have participated in the building of this theme.
 
 ## License
-This project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details
+Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details
 
