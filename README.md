@@ -25,4 +25,4 @@ We aim to use [SemVer](http://semver.org/) for versioning. For the versions avai
 See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who have participated in the building of this theme.
 
 ## License
-Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details
+Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details.
