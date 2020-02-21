@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-
+<div id="main" class="wrapper">
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -31,12 +31,12 @@ get_header(); ?>
 					<li><a href="http://guelph.ca/living/getting-around/bus">Guelph Transit</a></li>
 					<li><a href="http://guelph.ca/living/getting-around/drive/parking/">Parking</a></li>
 					<li><a href="http://guelph.ca/living/recreation/">Recreation</a></li>
-					
+
 					</ul>
 				</div><!-- .entry-content -->
 			</article><!-- #post-0 -->
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+</div>
 <?php get_footer(); ?>
