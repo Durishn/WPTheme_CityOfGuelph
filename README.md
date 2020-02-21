@@ -1,5 +1,4 @@
 # TwentyTwelve-CityOfGuelph
-TEST2
 This repository holds all the code for the custom-built WordPress theme which runs the City of Guelph municipal website. The theme was built as a child theme of the popular Twenty Twelve wordpress theme
 
 ## Installation
