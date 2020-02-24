@@ -19,14 +19,16 @@
 
 get_header(); ?>
 <style>
-div {line-height:1.5;}
+	div {
+		line-height: 1.5;
+	}
 </style>
-	<section id="primary" class="site-content">
-		<div id="content" role="main">
+<section id="primary" class="site-content">
+	<div id="content" role="main">
 
 		<?php if ( have_posts() ) : ?>
-			<header class="archive-header">
-				<h1 class="lead"><?php
+		<header class="archive-header">
+			<h1 class="lead"><?php
 					if ( is_day() ) :
 						printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
 					elseif ( is_month() ) :
@@ -34,12 +36,12 @@ div {line-height:1.5;}
 					elseif ( is_year() ) :
 						printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
 					else :
-						$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; 
+						$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name;
 					endif;
 				?></h1>
-			</header><!-- .archive-header (added taxonomy as heading title if it's a taxonomy archive - Greg -->
+		</header><!-- .archive-header (added taxonomy as heading title if it's a taxonomy archive - Greg -->
 
-			<?php
+		<?php
 			/* Start the Loop */
 			while ( have_posts() ) : the_post();
 
@@ -55,11 +57,11 @@ div {line-height:1.5;}
 			?>
 
 		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
+		<?php get_template_part( 'content', 'none' ); ?>
 		<?php endif; ?>
 
-		</div><!-- #content -->
-	</section><!-- #primary -->
+	</div><!-- #content -->
+</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

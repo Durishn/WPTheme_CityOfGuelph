@@ -18,19 +18,21 @@ get_header(); ?>
 				</header>
 
 				<div class="entry-content">
-					<p><?php _e( 'We&rsquo;re updating the website’s content and we may have moved that page. Please try the site search, or the popular pages listed below. <br /><br /><a href="http://guelph.ca/how-can-we-help-you/">How can we help you?</a>', 'twentytwelve' ); ?></p>
-<input type="text" class="st-default-search-input" placeholder="What are you looking for?">
+					<p>
+						<?php _e( 'We&rsquo;re updating the website’s content and we may have moved that page. Please try the site search, or the popular pages listed below. <br /><br /><a href="http://guelph.ca/how-can-we-help-you/">How can we help you?</a>', 'twentytwelve' ); ?>
+					</p>
+					<input type="text" class="st-default-search-input" placeholder="What are you looking for?">
 
 					<h2>Popular pages</h2>
 					<ul>
-					<li><a href="http://guelph.ca/?page_id=2442">Bids and tenders</a></li>
-					<li><a href="http://guelph.ca/?page_id=4725">Careers</a></li>
-					<li><a href="http://guelph.ca/city-hall/mayor-and-council/city-council/">City Council</a></li>
-					<li><a href="http://guelph.ca/events">Events calendar</a></li>
-					<li><a href="http://guelph.ca/living/garbage-and-recycling/">Garbage and recycling</a></li>
-					<li><a href="http://guelph.ca/living/getting-around/bus">Guelph Transit</a></li>
-					<li><a href="http://guelph.ca/living/getting-around/drive/parking/">Parking</a></li>
-					<li><a href="http://guelph.ca/living/recreation/">Recreation</a></li>
+						<li><a href="http://guelph.ca/?page_id=2442">Bids and tenders</a></li>
+						<li><a href="http://guelph.ca/?page_id=4725">Careers</a></li>
+						<li><a href="http://guelph.ca/city-hall/mayor-and-council/city-council/">City Council</a></li>
+						<li><a href="http://guelph.ca/events">Events calendar</a></li>
+						<li><a href="http://guelph.ca/living/garbage-and-recycling/">Garbage and recycling</a></li>
+						<li><a href="http://guelph.ca/living/getting-around/bus">Guelph Transit</a></li>
+						<li><a href="http://guelph.ca/living/getting-around/drive/parking/">Parking</a></li>
+						<li><a href="http://guelph.ca/living/recreation/">Recreation</a></li>
 
 					</ul>
 				</div><!-- .entry-content -->
