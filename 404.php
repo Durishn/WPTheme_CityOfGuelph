@@ -40,5 +40,5 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-</div><!-- #main -->
+
 <?php get_footer(); ?>
