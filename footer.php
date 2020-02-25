@@ -12,18 +12,18 @@
 ?>
 
 
-          <?php if (get_the_modified_time() != get_the_time()) : ?>
-            <div class="width100" style="float: left;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
-          <?php else: ?>
-            <div class="width100" style="float: left;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
-          <?php endif; ?>
-        </div> <!-- #main -->
+        <?php if (get_the_modified_time() != get_the_time()) : ?>
+          <div class="width100" style="float: left;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
+        <?php else: ?>
+          <div class="width100" style="float: left;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
+        <?php endif; ?>
+      </div> <!-- #main -->
 
 
-        <p class="well">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
-      </div> <!-- #page -->
-    <!--</div>-->
+      <div class="well margin0" aria-label="Notice Board"><p>We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p></div>
+    </div> <!-- #page -->
 
+    <!-- FOOTER START -->
     <div id="footer-wrapper">
       <footer id="colophon" class="cogFooter">
         <?php

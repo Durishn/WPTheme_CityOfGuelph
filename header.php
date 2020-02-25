@@ -143,7 +143,7 @@ function googleTranslateElementInit() {
 
 
 
-      <div id="site-navigation" class="main-navigation" aria-labelledby="ubermenu-main-76-primary">
+      <div id="site-navigation" class="main-navigation" aria-label="Navigation Bar">
 
 
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
