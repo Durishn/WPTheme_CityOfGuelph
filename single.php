@@ -29,7 +29,4 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</div><!-- #primary -->
-</div>
-
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
