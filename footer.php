@@ -20,7 +20,7 @@
       </div> <!-- #main -->
 
 
-      <div class="well margin0" aria-label="Notice Board"><p>We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p></div>
+      <p class="well margin0" aria-label="Notice Board">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
     </div> <!-- #page -->
 
     <!-- FOOTER START -->
