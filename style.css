@@ -39,22 +39,31 @@ iframe {
 }
 
 /* =================== OVERRIDE CLASS TOOLS (BE CAREFUL YALL) =================== */
+/* Padding */
 .padround {
   padding: 20px !important;
 }
 
+.padded10-content {
+  padding: 0px 10px 0px 10px !important;
+}
+
+/* Border */
 .thinborder {
   border: 1px solid #021a40 !important;
 }
 
+/* Font */
 .defaultfont {
   font-size: 100% !important;
 }
 
+/* Margin */
 .margin0 {
   margin: 0 !important;
 }
 
+/* Width */
 .width100, .fullwidth {
   width: 100% !important;
 }
@@ -67,8 +76,19 @@ iframe {
   width: 25% !important;
 }
 
-.padded10-content {
-  padding: 0px 10px 0px 10px !important;
+
+/* =================== GENERAL CLASS TOOLS =================== */
+/* Screen Readers */
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  padding-right: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
 
 
