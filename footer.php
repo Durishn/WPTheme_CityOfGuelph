@@ -17,31 +17,31 @@
         <?php else: ?>
           <div class="width100" style="float: left;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
         <?php endif; ?>
-      </div> <!-- #main -->
+      </div>
 
 
       <p class="well margin0" aria-label="Notice Board">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
-    </div> <!-- #page -->
 
-    <!-- FOOTER START -->
-    <div id="footer-wrapper">
-      <footer id="colophon" class="cogFooter">
-        <?php
-        /* footer sidebar */
-        if ( ! is_404() ) : ?>
-          <div id="footer-widgets">
-            <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
-              <?php dynamic_sidebar( 'sidebar-4' ); ?>
-            <?php endif; ?>
-            <?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
-              <?php dynamic_sidebar( 'sidebar-5' ); ?>
-            <?php endif; ?>
-            <?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
-              <?php dynamic_sidebar( 'sidebar-6' ); ?>
-            <?php endif; ?>
-          </div>
-        <?php endif; ?>
-      </footer>
+      <!--==================== FOOTER ====================-->
+      <div id="footer-wrapper">
+        <footer id="colophon" class="cogFooter">
+          <?php
+          /* footer sidebar */
+          if ( ! is_404() ) : ?>
+            <div id="footer-widgets">
+              <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-4' ); ?>
+              <?php endif; ?>
+              <?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-5' ); ?>
+              <?php endif; ?>
+              <?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
+                <?php dynamic_sidebar( 'sidebar-6' ); ?>
+              <?php endif; ?>
+            </div>
+          <?php endif; ?>
+        </footer>
+      </div>
     </div>
 
     <aside aria-label="FooterScripts"><?php wp_footer(); ?></aside>
