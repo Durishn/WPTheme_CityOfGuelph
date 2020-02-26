@@ -42,10 +42,9 @@
           <?php endif; ?>
         </footer>
       </div>
-
-      <aside aria-label="FooterScripts"><?php wp_footer(); ?></aside>
-
     </div>
+
+    <aside aria-label="FooterScripts"><?php wp_footer(); ?></aside>
 
   </body>
 </html>
