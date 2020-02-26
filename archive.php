@@ -23,45 +23,46 @@ get_header(); ?>
 		line-height: 1.5;
 	}
 </style>
-<section id="primary" class="site-content">
-	<div id="content" role="main">
+<div id="main" class="wrapper">
+	<section id="primary" class="site-content">
+		<div id="content" role="main">
 
-		<?php if ( have_posts() ) : ?>
-		<header class="archive-header">
-			<h1 class="lead"><?php
-					if ( is_day() ) :
-						printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
-					elseif ( is_month() ) :
-						printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
-					elseif ( is_year() ) :
-						printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
-					else :
-						$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name;
-					endif;
-				?></h1>
-		</header><!-- .archive-header (added taxonomy as heading title if it's a taxonomy archive - Greg -->
+			<?php if ( have_posts() ) : ?>
+			<header class="archive-header">
+				<h1 class="lead"><?php
+						if ( is_day() ) :
+							printf( __( 'Daily Archives: %s', 'twentytwelve' ), '<span>' . get_the_date() . '</span>' );
+						elseif ( is_month() ) :
+							printf( __( 'Monthly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'twentytwelve' ) ) . '</span>' );
+						elseif ( is_year() ) :
+							printf( __( 'Yearly Archives: %s', 'twentytwelve' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'twentytwelve' ) ) . '</span>' );
+						else :
+							$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name;
+						endif;
+					?></h1>
+			</header><!-- .archive-header (added taxonomy as heading title if it's a taxonomy archive - Greg -->
 
-		<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			<?php
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
 
-				/* Include the post format-specific template for the content. If you want to
-				 * this in a child theme then include a file called called content-___.php
-				 * (where ___ is the post format) and that will be used instead.
-				 */
-				get_template_part( 'content', get_post_format() );
+					/* Include the post format-specific template for the content. If you want to
+					 * this in a child theme then include a file called called content-___.php
+					 * (where ___ is the post format) and that will be used instead.
+					 */
+					get_template_part( 'content', get_post_format() );
 
-			endwhile;
+				endwhile;
 
-			twentytwelve_content_nav( 'nav-below' );
-			?>
+				twentytwelve_content_nav( 'nav-below' );
+				?>
 
-		<?php else : ?>
-		<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+			<?php else : ?>
+			<?php get_template_part( 'content', 'none' ); ?>
+			<?php endif; ?>
 
-	</div><!-- #content -->
-</section><!-- #primary -->
+		</div><!-- #content -->
+	</section><!-- #primary -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

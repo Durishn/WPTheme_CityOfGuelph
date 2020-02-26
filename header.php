@@ -92,7 +92,10 @@
 
 <body <?php body_class(); ?>>
   <!-- Google Tag Manager -->
-  <aside aria-label="TagManager"><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8DL43" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <aside aria-label="TagManager">
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8DL43" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <script>
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -119,8 +122,9 @@
 
       <div class="row">
         <div class="col-md-6">
-          <span id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img id="site-logo" src="/wp-content/uploads/cog_logo.png"
-                  alt="guelph.ca homepage" /></a></span></span>
+          <span id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+            <img id="site-logo" src="/wp-content/uploads/cog_logo.png" alt="guelph.ca homepage" />
+          </a></span></span>
         </div>
         <div class="col-md-6">
 
@@ -135,15 +139,13 @@ function googleTranslateElementInit() {
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 		-->
-          </div>
-          <!-- .alignright -->
+          </div><!-- .alignright -->
         </div>
-
       </div>
 
 
 
-      <div id="site-navigation" class="main-navigation" aria-labelledby="ubermenu-main-76-primary">
+      <div id="site-navigation" class="main-navigation" aria-label="Navigation Bar">
 
 
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>

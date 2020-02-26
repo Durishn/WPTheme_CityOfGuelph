@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-
+<div id="main" class="wrapper">
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 

@@ -1,0 +1,13 @@
+name: Greetings
+
+on: [pull_request, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: 'Congratulations - this is your first Issue on the TwentyTwelve-CityOfGuelph WP Theme'' first issue'
+        pr-message: 'Congratulations - this is your first Pull Request on the TwentyTwelve-CityOfGuelph WP Theme'' first pr'
