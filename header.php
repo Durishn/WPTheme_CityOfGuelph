@@ -19,7 +19,7 @@
 
 <head>
 
-
+  <!--==================== EXTERNAL LINKS ====================-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width" />
@@ -32,12 +32,12 @@
   <link rel="manifest" href="/site.webmanifest">
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-  <!--[if lt IE 9]>
-<![endif]-->
+
   <?php wp_head(); ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+  <meta name="google-site-verification" content="U72oytUFHuNuKTIQxRh46jAFknFIb8b1fiurKbNNRQ4" />
 
-  <!-- swiftype code -->
+  <!--==================== SWIFTYPE ====================-->
   <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', function() {
       (function(w, d, t, u, n, s, e) {
@@ -56,26 +56,7 @@
     });
   </script>
 
-  <!-- Begin Inspectlet Embed Code -->
-  <!--
-<script type="text/javascript" id="inspectletjs">
-	window.__insp = window.__insp || [];
-	__insp.push(['wid', 42137375]);
-	(function() {
-		function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
-		if (window.attachEvent){
-			window.attachEvent('onload', __ldinsp);
-		}else{
-			window.addEventListener('load', __ldinsp, false);
-		}
-	})();
-</script>
--->
-  <!-- End Inspectlet Embed Code -->
-  <meta name="google-site-verification" content="U72oytUFHuNuKTIQxRh46jAFknFIb8b1fiurKbNNRQ4" />
-
-  <!-- Removed duplicate jQuery and updated core jQuery in functions -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  <!--==================== eScribe MeetingFrame ====================-->
   <script type="text/javascript">
     function Message_Recieved(event) {
       $("#MeetingsFrame").height(event.data + "px");
@@ -86,13 +67,14 @@
       attachEvent("onmessage", Message_Recieved);
     }
   </script>
-
-
 </head>
 
 <body <?php body_class(); ?>>
-  <!-- Google Tag Manager -->
-  <aside aria-label="TagManager"><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8DL43" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!--==================== GOOGLE TAG MANAGER ====================-->
+  <aside aria-label="TagManager">
+    <noscript>
+      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-K8DL43" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
     <script>
       (function(w, d, s, l, i) {
         w[l] = w[l] || [];
@@ -110,7 +92,7 @@
       })(window, document, 'script', 'dataLayer', 'GTM-K8DL43');
     </script>
   </aside>
-  <!-- End Google Tag Manager -->
+
   <div id="page" class="hfeed site">
 
 
@@ -119,8 +101,9 @@
 
       <div class="row">
         <div class="col-md-6">
-          <span id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img id="site-logo" src="/wp-content/uploads/cog_logo.png"
-                  alt="guelph.ca homepage" /></a></span></span>
+          <span id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+            <img id="site-logo" src="/wp-content/uploads/cog_logo.png" alt="guelph.ca homepage" />
+          </a></span></span>
         </div>
         <div class="col-md-6">
 
@@ -136,14 +119,12 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
 		-->
           </div>
-          <!-- .alignright -->
         </div>
-
       </div>
 
 
 
-      <div id="site-navigation" class="main-navigation" aria-labelledby="ubermenu-main-76-primary">
+      <div id="site-navigation" class="main-navigation" aria-label="Navigation Bar">
 
 
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
@@ -152,6 +133,4 @@ function googleTranslateElementInit() {
 		if ( ! empty( $header_image ) ) : ?>
       <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
       <?php endif; ?>
-    </header><!-- #masthead -->
-
-    <!--<div id="main" class="wrapper">-->
+    </header>
