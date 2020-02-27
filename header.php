@@ -108,9 +108,12 @@
         <div class="col-md-6">
 
 
-          <div class="alignright" style="margin-right:20px;"><label for="mainSearch" class="hideStuff">Search:</label>
-            <input type="text" id="mainSearch" name="textfield" class="st-default-search-input" placeholder="What are you looking for?">
-
+          <div class="alignright" style="margin-right:20px;">
+		<form>
+			<label for="mainSearch" class="hideStuff">Search:</label>
+			<input type="text" id="mainSearch" name="textfield" class="st-default-search-input" placeholder="What are you looking for?">
+			<input type="submit" value="Submit" />
+		</form>			  
             <div id="google_translate_element" style=" margin-top:15px;"></div>
             <!--<script type="text/javascript">
 function googleTranslateElementInit() {
