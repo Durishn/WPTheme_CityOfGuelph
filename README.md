@@ -21,6 +21,7 @@ We aim to use [SemVer](http://semver.org/) for versioning. For the versions avai
 * **[Durish, Nic](https://github.com/Durishn)**
 * **Hahn, Greg**
 * **Lawrence, Kim**
+* **[Robertson, Stuart](https://github.com/StuartRoberts0n)**
 
 See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who have participated in the building of this theme.
 
