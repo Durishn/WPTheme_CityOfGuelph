@@ -93,16 +93,6 @@ iframe {
 
 
 /* =================== FOR PAGE TEMPLATES =================== */
-#primary-bigwidth .entry-header{
-  padding-left: 10vw;
-}
-
-#main.wrapper-bigwidth {
-  max-width: 1600px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
 #main.wrapper-fullwidth {
   max-width: 100%;
   overflow: hidden;
