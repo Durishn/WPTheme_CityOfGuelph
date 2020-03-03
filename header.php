@@ -109,10 +109,10 @@
 
 
           <div class="alignright" style="margin-right:20px;">
-        		<div class="searchbarwrapper"><form>
+            <div class="searchbarwrapper"><form>
         			<label for="mainSearch" class="hideStuff">Search:</label>
-        			<input type="text" id="mainSearch" name="textfield" placeholder="What are you looking for?">
-              <button title="Submit" class='btn btn-link search-btn'>
+        			<input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
+              <button type="submit" title="Submit" class='btn btn-link search-btn'>
                 <span class='glyphicon glyphicon-search'></span>
               </button>
         		</form></div>

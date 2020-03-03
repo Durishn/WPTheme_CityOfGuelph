@@ -143,6 +143,10 @@ iframe {
   font-size: 24px;
   border: 0px;
   line-height: inherit;
+  padding: .4em 42px .4em .2em !important;
+  font-weight: 100;
+  box-sizing: border-box;
+  background: #fff;
 }
 .searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
   box-shadow: none;
