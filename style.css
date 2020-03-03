@@ -142,6 +142,7 @@ iframe {
   width: 500px;
   font-size: 24px;
   border: 0px;
+  line-height: inherit;
 }
 .searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
   box-shadow: none;
@@ -161,6 +162,7 @@ iframe {
 .searchbarwrapper .search-btn:hover {
   color: #fff;
   background-color: #00a6e5;
+  background-image: none;
 }
 
 .crumbwrapper{
