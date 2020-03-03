@@ -104,7 +104,8 @@ iframe {
 }
 
 /* =================== TEXT CLASS TOOLS =================== */
-.txtwhiteoutline{
+.txtoutline-ocr{
+  font-family: "ocr-a-std",monospace;
   text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
 }
 
