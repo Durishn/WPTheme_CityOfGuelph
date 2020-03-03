@@ -123,7 +123,7 @@ iframe {
 
 /* =================== FOR PAGE TEMPLATES =================== */
 /* Header - Searchbar */
-.searchbbarwrapper {
+.searchbarwrapper {
   display: inline-block;
   width: 100%;
   border-radius: 6px;
@@ -135,20 +135,18 @@ iframe {
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.searchbbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
+.searchbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
   border: 1px solid #888;
 }
-.searchbbarwrapper input[type=text] {
-  border: none;
-  box-shadow: none;
-  display: inline-block;
-  padding: 0;
-  background: transparent;
+.searchbarwrapper input[type=text] {
+  width: 500px;
+  font-size: 24px;
+  border: 0px;
 }
-.searchbbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
+.searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
   box-shadow: none;
 }
-.searchbbarwrapper .search-btn {
+.searchbarwrapper .search-btn {
   position: absolute;
   right: 2px;
   top: 2px;
@@ -160,7 +158,7 @@ iframe {
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-.searchbbarwrapper .search-btn:hover {
+.searchbarwrapper .search-btn:hover {
   color: #fff;
   background-color: #00a6e5;
 }
