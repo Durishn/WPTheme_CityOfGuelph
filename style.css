@@ -116,7 +116,68 @@ iframe {
 }
 
 
+
+
+
+
+
 /* =================== FOR PAGE TEMPLATES =================== */
+/* Header - Searchbar */
+.searchbarwrapper {
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 4px 4px 4px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #bbb;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  margin-top: 15px;
+}
+.searchbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
+  border: 1px solid #888;
+}
+.searchbarwrapper input[type=text] {
+  width: 500px;
+  font-size: 18px;
+  border: 0px;
+  line-height: inherit;
+  padding: .4em 42px .4em .2em !important;
+  font-weight: 100;
+  box-sizing: border-box;
+  background: #fff;
+  height: 36px !important;
+  max-width: calc(100vw - 70px);
+}
+.searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
+  box-shadow: none;
+}
+.searchbarwrapper .search-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: #aaa;
+  border-radius: 3px;
+  font-size: 21px;
+  padding: 5px 10px 1px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.searchbarwrapper .search-btn:hover {
+  color: #fff;
+  background-color: #00a6e5;
+  background-image: none;
+}
+@media screen and (max-width: 600px) {
+  #masthead .col-md-6{
+    text-align: center;
+  }
+}
+
+
 .crumbwrapper{
 	position: absolute;
 	z-index: 10;
