@@ -116,7 +116,55 @@ iframe {
 }
 
 
+
+
+
+
+
 /* =================== FOR PAGE TEMPLATES =================== */
+/* Header - Searchbar */
+.searchbbarwrapper {
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 4px 4px 4px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #bbb;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.searchbbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
+  border: 1px solid #888;
+}
+.searchbbarwrapper input[type=text] {
+  border: none;
+  box-shadow: none;
+  display: inline-block;
+  padding: 0;
+  background: transparent;
+}
+.searchbbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
+  box-shadow: none;
+}
+.searchbbarwrapper .search-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: #aaa;
+  border-radius: 3px;
+  font-size: 21px;
+  padding: 5px 10px 1px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.searchbbarwrapper .search-btn:hover {
+  color: #fff;
+  background-color: #00a6e5;
+}
+
 .crumbwrapper{
 	position: absolute;
 	z-index: 10;
