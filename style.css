@@ -39,15 +39,6 @@ iframe {
 }
 
 /* =================== OVERRIDE CLASS TOOLS (BE CAREFUL YALL) =================== */
-/* Padding */
-.padround {
-  padding: 20px !important;
-}
-
-.padded10-content {
-  padding: 0px 10px 0px 10px !important;
-}
-
 /* Border */
 .thinborder {
   border: 1px solid #021a40 !important;
@@ -61,6 +52,20 @@ iframe {
 /* Margin */
 .margin0 {
   margin: 0 !important;
+}
+
+/* Padding */
+.padround {
+  padding: 20px !important;
+}
+
+.padded10-content {
+  padding: 0px 10px 0px 10px !important;
+}
+
+/* Text */
+.txtcenter{
+	text-align: center !important;
 }
 
 /* Width */
@@ -91,14 +96,76 @@ iframe {
   border: 0;
 }
 
+.pagecontentwrapper{
+	  max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+	  padding: 20px;
+}
+
+/* =================== TEXT CLASS TOOLS =================== */
+.txtwhiteoutline{
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
 
 /* =================== FOR PAGE TEMPLATES =================== */
+.crumbwrapper{
+	position: absolute;
+	z-index: 10;
+	font-size: 25px;
+}
+
 #main.wrapper-fullwidth {
   max-width: 100%;
   overflow: hidden;
   margin: 0 auto;
 }
 
+@media only screen and (max-device-width: 640px){
+	#primary-fullwidth.site-content {
+    margin: 0 !important;
+    padding: 0 !important;
+	}
+}
+
+@media screen and (min-width: 600px) {
+  .site-content, .site-content {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrapper-bigger .site-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.wrapper-fullwidth .site-content{
+	padding: 0 !important;
+}
+
+.wrapper-fullwidth .site-content, .wrapper-bigger .site-content {
+	margin-top: 0;
+	float: none;
+	width: 100%
+}
+
+.wrapper-bigger .entry-header, .wrapper-fullwidth .entry-header {
+display:none;
+}
+
+#main.wrapper-bigger {
+    max-width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
 
 /* =================== Landing Boxes =================== */
@@ -139,9 +206,9 @@ iframe {
   background-color: #eee;
 }
 
-/**************
- * Class Edits
- **************/
+/********************************
+ * Parent Overrides & Class Edits
+ ********************************/
 .tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -177,7 +244,7 @@ iframe {
 }
 
 .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a {
-  color: #206dbc;
+  /*color: #206dbc;*/
 }
 
 
