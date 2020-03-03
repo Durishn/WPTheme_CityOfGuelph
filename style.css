@@ -134,19 +134,22 @@ iframe {
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  margin-top: 15px;
 }
 .searchbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
   border: 1px solid #888;
 }
 .searchbarwrapper input[type=text] {
   width: 500px;
-  font-size: 24px;
+  font-size: 18px;
   border: 0px;
   line-height: inherit;
   padding: .4em 42px .4em .2em !important;
   font-weight: 100;
   box-sizing: border-box;
   background: #fff;
+  height: 36px !important;
+  max-width: calc(100vw - 70px);
 }
 .searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
   box-shadow: none;
@@ -168,6 +171,12 @@ iframe {
   background-color: #00a6e5;
   background-image: none;
 }
+@media screen and (max-width: 600px) {
+  #masthead .col-md-6{
+    text-align: center;
+  }
+}
+
 
 .crumbwrapper{
 	position: absolute;
