@@ -108,9 +108,14 @@
         <div class="col-md-6">
 
 
-          <div class="alignright" style="margin-right:20px;"><label for="mainSearch" class="hideStuff">Search:</label>
-            <input type="text" id="mainSearch" name="textfield" class="st-default-search-input" placeholder="What are you looking for?">
-
+          <div class="alignright" style="margin-right:20px;">
+            <div class="searchbarwrapper"><form>
+        			<label for="mainSearch" class="hideStuff">Search:</label>
+        			<input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
+              <button type="submit" title="Submit" class='btn btn-link search-btn'>
+                <span class='glyphicon glyphicon-search'></span>
+              </button>
+        		</form></div>
             <div id="google_translate_element" style=" margin-top:15px;"></div>
             <!--<script type="text/javascript">
 function googleTranslateElementInit() {

@@ -65,3 +65,35 @@ a.NDprettylink[href*=".pdf"]:after, .wp-block-file a[href*=".pdf"]:after, a.NDpr
 }*/
 
 .wp-block-file__button{display:none !important;}
+
+
+
+
+
+
+
+.NDprettybtn {
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+	display: inline-block;
+	border-radius: 3px;
+	text-decoration: none;
+}
+.NDprettybtn.blue{
+	 color: #00355f !important;
+}
+.NDprettybtn.blue:hover, .NDprettybtn.blue:focus {
+  border-color: #00355f !important;
+	text-decoration: none;
+  color: #fff !important;
+}
+.NDprettybtn.blue.fill:hover,
+.NDprettybtn.blue.fill:focus {
+  box-shadow: inset 0 0 0 2em #00355f;
+}

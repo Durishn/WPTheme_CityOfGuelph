@@ -17,6 +17,12 @@ css/btnStyles.css
 css/NDprettyLinks.css
 css/CoGGutenbergCustom
 */
+/* =================== FONTS =================== */
+@font-face {
+  font-family:"ocr-a-std";
+  src:url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:400;
+}
 
 /* ========================= GENERAL TAGS ======================== */
 
@@ -39,22 +45,36 @@ iframe {
 }
 
 /* =================== OVERRIDE CLASS TOOLS (BE CAREFUL YALL) =================== */
-.padround {
-  padding: 20px !important;
-}
-
+/* Border */
 .thinborder {
   border: 1px solid #021a40 !important;
 }
 
+/* Font */
 .defaultfont {
   font-size: 100% !important;
 }
 
+/* Margin */
 .margin0 {
   margin: 0 !important;
 }
 
+/* Padding */
+.padround {
+  padding: 20px !important;
+}
+
+.padded10-content {
+  padding: 0px 10px 0px 10px !important;
+}
+
+/* Text */
+.txtcenter{
+	text-align: center !important;
+}
+
+/* Width */
 .width100, .fullwidth {
   width: 100% !important;
 }
@@ -67,20 +87,101 @@ iframe {
   width: 25% !important;
 }
 
-.padded10-content {
-  padding: 0px 10px 0px 10px !important;
+
+/* =================== GENERAL CLASS TOOLS =================== */
+/* Screen Readers */
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  padding-right: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
 }
+
+.pagecontentwrapper{
+	  max-width: 1400px;
+    overflow: hidden;
+    margin: 0 auto;
+	  padding: 20px;
+}
+
+/* =================== TEXT CLASS TOOLS =================== */
+.txtoutline-ocr{
+  font-family: "ocr-a-std",monospace;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+}
+
+
+
+
+
 
 
 /* =================== FOR PAGE TEMPLATES =================== */
-#primary-bigwidth .entry-header{
-  padding-left: 10vw;
+/* Header - Searchbar */
+.searchbarwrapper {
+  display: inline-block;
+  width: 100%;
+  border-radius: 6px;
+  padding: 4px 4px 4px 4px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #bbb;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  margin-top: 15px;
+}
+.searchbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
+  border: 1px solid #888;
+}
+.searchbarwrapper input[type=text] {
+  width: 500px;
+  font-size: 18px;
+  border: 0px;
+  line-height: inherit;
+  padding: .4em 42px .4em .2em !important;
+  font-weight: 100;
+  box-sizing: border-box;
+  background: #fff;
+  height: 36px !important;
+  max-width: calc(100vw - 70px);
+}
+.searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
+  box-shadow: none;
+}
+.searchbarwrapper .search-btn {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  color: #aaa;
+  border-radius: 3px;
+  font-size: 21px;
+  padding: 5px 10px 1px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.searchbarwrapper .search-btn:hover {
+  color: #fff;
+  background-color: #00a6e5;
+  background-image: none;
+}
+@media screen and (max-width: 600px) {
+  #masthead .col-md-6{
+    text-align: center;
+  }
 }
 
-#main.wrapper-bigwidth {
-  max-width: 1600px;
-  overflow: hidden;
-  margin: 0 auto;
+
+.crumbwrapper{
+	position: absolute;
+	z-index: 10;
+	font-size: 25px;
 }
 
 #main.wrapper-fullwidth {
@@ -89,6 +190,50 @@ iframe {
   margin: 0 auto;
 }
 
+@media only screen and (max-device-width: 640px){
+	#primary-fullwidth.site-content {
+    margin: 0 !important;
+    padding: 0 !important;
+	}
+}
+
+@media screen and (min-width: 600px) {
+  .site-content, .site-content {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .site-content {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .wrapper-bigger .site-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.wrapper-fullwidth .site-content{
+	padding: 0 !important;
+}
+
+.wrapper-fullwidth .site-content, .wrapper-bigger .site-content {
+	margin-top: 0;
+	float: none;
+	width: 100%
+}
+
+.wrapper-bigger .entry-header, .wrapper-fullwidth .entry-header {
+display:none;
+}
+
+#main.wrapper-bigger {
+    max-width: 1600px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
 
 /* =================== Landing Boxes =================== */
@@ -129,9 +274,9 @@ iframe {
   background-color: #eee;
 }
 
-/**************
- * Class Edits
- **************/
+/********************************
+ * Parent Overrides & Class Edits
+ ********************************/
 .tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -167,7 +312,7 @@ iframe {
 }
 
 .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a {
-  color: #206dbc;
+  /*color: #206dbc;*/
 }
 
 

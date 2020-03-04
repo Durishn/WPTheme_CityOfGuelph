@@ -356,11 +356,8 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
         wp_enqueue_style( 'chld_thm_cfg_ext1', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/colourBlocks.css' );
         wp_enqueue_style( 'chld_thm_cfg_ext2', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/btnStyles.css' );
         wp_enqueue_style( 'chld_thm_cfg_ext3', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/prettyLinks.css' );
-        wp_enqueue_style( 'chld_thm_cfg_ext4', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/CoGGutenbergCustom.css' );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 100 );
 
 // END ENQUEUE PARENT ACTION
-
-
