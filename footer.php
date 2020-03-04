@@ -13,9 +13,9 @@
 
 
         <?php if (get_the_modified_time() != get_the_time()) : ?>
-          <div class="width100" style="float: left;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
+          <div aria-label="Update Date" class="width100" style="float: left;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
         <?php else: ?>
-          <div class="width100" style="float: left;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
+          <div aria-label="Update Date" class="width100" style="float: left;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
         <?php endif; ?>
       </div>
 
