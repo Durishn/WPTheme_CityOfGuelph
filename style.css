@@ -140,7 +140,7 @@ iframe {
   border: 1px solid #888;
 }
 .searchbarwrapper input[type=text] {
-  width: 500px;
+  width: 420px;
   font-size: 18px;
   border: 0px;
   line-height: inherit;
@@ -172,8 +172,11 @@ iframe {
   background-image: none;
 }
 @media screen and (max-width: 600px) {
-  #masthead .col-md-6{
+  #masthead .col-sm-4{
     text-align: center;
+  }
+  #masthead #site-title{
+    margin-right: 30px;
   }
 }
 
@@ -1177,7 +1180,7 @@ body.mceContentBody {
   }
 
   .st-ui-search-input, .st-default-search-input {
-    width: 500px !important;
+    width: 420px !important;
     font-size: 24px !important;
     height: 36px !important;
   }
