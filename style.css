@@ -315,7 +315,7 @@ display:none;
 }
 
 .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a {
-  /*color: #206dbc;*/
+  color: #206dbc;
 }
 
 
