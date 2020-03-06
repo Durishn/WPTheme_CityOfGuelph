@@ -280,6 +280,10 @@ display:none;
 /********************************
  * Parent Overrides & Class Edits
  ********************************/
+.has-text-align-center{
+  text-align: center;
+}
+
 .tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
   padding-bottom: 25px;
   padding-top: 25px;
