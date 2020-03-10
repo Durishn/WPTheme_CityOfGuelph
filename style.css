@@ -372,11 +372,6 @@ display:none;
   margin-left: -3px;
 }
 
-.accordion-toggle, .accordion-toggle:hover, .accordion-toggle:focus {
-  color: white;
-  text-decoration: none;
-}
-
 #masthead {
   background-color: #00a6e5;
 }
