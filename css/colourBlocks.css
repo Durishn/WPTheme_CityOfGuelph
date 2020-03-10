@@ -130,7 +130,7 @@ Version: 1.0
 }
 
 .boxYellow {
-  background-color: #b69000;
+  background-color: #8D6708;
 }
 
 .boxDark-purple {
@@ -211,7 +211,7 @@ Version: 1.0
 }
 
 .yellow {
-  background-color: #8F7200;
+  background-color: #8D6708;
 }
 
 .dark-purple {
@@ -687,7 +687,7 @@ Version: 1.0
 
 .yellow-block-top {
   display: block;
-  background-color: #b69000;
+  background-color: #8D6708;
   width: 97%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -710,14 +710,14 @@ Version: 1.0
 
 .yellow-block-top:hover {
   text-decoration: none;
-  background-color: #c39a00;
+  background-color: #B36200;
   color: #fff !important;
   cursor: pointer;
 }
 
 .yellow-block {
   display: block;
-  background-color: #987700;
+  background-color: #8D6708;
   width: 97%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -741,7 +741,7 @@ Version: 1.0
 
 .yellow-block:hover {
   text-decoration: none;
-  background-color: #c39a00;
+  background-color: #B36200;
   color: #fff !important;
   cursor: pointer;
 }

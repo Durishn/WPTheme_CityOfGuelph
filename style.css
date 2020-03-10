@@ -1060,10 +1060,6 @@ h2.aqua-header a, h2.aqua-header a:visited {
   color: #3ba0be;
 }
 
-.bs-callout a {
-  text-decoration: none;
-}
-
 .bs-callout .plain-text a {
   font-size: 16px;
   text-decoration: underline dotted grey;
