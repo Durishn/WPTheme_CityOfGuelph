@@ -140,7 +140,7 @@ iframe {
   border: 1px solid #888;
 }
 .searchbarwrapper input[type=text] {
-  width: 500px;
+  width: 420px;
   font-size: 18px;
   border: 0px;
   line-height: inherit;
@@ -172,8 +172,11 @@ iframe {
   background-image: none;
 }
 @media screen and (max-width: 600px) {
-  #masthead .col-md-6{
+  #masthead .col-sm-4{
     text-align: center;
+  }
+  #masthead #site-title{
+    margin-right: 30px;
   }
 }
 
@@ -277,6 +280,10 @@ display:none;
 /********************************
  * Parent Overrides & Class Edits
  ********************************/
+.has-text-align-center{
+  text-align: center;
+}
+
 .tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
   padding-bottom: 25px;
   padding-top: 25px;
@@ -312,7 +319,7 @@ display:none;
 }
 
 .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a {
-  /*color: #206dbc;*/
+  color: #206dbc;
 }
 
 
@@ -363,11 +370,6 @@ display:none;
 .row {
   margin-right: -3px;
   margin-left: -3px;
-}
-
-.accordion-toggle, .accordion-toggle:hover, .accordion-toggle:focus {
-  color: white;
-  text-decoration: none;
 }
 
 #masthead {
@@ -1173,7 +1175,7 @@ body.mceContentBody {
   }
 
   .st-ui-search-input, .st-default-search-input {
-    width: 500px !important;
+    width: 420px !important;
     font-size: 24px !important;
     height: 36px !important;
   }

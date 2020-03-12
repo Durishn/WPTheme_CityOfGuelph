@@ -100,14 +100,14 @@
       <?php do_action( 'before' ); ?>
 
       <div class="row">
-        <div class="col-md-6">
+
+        <div class="col-sm-4">
           <span id="site-title"><span><a aria-label="Site Logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+
             <img id="site-logo" src="/wp-content/uploads/cog_logo.png" alt="guelph.ca homepage" />
           </a></span></span>
         </div>
-        <div class="col-md-6">
-
-
+        <div class="col-sm-8">
           <div class="alignright" style="margin-right:20px;">
             <div class="searchbarwrapper"><form>
         			<label for="mainSearch" class="hideStuff">Search:</label>
