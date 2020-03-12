@@ -24,7 +24,7 @@ a.NDprettylink, .wp-block-file a, .wp-block-file__content-wrapper{
   line-height: 1.2em;
   padding: 10px 10px 10px 40px;
   position: relative;
-  text-decoration: underline;
+  text-decoration: none !important;
 }
 
 a.NDprettylink:after, .wp-block-file a:after{

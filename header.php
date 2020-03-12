@@ -100,8 +100,10 @@
       <?php do_action( 'before' ); ?>
 
       <div class="row">
+
         <div class="col-sm-4">
-          <span id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+          <span id="site-title"><span><a aria-label="Site Logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+
             <img id="site-logo" src="/wp-content/uploads/cog_logo.png" alt="guelph.ca homepage" />
           </a></span></span>
         </div>
