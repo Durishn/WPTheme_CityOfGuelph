@@ -975,18 +975,18 @@ h2.blue-header a, h2.blue-header a:visited {
 }
 
 .bs-callout-red {
-  border-left-color: #d9534f;
+  border-left-color: #d4403a;
 }
 
 h2.red-header a, h2.red-header a:visited {
-  color: #d9534f;
+  color: #d4403a;
 }
 
 .bs-callout-red h2.red-header, h3.red-header, h4.red-header, h5.red-header, p.red-lead, .bs-callout-red a, h2.red-header a, h3.red-header a, h4.red-header a, h5.red-header a, p.red-lead a, .bs-callout-red a:visited, h2.red-header a:visited, h3.red-header a:visited, h4.red-header a:visited, h5.red-header a:visited, p.red-lead a:visited {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 150%;
-  color: #d9534f;
+  color: #d4403a;
   font-weight: 400;
 }
 
@@ -1039,11 +1039,11 @@ h2.aqua-header a, h2.aqua-header a:visited {
 }
 
 .bs-callout-danger {
-  border-left-color: #d9534f;
+  border-left-color: #d4403a;
 }
 
 .bs-callout-danger lead {
-  color: #d9534f;
+  color: #d4403a;
 }
 
 .bs-callout-warning {
