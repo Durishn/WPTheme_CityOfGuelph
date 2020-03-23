@@ -110,7 +110,7 @@ Version: 1.0
 }
 
 .boxLight-Blue, .bglightblue{
-  background-color: #1fa6de;
+  background-color: #1F9FD6;
 }
 
 .boxBlue {
@@ -161,7 +161,7 @@ Version: 1.0
   font-weight: normal;
   text-decoration: none;
   color: #fff !important;
-  font-size: 120%;
+  font-size: 150%;
   -webkit-transition: 0.1s all;
   -moz-transition: 0.1s all;
   -ms-transition: 0.1s all;
