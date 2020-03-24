@@ -44,6 +44,10 @@ a.NDprettylink:hover, .wp-block-file a:hover{
   color: #206dbc;
 }
 
+a.NDprettylink[href$=".mp3"]:after, a.NDprettylink[href$=".mp4"]:after{
+  content:url(https://img.icons8.com/color/24/000000/video-file.png);
+}
+
 a.NDprettylink[href$=".docx"]:after, a.NDprettylink[type="application/msword"]:after, .wp-block-file a[href$=".docx"]:after, .wp-block-file a[type="application/msword"]:after {
   content:url(https://img.icons8.com/color/24/000000/ms-word.png);
 }
