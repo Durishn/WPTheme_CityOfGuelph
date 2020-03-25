@@ -38,20 +38,16 @@ Version: 1.0
   color:#555555;
 }
 
-.btn .btn-success a:visited {
-  color: #fff !important;
-}
-
 
 a.btn.btn-success, .wp-block-button__link {
-  background-color: #fff !important;
+  background-color: #fff;
   background-image: none !important;
   text-decoration: none;
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5px;
   font-weight: normal;
-  color: #474747 !important;
+  color: #474747;
   border: 1px solid #474747;
    !important;
   font-size: 120%;
@@ -68,6 +64,10 @@ a.btn.btn-success, .wp-block-button__link {
 
 a.btn.btn-success:hover {
   background-color: #eee;
+}
+
+.btn .btn-success a:visited {
+  color: #fff !important;
 }
 
 a.btn.btn-footer {
