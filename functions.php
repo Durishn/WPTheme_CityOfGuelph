@@ -1,8 +1,8 @@
 <?php
 ob_start("ob_gzhandler");
+
 // Prevent TinyMCE from stripping out schema.org metadata
-function schema_TinyMCE_init($in)
-{
+function schema_TinyMCE_init($in) {
     /**
      *   Edit extended_valid_elements as needed. For syntax, see
      *   http://www.tinymce.com/wiki.php/Configuration:valid_elements
@@ -13,16 +13,13 @@ function schema_TinyMCE_init($in)
      */
     if(!empty($in['extended_valid_elements']))
         $in['extended_valid_elements'] .= ',';
-
     $in['extended_valid_elements'] .= '@[id|class|style|title|itemscope|itemtype|itemprop|datetime|rel],div,dl,ul,dt,dd,li,i,span,a|rev|charset|href|lang|tabindex|accesskey|type|name|href|target|title|class|onfocus|onblur|alert]';
 
     return $in;
 }
 
-
 // stop wp removing div tags
-function magnium_tinymce_fix( $init )
-{
+function magnium_tinymce_fix( $init ) {
     // html elements being stripped
     $init['extended_valid_elements'] = 'div[*], article[*]';
     // don't remove line breaks
@@ -63,8 +60,8 @@ echo $filesize;
  * Sets up theme defaults and registers support for various WordPress features.
  */
 function twentytwelveguelph_setup() {
-	  // Add support for editor styles.
-	  add_theme_support( 'editor-styles' );
+	// Add support for editor styles.
+	add_theme_support( 'editor-styles' );
 
 	// Enqueue editor styles.
 	add_editor_style( 'css/style-editor.css' );
@@ -83,24 +80,23 @@ add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
  *  @param   array  $settings  The array of editor settings
  *  @return  array             The modified edit settings
  */
- add_filter( 'tiny_mce_before_init', 'remove_h1_from_editor' );
+add_filter( 'tiny_mce_before_init', 'remove_h1_from_editor' );
 
 function remove_h1_from_editor( $settings ) {
     $settings['block_formats'] = 'Paragraph=p;Heading 2=h2;Heading 3=h3;Heading 4=h4;Heading 5=h5;Heading 6=h6;Preformatted=pre;';
     return $settings;
 }
-
 add_filter('tiny_mce_before_init', 'schema_TinyMCE_init' );
 
-add_action('init', 'my_custom_init');
+
 function my_custom_init() {
 	add_post_type_support('tribe_venue', 'thumbnail' );
 	add_post_type_support('tribe_venue', 'excerpt' );
 	add_post_type_support('tribe_venue', 'editor' );
-	}
+}
+add_action('init', 'my_custom_init');
 
 //add mobile dropdown to pages
-
 function theme_slug_filter_the_content( $content ) {
     $custom_content = '[wpv-view name="mobile-child"]';
     $custom_content .= $content;
@@ -136,31 +132,28 @@ function my_custom_login_logo() {
 	echo '<style type="text/css">
 	h1 a { background-image:url(/wp-content/uploads/g.jpg) !important; background-size: 84px 84px !important; padding-bottom: 50px !important;}
 	</style>';
-	}
-
-	add_action('login_head', 'my_custom_login_logo');
+}
+add_action('login_head', 'my_custom_login_logo');
 
 // removes admin meta boxes for Wordpress News, plugin updates, incoming links
-
 add_filter('widget_text', 'do_shortcode');
 
 
 // removes Yoast redirect notification when page/post deleted
-
 add_filter('wpseo_enable_notification_post_trash','__return_false');
 
 // allows shortcodes in the text widget
 
-add_action('admin_init','rw_remove_dashboard_widgets');
 function rw_remove_dashboard_widgets() {
 	remove_meta_box('dashboard_incoming_links','dashboard','normal');
 	remove_meta_box('dashboard_plugins','dashboard','normal');
 	remove_meta_box('dashboard_primary','dashboard','normal');
 	remove_meta_box('dashboard_secondary','dashboard','normal');
-	}
+}
+add_action('admin_init','rw_remove_dashboard_widgets');
 
 function twentytwelve_excerpt_length($length){
-return 125;
+  return 125;
 }
 add_filter('excerpt_length','twentytwelve_excerpt_length');
 
@@ -295,7 +288,6 @@ register_post_type('tribe_events',array( // Registers Events Calendar Custom Pos
 }
 
 // stops wysiwyg editor from stripping code
-
 function allow_all_tinymce_elements_attributes( $init ) {
 
     // Allow all elements and all attributes
@@ -326,11 +318,13 @@ function shapeSpace_check_enum($redirect, $request) {
 }
 
 /** * Install latest jQuery version 3.4.1. */
-if (!is_admin()) {
-	wp_deregister_script('jquery');
-	wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"), false);
-	wp_enqueue_script('jquery');
-}
+//if (!is_admin()) {
+	//wp_deregister_script('jquery');
+	//wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"), false);
+	//wp_enqueue_script('jquery');
+//}
+
+
 
 // BEGIN ENQUEUE PARENT ACTION
 // AUTO GENERATED - Do not modify or remove comment markers above or below:
@@ -346,6 +340,7 @@ add_filter( 'locale_stylesheet_uri', 'chld_thm_cfg_locale_css' );
 
 if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
     function chld_thm_cfg_parent_css() {
+        //wp_enqueue_style('bootstrap-css', ('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css') );
         wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
     }
 endif;
@@ -353,9 +348,11 @@ add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 if ( !function_exists( 'child_theme_configurator_css' ) ):
     function child_theme_configurator_css() {
-        wp_enqueue_style( 'chld_thm_cfg_ext1', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/colourBlocks.css' );
-        wp_enqueue_style( 'chld_thm_cfg_ext2', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/btnStyles.css' );
-        wp_enqueue_style( 'chld_thm_cfg_ext3', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/prettyLinks.css' );
+
+        wp_enqueue_style( 'chld_thm_cfg_ext1', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/colourBlocks.css');
+        wp_enqueue_style( 'chld_thm_cfg_ext2', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/btnStyles.css');
+        wp_enqueue_style( 'chld_thm_cfg_ext3', trailingslashit( get_theme_root_uri() ) . 'TwentyTwelve-CityOfGuelph/./css/prettyLinks.css');
+
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 100 );
