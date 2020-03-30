@@ -8,15 +8,29 @@ Tags: Guelph, CityOfGuelph, Ender
 Version: 1.0.158
 Updated: 2020-2-24 11:53:24
 
-
-
-/* ============================ WP ENQUEUE ============================ */
-/*
-css/colourBlocks.css
-css/btnStyles.css
-css/NDprettyLinks.css
-css/CoGGutenbergCustom
+/*== WP ENQUEUE ==*
+* css/colourBlocks.css
+* css/btnStyles.css
+* css/NDprettyLinks.css
+* css/CoGGutenbergCustom
 */
+
+/*== SITE VARIABLES ==*/
+:root {
+  --site-primary: #00a6e5;
+  --site-darktone: #282828;
+
+  --main-text-color: #474747;
+  --main-text-size: 16px;
+  --main-text-weight: 400;
+
+  --link-text-color: #206dbc;
+  --link-text-size: var(--main-text-size);
+  --link-text-weight: var(--main-text-weight);
+
+  --head-text-color: var(--main-text-color);
+}
+
 /* =================== FONTS =================== */
 @font-face {
   font-family:"ocr-a-std";
@@ -27,16 +41,20 @@ css/CoGGutenbergCustom
 /* ========================= GENERAL TAGS ======================== */
 
 body {
-  font-size: 16px;
-  color: #474747;
-  font-weight: 400;
+  font-size: var(--main-text-size);
+  color: var(--main-text-color);
+  font-weight: var(--main-text-weight);
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 80%;
+  color: var(--head-text-color);
 }
 
 a {
   text-decoration: underline;
-  /*color: #337ab7;*/
-  color: #206dbc;
-  font-weight: 600;
+  color: var(--link-text-color);
+  font-weight: var(--link-text-weight);
 }
 
 iframe {
@@ -51,7 +69,7 @@ iframe {
 }
 
 /* Font */
-.defaultfont {
+.defaultfont, .defaultfontsize {
   font-size: 100% !important;
 }
 
@@ -116,13 +134,12 @@ iframe {
 }
 
 
-
-
-
-
-
 /* =================== FOR PAGE TEMPLATES =================== */
-/* Header - Searchbar */
+/* Header*/
+#masthead {
+  background-color: var(--site-primary);
+}
+
 .searchbarwrapper {
   display: inline-block;
   width: 100%;
@@ -168,7 +185,7 @@ iframe {
 }
 .searchbarwrapper .search-btn:hover {
   color: #fff;
-  background-color: #00a6e5;
+  background-color: var(--site-primary);
   background-image: none;
 }
 @media screen and (max-width: 600px) {
@@ -193,21 +210,21 @@ iframe {
   margin: 0 auto;
 }
 
-@media only screen and (max-device-width: 640px){
+@media only screen and (max-device-width: 650px){
 	#primary-fullwidth.site-content {
     margin: 0 !important;
     padding: 0 !important;
 	}
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
   .site-content, .site-content {
     padding-left: 35px;
     padding-right: 35px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .site-content {
     padding-left: 5px;
     padding-right: 5px;
@@ -329,7 +346,7 @@ display:none;
 }
 
 .required {
-  color: #474747;
+  color: var(--main-text-color);
 }
 
 .wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized, .centerimg {
@@ -372,9 +389,7 @@ display:none;
   margin-left: -3px;
 }
 
-#masthead {
-  background-color: #00a6e5;
-}
+
 
 .post-date {
   margin-bottom: 1em;
@@ -424,7 +439,7 @@ li.mobile-dropdown a:visited {
 }
 
 .ubermenu .ubermenu-target-text {
-  font-size: 16px;
+  font-size: var(--main-text-size);
 }
 
 .table>thead>tr>th {
@@ -486,11 +501,6 @@ h1.entry-title {
   font-weight: bold;
 }
 
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-size: 80%;
-  color: #474747;
-}
-
 h2.panel-title {
   font-size: 140% !important;
   margin: 12px 24px;
@@ -525,7 +535,7 @@ h2.panel-title {
 }
 
 .widget-title, .entry-content th, .comment-content th {
-  color: #474747;
+  color: var(--main-text-color);
   text-transform: none !important;
 }
 
@@ -534,11 +544,11 @@ h3.widget-title {
 }
 
 .entry-content table {
-  color: #474747;
+  color: var(--main-text-color);
 }
 
 .entry-content table caption {
-  color: #474747;
+  color: var(--main-text-color);
 }
 
 ol.d {
@@ -1063,7 +1073,7 @@ h2.aqua-header a, h2.aqua-header a:visited {
 }
 
 .bs-callout .plain-text a {
-  font-size: 16px;
+  font-size: var(--main-text-size);
   text-decoration: underline dotted grey;
   color: #206dbc;
   font-weight: bold;
@@ -1181,6 +1191,7 @@ body.mceContentBody {
   }
 }
 
+
 /* WCAG Contrast Fixes */
 .tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a {
   background-color: #666;
@@ -1189,12 +1200,12 @@ body.mceContentBody {
 
 #footer-widgets {
   color: #fff;
-  background-color: #282828;
+  background-color: var(--site-darktone);
 }
 
 #footer-widgets a {
   color: #f28433;
-  background-color: #282828;
+  background-color: var(--site-darktone);
   tex-decoration: underline;
 }
 
@@ -1204,9 +1215,9 @@ body.mceContentBody {
 }
 
 a.btn-success {
-  background-color: #fff !important;
-  color: #474747 !important;
-  border: 1px solid #474747;
+  background-color: white !important;
+  color: var(--main-text-color) !important;
+  border: 1px solid var(--main-text-color);
 }
 
 .et_monarch .et_social_mobile, .et_monarch .et_social_heading { background-color:#666; color:#fff; }
@@ -1215,8 +1226,4 @@ a.btn-success {
 
 .table>tbody>tr.info>td, .table>tbody>tr.info>th, .table>tbody>tr>td.info, .table>tbody>tr>th.info, .table>tfoot>tr.info>td, .table>tfoot>tr.info>th, .table>tfoot>tr>td.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>thead>tr.info>th, .table>thead>tr>td.info, .table>thead>tr>th.info {
 background-color: #E1F1F9;
-}
-
-.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
-background-color: #EEEEEE;
 }
