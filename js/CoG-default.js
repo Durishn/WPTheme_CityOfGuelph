@@ -32,14 +32,36 @@ topbtn.on('click', function(e) {
 });
 
 
+
+
+
+
 /*
 * WCAG QUICKFIXES
 */
+/* A 1.1.1 - Error
+* Non-text Content
+*/
+//EMAIL SUBSCRIBERS PLUGIN
+$('.es_spinner_image img').attr('alt', '');
+
+/* A 1.3.1 - Error
+* Input field has no description
+*/
+$('.es_required_field').attr('aria-label', 'Required Field');
+
+
+/* A 1.3.1 - Error
+* HTML is used to format content
+*/
+//GENERAL
+$('iframe').removeAttr("frameborder");
+$('img').removeAttr("align");
 
 /* A 1.3.1 -Warning
 * i used to format text
 */
-/*Change <i> to <span> where applicable*/
+//GENERAL
 $('i').each(function() {
   var outer = this.outerHTML;
 
@@ -57,6 +79,30 @@ $('i').each(function() {
 /* A 1.3.1
 * No top-level heading on the page - Warning
 */
+//GENERAL
 if ($("h1").length == 0) {
   $("<h1 class='visually-hidden' role='complementary' aria-label='hidden title'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
 }
+
+/* A 1.3.1
+* Non-distinguishing landmark - Warning
+*/
+//WORDPRESS
+$('#custom_html-2').attr('aria-label', 'Footer Widgets');
+$('#secondary').attr('aria-label', 'Sidebar');
+//BU NAVIGATION PLUGIN
+$('.widget_bu_pages').attr('aria-label', 'BU navigation');
+//TWITTER EMBED
+$('#text-147').attr('aria-label', 'Twitter Widget');
+
+/* A 3.2.2
+* Missing Button in form
+*/
+// SWIFTYPE EMBED
+$("<input class='sr-only' type='submit' value='Submit'>").insertAfter( ".st-default-search-input");
+
+/* A 4.1.2 Error
+* iFrame is missing a title
+*/
+// TWITTER EMBED
+$('#twitter-widget-0').attr('title', "Twitter Widget");

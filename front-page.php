@@ -35,5 +35,4 @@ get_header(); ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 <?php get_sidebar( 'front' ); ?>
-	</div>
 <?php get_footer(); ?>

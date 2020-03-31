@@ -13,11 +13,11 @@
 
 
         <?php if (get_the_modified_time() != get_the_time()) : ?>
-          <div aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
+          <div role="complementary" aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
         <?php else: ?>
-          <div aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
+          <div role="complementary" aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
         <?php endif; ?>
-      </div>
+      </div> <!-- #main -->
 
 
       <p class="well margin0" aria-label="Website Update Feedback">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
