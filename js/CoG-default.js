@@ -126,13 +126,12 @@ $('#text-147').attr('aria-label', 'Twitter Widget');
 /* A 3.2.2
 * Missing button in form
 */
-// SWIFTYPE EMBED
-$("<input class='sr-only' type='submit' value='Submit'>").insertAfter( ".st-default-search-input");
+//$('.st-ui-header form').attr("id", "TEST");
 
 /* A 3.2.2
 * Select box has no submit button
 */
-// SWIFTYPE EMBED
+// MAPLISTPRO PLUGIN
 $("#Map-List-Search a.doPrettySearch").wrap('<button type="submit" style="  border: none; background: none;"></button>')
 
 /* A 3.2.2 - Error

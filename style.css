@@ -1204,9 +1204,7 @@ body.mceContentBody {
   }
 
   .st-ui-search-input, .st-default-search-input {
-    width: 420px !important;
     font-size: 24px !important;
-    height: 36px !important;
   }
 }
 
