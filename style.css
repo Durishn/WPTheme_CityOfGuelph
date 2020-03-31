@@ -649,7 +649,7 @@ ul.nav.nav-pills.nav-justified li.active {
 }
 
 .home .entry-title {
-  display: none;
+  /*display: none;*/
 }
 
 .entry-content img {
