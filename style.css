@@ -140,6 +140,16 @@ iframe {
   background-color: var(--site-primary);
 }
 
+#masthead.site-header {
+  padding: 0;
+  margin: 0 !important;
+}
+
+#masthead .headtoprow {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
 .searchbarwrapper {
   display: inline-block;
   width: 100%;
@@ -196,6 +206,15 @@ iframe {
     margin-right: 30px;
   }
 }
+
+#masthead .main-navigation {
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+
+
 
 
 .crumbwrapper{
@@ -322,11 +341,6 @@ display:none;
   margin: 2px auto;
 }
 
-.site-header {
-  padding-bottom: 0;
-  margin: 0 !important;
-}
-
 .dropdown-menu > li > a:visited {
   color: #333;
 }
@@ -388,8 +402,6 @@ display:none;
   margin-right: -3px;
   margin-left: -3px;
 }
-
-
 
 .post-date {
   margin-bottom: 1em;

@@ -38,7 +38,9 @@ topbtn.on('click', function(e) {
 
 /*
 * WCAG QUICKFIXES
+* author: Nic Durish (code@nicdurish.ca)
 */
+
 /* A 1.1.1 - Error
 * Non-text Content
 */
@@ -48,15 +50,38 @@ $('.es_spinner_image img').attr('alt', '');
 /* A 1.3.1 - Error
 * Input field has no description
 */
+//EMAIL SUBSCRIBERS PLUGIN
 $('.es_required_field').attr('aria-label', 'Required Field');
 
+/* A 1.3.1 - Error
+* Select box has no description
+*/
+//EVENTS CALENDER PLUGIN
+$('#tribe-events .select2-results').attr('aria-label', 'Filter Results');
 
 /* A 1.3.1 - Error
 * HTML is used to format content
 */
 //GENERAL
 $('iframe').removeAttr("frameborder");
+$('iframe').removeAttr("marginwidth");
+$('iframe').removeAttr("marginheight");
+$('iframe').removeAttr("scrolling");
 $('img').removeAttr("align");
+
+/* A 1.3.1 - Error
+* Local-link does not exist
+*/
+//EVENTS CALENDER PLUGIN
+$('div#tribe-events .tribe-events-before-html').attr('id', 'content');
+
+/* A 1.3.1 - Error
+* Form control label is missing text
+*/
+//EMAIL SUBSCRIBERS PLUGIN
+$('.emaillist form.es_subscription_form label').append("<span class='sr-only'>- Email Subscription Form</span>");
+//EVENTS CALENDER PLUGIN
+//$('div#tribe-events form#tribe_events_filters_form label').append("<span class='sr-only'>- Filter Selection</span>");
 
 /* A 1.3.1 -Warning
 * i used to format text
@@ -76,16 +101,16 @@ $('i').each(function() {
   $(this).replaceWith(newTag);
 });
 
-/* A 1.3.1
-* No top-level heading on the page - Warning
+/* A 1.3.1 - Warning
+* No top-level heading on the page
 */
 //GENERAL
 if ($("h1").length == 0) {
   $("<h1 class='visually-hidden' role='complementary' aria-label='hidden title'> "+ $("h2").text() + " </h1>").insertAfter( "#main-header");
 }
 
-/* A 1.3.1
-* Non-distinguishing landmark - Warning
+/* A 1.3.1 - Warning
+* Non-distinguishing landmark
 */
 //WORDPRESS
 $('#custom_html-2').attr('aria-label', 'Footer Widgets');
@@ -106,3 +131,5 @@ $("<input class='sr-only' type='submit' value='Submit'>").insertAfter( ".st-defa
 */
 // TWITTER EMBED
 $('#twitter-widget-0').attr('title', "Twitter Widget");
+// DARKSKY EMBED
+$('#forecast_embed').attr('title', "Forecast Widget");
