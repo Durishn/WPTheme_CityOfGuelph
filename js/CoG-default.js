@@ -1,4 +1,10 @@
 /**
+ * AODAfixes.js
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ *
+ *   WARNING: If links have scripts attached to their id, things may break!
+ *
+ * @summary Quickfixes for WCAG errors.
  * @author Nic Durish <nic.durish@guelph.com>
  * @author_uri nicdurish.ca
  * @date 2020-03-17
@@ -26,7 +32,6 @@ topbtn.on('click', function(e) {
 });
 
 
-
 /*
 * WCAG QUICKFIXES
 */
@@ -34,6 +39,7 @@ topbtn.on('click', function(e) {
 /* A 1.3.1 -Warning
 * i used to format text
 */
+/*Change <i> to <span> where applicable*/
 $('i').each(function() {
   var outer = this.outerHTML;
 

@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <aside aria-hidden="true"><?php wp_footer(); ?></aside>
+    <aside aria-hidden="true" aria-label="Footer Scripts"><?php wp_footer(); ?></aside>
 
   </body>
 </html>

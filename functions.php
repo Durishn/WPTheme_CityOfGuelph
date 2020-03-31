@@ -28,7 +28,7 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
         wp_enqueue_script('defaultJS');
 }
 endif;
-add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 100 );
+add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', PHP_INT_MAX-1 );
 // END ENQUEUE PARENT ACTION
 
 /*

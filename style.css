@@ -650,6 +650,13 @@ ul.nav.nav-pills.nav-justified li.active {
 
 .home .entry-title {
   /*display: none;*/
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+
 }
 
 .entry-content img {
