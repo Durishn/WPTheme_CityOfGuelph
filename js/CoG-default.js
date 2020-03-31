@@ -52,6 +52,9 @@ $('.es_spinner_image img').attr('alt', '');
 */
 //EMAIL SUBSCRIBERS PLUGIN
 $('.es_required_field').attr('aria-label', 'Required Field');
+//MAPLISTPRO PLUGIN
+$('.prettyMapList #Map-List-Search input.prettySearchValue').attr('aria-label', 'Search map by keyword');
+
 
 /* A 1.3.1 - Error
 * Select box has no description
@@ -121,10 +124,22 @@ $('.widget_bu_pages').attr('aria-label', 'BU navigation');
 $('#text-147').attr('aria-label', 'Twitter Widget');
 
 /* A 3.2.2
-* Missing Button in form
+* Missing button in form
 */
 // SWIFTYPE EMBED
 $("<input class='sr-only' type='submit' value='Submit'>").insertAfter( ".st-default-search-input");
+
+/* A 3.2.2
+* Select box has no submit button
+*/
+// SWIFTYPE EMBED
+$("#Map-List-Search a.doPrettySearch").wrap('<button type="submit" style="  border: none; background: none;"></button>')
+
+/* A 3.2.2 - Error
+* Select box has no description
+*/
+//MAPLISTPRO PLUGIN
+$('.prettyMapList #Map-List-Search select.distanceSelector').attr('aria-label', 'Distance Selector');
 
 /* A 4.1.2 Error
 * iFrame is missing a title
