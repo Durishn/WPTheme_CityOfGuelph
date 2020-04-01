@@ -93,14 +93,13 @@
     </script>
   </aside>
 
-  <div id="page" class="hfeed site">
+  <div id="page" class="hfeed site" role="region" aria-label="page wrapper">
 
 
     <header id="masthead" class="site-header">
       <?php do_action( 'before' ); ?>
 
-      <div class="row">
-
+      <div class="row headtoprow">
         <div class="col-sm-4">
           <span id="site-title"><span><a aria-label="Site Logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 
@@ -109,29 +108,19 @@
         </div>
         <div class="col-sm-8">
           <div class="alignright" style="margin-right:20px;">
-            <div class="searchbarwrapper"><form>
-        			<label for="mainSearch" class="hideStuff">Search:</label>
-        			<input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
-              <button type="submit" title="Submit" class='btn btn-link search-btn'>
-                <span class='glyphicon glyphicon-search'></span>
-              </button>
-        		</form></div>
-            <div id="google_translate_element" style=" margin-top:15px;"></div>
-            <!--<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-2623375-1'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" async></script>
-		-->
+            <div class="searchbarwrapper">
+              <form>
+          			<label for="mainSearch" class="hideStuff">Search:</label>
+          			<input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
+                <button type="submit" title="Submit" class='btn btn-link search-btn'>
+                  <span class='glyphicon glyphicon-search'></span>
+                </button>
+        		  </form>
+            </div>
           </div>
         </div>
       </div>
-
-
-
       <div id="site-navigation" class="main-navigation" aria-label="Navigation Bar">
-
-
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
       </div><!-- #site-navigation -->
       <?php $header_image = get_header_image();
