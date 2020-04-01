@@ -54,7 +54,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 a {
   text-decoration: underline;
   color: var(--link-text-color);
-  font-weight: var(--link-text-weight);
+  /*font-weight: var(--link-text-weight);*/
 }
 
 iframe {
