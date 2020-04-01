@@ -26,7 +26,7 @@ Updated: 2020-2-24 11:53:24
 
   --link-text-color: #206dbc;
   --link-text-size: var(--main-text-size);
-  --link-text-weight: var(--main-text-weight);
+  --link-text-weight: 600;
 
   --head-text-color: var(--main-text-color);
 }
@@ -54,7 +54,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 a {
   text-decoration: underline;
   color: var(--link-text-color);
-  /*font-weight: var(--link-text-weight);*/
+  font-weight: var(--link-text-weight);
 }
 
 iframe {
