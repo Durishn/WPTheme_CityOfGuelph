@@ -26,7 +26,7 @@ Updated: 2020-2-24 11:53:24
 
   --link-text-color: #206dbc;
   --link-text-size: var(--main-text-size);
-  --link-text-weight: var(--main-text-weight);
+  --link-text-weight: 600;
 
   --head-text-color: var(--main-text-color);
 }
