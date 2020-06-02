@@ -14,7 +14,7 @@ We don't have any tests or lints currently, but in the future merges into master
 Once changes are in master, they can be pulled into Guelphs Wordpress installations by 'updating' the theme.
 
 ## Contributing
-Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/develop/doc/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 We aim to use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/tags).
