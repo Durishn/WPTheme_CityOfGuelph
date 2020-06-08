@@ -13,6 +13,7 @@ The COG_default_page template is used for content driven pages within the lowest
 **Optional Fields**
 * Recent News - Plugin - Requires user input
 * Recent Events - Plugin - Requires user input
+* Related Resources -
 * Page Notice/Alert - ACF - Requires user input
 
 **Meta Fields**
