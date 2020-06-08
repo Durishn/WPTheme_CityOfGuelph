@@ -329,3 +329,5 @@ function shapeSpace_check_enum($redirect, $request) {
 	if (preg_match('/\?author=([0-9]*)(\/*)/i', $request)) die();
 	else return $redirect;
 }
+
+include "customTMCE.php";
