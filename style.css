@@ -7,39 +7,38 @@ Description: Child theme of Twenty Twelve theme designed and built by the WebSer
 Tags: Guelph, CityOfGuelph, Ender
 Version: 1.0.158
 Updated: 2020-2-24 11:53:24
-
-/*== WP ENQUEUE ==*
-* css/colourBlocks.css
-* css/btnStyles.css
-* css/NDprettyLinks.css
-* css/CoGGutenbergCustom
 */
 
 /*== SITE VARIABLES ==*/
 :root {
+  /*== COLOURS ==*/
   --site-primary: #00a6e5;
   --site-darktone: #282828;
-
   --main-text-color: #474747;
+  --link-text-color: #206dbc;
+  --head-text-color: var(--main-text-color);
+
+  /*== TYPOGRAPHY ==*/
   --main-text-size: 16px;
   --main-text-weight: 400;
-
-  --link-text-color: #206dbc;
   --link-text-size: var(--main-text-size);
   --link-text-weight: 600;
 
-  --head-text-color: var(--main-text-color);
+  /*== LAYOUT ==*/
 }
 
-/* =================== FONTS =================== */
+/*== FONTS ==*/
 @font-face {
   font-family:"ocr-a-std";
   src:url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/3315df/000000000000000000012e5c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
   font-display:auto;font-style:normal;font-weight:400;
 }
 
-/* ========================= GENERAL TAGS ======================== */
 
+
+
+
+/* ========================= GENERAL TAGS ======================== */
 body {
   font-size: var(--main-text-size);
   color: var(--main-text-color);
@@ -61,6 +60,10 @@ iframe {
   display: block;
   margin: 0 auto;
 }
+
+
+
+
 
 /* =================== OVERRIDE CLASS TOOLS (BE CAREFUL YALL) =================== */
 /* Border */

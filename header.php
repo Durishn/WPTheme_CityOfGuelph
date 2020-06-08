@@ -31,8 +31,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
   <?php wp_head(); ?>
   <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
   <meta name="google-site-verification" content="U72oytUFHuNuKTIQxRh46jAFknFIb8b1fiurKbNNRQ4" />
