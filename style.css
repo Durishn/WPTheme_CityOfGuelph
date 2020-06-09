@@ -496,6 +496,21 @@ h1.entry-title {
   font-size: 64px !important;
 }
 
+.entry-content h1,
+.comment-content h1,
+.entry-content h2,
+.comment-content h2,
+.entry-content h3,
+.comment-content h3,
+.entry-content h4,
+.comment-content h4,
+.entry-content h5,
+.comment-content h5,
+.entry-content h6,
+.comment-content h6 {
+	margin: 1.8rem 0 1rem 0;
+}
+
 .entry-content h2, h2 {
   font-size: 160%;
   font-weight: bold;
@@ -552,6 +567,10 @@ h2.panel-title {
 .widget-title, .entry-content th, .comment-content th {
   color: var(--main-text-color);
   text-transform: none !important;
+}
+
+#contentnav h3.widget-title {
+  display: none;
 }
 
 h3.widget-title {
