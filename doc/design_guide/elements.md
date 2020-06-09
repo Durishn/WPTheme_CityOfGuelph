@@ -22,32 +22,23 @@
 ## Post Snippets / WYSIWYG Blocks
 * paragraphs (`<p>`, )
   * `<strong>`
-
+  * `<abbr>`
+  * etc.
 * Headings (`<h1>`- `<h6>` )
-
 * Links (`<a>`)
   * Inline Links
   * Listed Links
   * Pretty Links
-
 * Button
   * `btn btn-success`
   * `kt-button`
   * `custom-block`
   * `ugb-button`
-
-
 * Thumbnail
   * `thumbnail`
   * `wp-block-ugb-card`
-
-
 * ImageCards
-
-
 * Table
-
-
 * Map
 
 
