@@ -1,9 +1,14 @@
 # Design Elements and Patterns for guelph.ca
 
 ## Post Snippets / Content Blocks
-* a tag
+* paragraphs - `<p>` tag
 
-* NDPrettyLink
+* headings
+
+* links
+  * Inline Links
+  * Listed Links
+  * Pretty Links
 
 * Button
   * `btn btn-success`
