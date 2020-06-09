@@ -1,11 +1,31 @@
 # Design Elements and Patterns for guelph.ca
 
-## Post Snippets / Content Blocks
-* paragraphs - `<p>` tag
+## Page Modules
 
-* headings
+* Breadcrumb
+* Page Title
+* Page Notice/Alert
+* Subsite Navigation
+* Table of Contents
+* Page Feature Image
+* Page Content
+* Recent News
+* Recent Events
+* Related Resources
 
-* links
+
+
+
+
+
+
+## Post Snippets / WYSIWYG Blocks
+* paragraphs (`<p>`, )
+  * `<strong>`
+
+* Headings (`<h1>`- `<h6>` )
+
+* Links (`<a>`)
   * Inline Links
   * Listed Links
   * Pretty Links
@@ -29,3 +49,14 @@
 
 
 * Map
+
+
+
+
+## Page metadata
+
+* Visibility of Feature Image
+* Page Expiration
+* Page Visibility
+* Location in Navigation
+* Page Excerpt

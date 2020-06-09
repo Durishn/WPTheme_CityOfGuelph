@@ -11,13 +11,13 @@
  */
 
 ?>
-<?php 
+<?php
 function mypage_head() {
     echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('stylesheet_directory').'/css/faq-page-template.css">'."\n";
 	echo '<script src="'.get_stylesheet_directory_uri().'/js/faq-accordion.js"></script>';
 }
 
-add_action('wp_head', 'mypage_head');
+add_action('wp_footer', 'mypage_head');
 ?>
 <?php get_header(); ?>
 
@@ -27,7 +27,7 @@ add_action('wp_head', 'mypage_head');
 		<div id="content" role="main">
 			<?php if ( function_exists('yoast_breadcrumb') )
 	{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
-			
+
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', 'page' ); ?>
 
@@ -53,7 +53,7 @@ add_action('wp_head', 'mypage_head');
 
   <?php endwhile; ?>
 
-  <?php 
+  <?php
 
     $schema = array(
     '@context'   => "https://schema.org",
