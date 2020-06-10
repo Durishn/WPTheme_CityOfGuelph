@@ -84,20 +84,58 @@ a.NDprettylink[href*=".pdf"]:after, .wp-block-file a[href*=".pdf"]:after, a.NDpr
   font: inherit;
   line-height: 1;
   margin: 0.5em;
-  padding: 1em 2em;
+  padding: 0.6em 1em;
 	display: inline-block;
 	border-radius: 3px;
 	text-decoration: none;
+  color: var(--link-text-color);
+  border-color: var(--main-text-color);
 }
+.NDprettybtn:hover, .NDprettybtn:focus {
+  text-decoration: underline;
+}
+
+/*Wide, thick, and other modifiers*/
+.NDprettybtn.wide{
+  padding: 1em 2em;
+}
+.NDprettybtn.thin{
+  border: 1px solid;
+}
+
+/*base animation*/
+.NDprettybtn.fill:hover,
+.NDprettybtn.fill:focus {
+  background-color: inset 0 0 0 2em var(--main-text-color);
+  text-decoration: none;
+  color: #fff !important;
+}
+
+/*Color options*/
 .NDprettybtn.blue{
 	 color: #00355f !important;
+   border-color: #00355f !important;
 }
 .NDprettybtn.blue:hover, .NDprettybtn.blue:focus {
-  border-color: #00355f !important;
-	text-decoration: none;
-  color: #fff !important;
+  text-decoration: underline;
 }
 .NDprettybtn.blue.fill:hover,
 .NDprettybtn.blue.fill:focus {
-  box-shadow: inset 0 0 0 2em #00355f;
+  background-color: #00355f;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.NDprettybtn.grey{
+	 color: var(--grey-text-color) !important;
+   border-color: var(--grey-text-color) !important;
+}
+.NDprettybtn.grey:hover, .NDprettybtn.blue:focus {
+  text-decoration: underline;
+}
+.NDprettybtn.grey.fill:hover,
+.NDprettybtn.grey.fill:focus {
+  background-color: var(--grey-text-color);
+  text-decoration: none;
+  color: #fff !important;
 }

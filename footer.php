@@ -12,33 +12,42 @@
 ?>
 
 
-        <?php if (get_the_modified_time() != get_the_time()) : ?>
-          <div role="complementary" aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Last Updated: <?php the_modified_time('F j, Y'); ?>.</p></div>
-        <?php else: ?>
-          <div role="complementary" aria-label="Update Date" class="width100" style="float: left; padding-left: 23px;"><p class="post-date">Posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p></div>
+        <?php if ( ! is_404() ) : ?>
+          <div role="complementary" aria-label="Page Details" class="page-details" style="float: left;">
+            <div class="post-date">
+              <?php if (get_the_modified_time() != get_the_time()) : ?>
+                <p>Date updated: <?php the_modified_time('F j, Y'); ?>.</p>
+              <?php else: ?>
+                <p>Date posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p>
+              <?php endif; ?>
+            </div>
+            <div class="site-feedback">
+              <a class="NDprettybtn grey thin fill" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">
+                <span class="material-icons" style="font-size: 1em; top: 2px; position: relative; margin: 0 6px 0 0; line-height: inherit; border: none; padding: 0;">feedback</span>Report a problem or provide feedback on this page</a>
+            </div>
+          </div>
         <?php endif; ?>
       </div> <!-- #main -->
-
-
-      <p class="well margin0" aria-label="Website Update Feedback">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p>
 
       <!--==================== FOOTER ====================-->
       <div id="footer-wrapper" aria-hidden="true">
         <footer id="colophon" class="cogFooter">
-          <?php if ( ! is_404() ) : ?>
             <a id="top-return-btn" title="back to top"><span class="sr-only">Back to top</span></a>
             <div id="footer-widgets">
-              <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+              <!-- <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
-              <?php endif; ?>
-              <?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
-                <?php dynamic_sidebar( 'sidebar-5' ); ?>
-              <?php endif; ?>
-              <?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
-                <?php dynamic_sidebar( 'sidebar-6' ); ?>
-              <?php endif; ?>
+              <?php endif; ?> -->
+
+              <ul class="footerDirectory list-unstyled colcount-sm-2 colcount-md-3">
+                <li><a href="/city-hall/contact-us/">Contact us</a></li>
+                <li><a href="/news/social-media/">Social media</a></li>
+                <li><a href="/web/website-privacy-policy">Privacy policy</a></li>
+                <li><a href="/web/sitemap">Site map</a></li>
+                <li><a href="/employment-careers/careers-jobs/">Careers/employment</a></li>
+                <li><a href="/news/">Newsroom</a></li>
+              </ul>
+
             </div>
-          <?php endif; ?>
         </footer>
       </div>
     </div>
