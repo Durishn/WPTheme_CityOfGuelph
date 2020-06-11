@@ -4,22 +4,19 @@
 
 * Breadcrumb
 * Page Title
-* Page Notice/Alert
+* Page Excerpt - Optional?
+* Page Notice/Alert - Optional
 * Subsite Navigation
-* Table of Contents
-* Page Feature Image
+* Table of Contents - Optional?
+* Page Feature Image - Optional
 * Page Content
-* Recent News
-* Recent Events
-* Related Resources
+* For more information - Optional
+* Recent News - OptionalOnLanding?
+* Recent Events - OptionalOnLanding?
+* Related Resources - Optional?
 
 
-
-
-
-
-
-## Post Snippets / WYSIWYG Blocks
+## WYSIWYG Blocks
 * paragraphs (`<p>`, )
   * `<strong>`
 

@@ -8,11 +8,12 @@ The COG_default_page template is used for content driven pages within the lowest
 * Page Title - WP - Requires user input
 * Subsite Navigation - Plugin
 * Page Content - Requires user input (allows )
-
+* Feedback Button
+* Page Update Date
 
 **Optional Fields**
-* Recent News - Plugin - Requires user input
-* Recent Events - Plugin - Requires user input
+* Recent News - Plugin - Requires user input?
+* Recent Events - Plugin - Requires user input?
 * Related Resources -
 * Page Notice/Alert - ACF - Requires user input
 
@@ -29,8 +30,7 @@ The COG_default_page template is used for content driven pages within the lowest
 
 
 ## TO DO:
-* COG Topic Page
-* COG Institution Landing??
+* COG Landing
 * COG Homepage
 * COG Search Page
 * COG News Page
