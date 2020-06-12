@@ -37,11 +37,12 @@ class FMI_Custom_Widget extends WP_Widget {
             <h3>For more info</h3>
             <p style="padding-left:2px"><strong><?php if (get_field('contact_name')):the_field('contact_name');endif;
             if (get_field('contact_name') && get_field('contact_position')): echo ' | ';endif;
-            if (get_field('contact_position')):the_field('contact_position');endif;?> </strong><br />
-            <?php if (get_field('contact_department')):the_field('contact_department');?> <br /><?php endif ?>
-            <?php the_field('contact_organization'); ?><br />
-            <?php the_field('contact_organization_address'); ?><br />
-            <?php if (get_field('contact_phone')):the_field('contact_phone');endif;if (get_field('contact_extension')): echo " ext: "; the_field('contact_extension'); echo "<br />";endif;
+            if (get_field('contact_position')):the_field('contact_position');endif;?> </strong><?php
+            if (get_field('contact_name') || get_field('contact_position')): echo '<br />';endif;
+            if (get_field('contact_department')):the_field('contact_department');echo '<br />';endif;
+            if (get_field('contact_organization')):the_field('contact_organization');echo '<br />';endif;
+            if (get_field('contact_organization_address')):the_field('contact_organization_address');echo '<br />';endif;
+            if (get_field('contact_phone')):the_field('contact_phone');endif;if (get_field('contact_extension')): echo " ext: "; the_field('contact_extension'); echo "<br />";endif;
             if (get_field('contact_email')): echo '<a href="mailto:'; the_field('contact_email'); echo '">'; the_field('contact_email'); echo '</a>';endif;
           echo '</p></div>';
         endif;

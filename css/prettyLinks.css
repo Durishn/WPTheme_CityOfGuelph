@@ -64,6 +64,10 @@ a.NDprettylink[href*=".pdf"]:after, .wp-block-file a[href*=".pdf"]:after, a.NDpr
   content:url(https://img.icons8.com/color/24/000000/pdf-2.png);
 }
 
+a.NDprettylink[href*="forms.guelph"]:after, .wp-block-file a[href*="forms.guelph"]:after {
+  content:url(https://img.icons8.com/color/24/000000/google-forms.png);
+}
+
 /*li < .NDprettylink {
     list-style-type: none !important;
 }*/
