@@ -19,10 +19,12 @@
                 <span class="material-icons" style="font-size: 1em; top: 2px; position: relative; margin: 0 6px 0 0; line-height: inherit; border: none; padding: 0;">feedback</span>Report a problem or provide feedback on this page</a>
             </div>
             <div class="post-date">
-              <?php if (get_the_modified_time() != get_the_time()) : ?>
-                <p>Date updated: <?php the_modified_time('F j, Y'); ?>.</p>
-              <?php else: ?>
-                <p>Date posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p>
+              <?php if ( ! is_single() ) : ?>
+                <?php if (get_the_modified_time() != get_the_time()) : ?>
+                  <p>Date updated: <?php the_modified_time('F j, Y'); ?>.</p>
+                <?php else: ?>
+                  <p>Date posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p>
+                <?php endif; ?>
               <?php endif; ?>
             </div>
           </div>

@@ -1,8 +1,8 @@
 <?php
 /**
- * Template Name: Sitemap Page
+ * Template Name: Sitemap Template
  * The template for displaying the Sitemap page
- *
+ * Author: Nic Durish
  */
 
 get_header(); ?>

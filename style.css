@@ -237,7 +237,7 @@ iframe {
 #main.wrapper-fullwidth {
   max-width: 100%;
   overflow: hidden;
-  margin: 2.5rem auto;
+  margin: 0 auto 2rem auto;
 }
 
 #main.wrapper-fullwidth  .page-details{
@@ -409,7 +409,24 @@ footer.cogFooter, footer[role="contentinfo"] {
   color: var(--link-text-color);
 }
 
-.entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a {
+.custom-entry-content{
+  line-height: 1.714285714;
+}
+
+.custom-sidebar-content{
+  line-height: 1;
+}
+
+#secondary .custom-sidebar-content p{
+  margin: 0;
+  padding: 5px;
+}
+
+#secondary .custom-sidebar-content h3{
+  margin: 0 0 0.8rem 0;
+}
+
+.entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a, .custom-entry-content a {
   color: var(--link-text-color);
 }
 
@@ -487,7 +504,7 @@ footer.cogFooter, footer[role="contentinfo"] {
   color: #000;
 }
 
-#main.wrapper {
+#main.wrapper, main.tribe-events-pg-template {
   max-width: 1200px;
   overflow: hidden;
   margin: 2.5rem auto 1rem auto;
@@ -570,16 +587,22 @@ h1.entry-title {
 }
 
 .entry-content h1,
+.custom-entry-content h1,
 .comment-content h1,
 .entry-content h2,
+.custom-entry-content h2,
 .comment-content h2,
 .entry-content h3,
+.custom-entry-content h3,
 .comment-content h3,
 .entry-content h4,
+.custom-entry-content h4,
 .comment-content h4,
 .entry-content h5,
+.custom-entry-content h5,
 .comment-content h5,
 .entry-content h6,
+.custom-entry-content h6,
 .comment-content h6 {
 	margin: 1.8rem 0 0.8rem 0;
 }
@@ -1211,13 +1234,13 @@ h2.aqua-header a, h2.aqua-header a:visited {
   text-decoration: underline;
 }
 
-html .mceContentBody {
+/* html .mceContentBody {
   max-width: 745px !important;
 }
 
 body.mceContentBody {
   background-color: #fff;
-}
+} */
 
 #MeetingsFrame {
   min-height: 800px;

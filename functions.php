@@ -32,11 +32,19 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', PHP_INT_MAX-1 );
 // END ENQUEUE PARENT ACTION
 
+include_once( get_stylesheet_directory() . '/inc/custom-widgets/for-more-information.php');
+
 /*
-* Set up basic theme configurations
+* Set up excerpt box
 */
 add_filter('excerpt_length', 125);
-add_post_type_support( 'page', 'excerpt' );
+// add_action('edit_form_after_title', function () {
+//     echo '<h3>Excerpt</h3>';
+//   }
+// );
+//add_post_type_support( 'page', 'excerpt' );
+add_action('edit_form_after_title', 'post_excerpt_meta_box');
+
 
 /*
 * Install latest jQuery version 3.4.1.
@@ -67,6 +75,23 @@ function my_theme_add_editor_styles() {
     add_editor_style( 'https://guelph.ca/wp-content/themes/TwentyTwelve-CityOfGuelph/style.css' );
 }
 add_action( 'admin_init', 'my_theme_add_editor_styles' );
+
+
+
+
+function move_beforeeditor_meta_boxes() {
+    # Get the globals:
+    global $post, $wp_meta_boxes;
+
+    # Output the "advanced" meta boxes:
+    do_meta_boxes( get_current_screen(), 'beforeeditor', $post );
+
+    # Remove the initial "advanced" meta boxes:
+    unset($wp_meta_boxes['post']['beforeeditor']);
+}
+add_action('edit_form_after_title', 'move_beforeeditor_meta_boxes');
+
+
 
 /**
 * Add custom logo to WP Admin login
@@ -229,6 +254,7 @@ add_filter('widget_text', 'do_shortcode');
 
 // removes Yoast redirect notification when page/post deleted
 add_filter('wpseo_enable_notification_post_trash','__return_false');
+
 
 // allows shortcodes in the text widget
 function rw_remove_dashboard_widgets() {

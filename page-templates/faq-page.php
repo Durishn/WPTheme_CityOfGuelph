@@ -1,13 +1,8 @@
 <?php
 /**
- * Template Name: Page with FAQs
+ * Template Name: FAQ Template
  * The template for displaying pages with structured data faqs
  *
-
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
  */
 
 ?>
