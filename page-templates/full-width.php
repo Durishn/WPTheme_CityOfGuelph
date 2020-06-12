@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full-width Page Template, No Sidebar
+ * Template Name: Default Template, No Sidebar
  *
  *
  * @package WordPress
