@@ -1,12 +1,11 @@
 <?php
 /**
- * The Header for our theme.
- *
+ * The Header for TwentyTwelve-CityOfGuelph.
  * Displays all of the <head> section and everything up till <div id="main">
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage TwentyTwelve-CityOfGuelph
+ * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 ?>
 <!DOCTYPE html>

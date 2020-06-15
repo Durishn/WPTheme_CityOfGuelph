@@ -3,12 +3,16 @@
  * Template Name: Sitemap Template
  * The template for displaying the Sitemap page
  * Author: Nic Durish
+ *
+ * @package WordPress
+ * @subpackage TwentyTwelve-CityOfGuelph
+ * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 
 get_header(); ?>
 
 <div id="main" class="wrapper sitemapPage">
-  <?php if ( function_exists('yoast_breadcrumb') ){yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+  <?php if ( function_exists('yoast_breadcrumb') ){yoast_breadcrumb('<div id="top-meta"><p id="breadcrumbs">','</p></div>');} ?>
 	<div id="primary">
 		<div id="content" role="main">
       <div class="entry-header">
