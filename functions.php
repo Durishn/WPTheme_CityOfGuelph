@@ -8,12 +8,12 @@ ob_start("ob_gzhandler");
 
 
 /* ADD TWENTYTWELVE THEME SUPPORT*/
-if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
-    function chld_thm_cfg_parent_css() {
-        wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
-    }
-endif;
-add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
+// if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
+//     function chld_thm_cfg_parent_css() {
+//         wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
+//     }
+// endif;
+// add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
 
 
 
@@ -29,13 +29,14 @@ function twentytwelveguelph_setup() {
   //add_editor_style( 'https://guelph.ca/wp-content/themes/TwentyTwelve-CityOfGuelph/style.css' );
   add_editor_style( 'css/style-editor.css' );
   add_editor_style( 'css/colourBlocks.css' );
-  add_editor_style( 'css/prettyLinks.css' );
+  add_editor_style( 'css/COG-components.css' );
   add_editor_style( 'css/btnStyles.css' );
 
 }
 add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
 
-
+// add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
+function disable_gutenberg_editor(){return false;}
 
 /**
  * Return the Google font stylesheet URL if available.
@@ -82,7 +83,7 @@ function load_cog_css_and_js() {
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
    wp_enqueue_style( 'chld_thm_cfg_ext1', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/colourBlocks.css' );
    wp_enqueue_style( 'chld_thm_cfg_ext2', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/btnStyles.css' );
-   wp_enqueue_style( 'chld_thm_cfg_ext3', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/prettyLinks.css' );
+   wp_enqueue_style( 'chld_thm_cfg_ext3', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/COG-components.css' );
 
    // JS
    wp_register_script('defaultJS', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/js/CoG-default.js', array('jquery'),'1.0', true);

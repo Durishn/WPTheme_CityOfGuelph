@@ -17,10 +17,8 @@
 
 
 ## WYSIWYG Blocks
-* paragraphs (`<p>`, )
+* Paragraphs `<p>` & Headings `<h1>`-`<h6>`
   * `<strong>`
-
-* Headings (`<h1>`- `<h6>` )
 
 * Links (`<a>`)
   * Inline Links
@@ -28,21 +26,27 @@
   * Pretty Links
 
 * Button
-  * `btn btn-success`
-  * `kt-button`
-  * `custom-block`
-  * `ugb-button`
+  * `COGprettybtn`
+  * `learn-more`
+  * `link-request`, `link-report` etc.
+  * `btn btn-success`?
+  * `kt-button`?
+  * `custom-block`?
+  * `ugb-button`?
 
+* Well
 
-* Thumbnail
+* Percentage Bar
+* Lead?
+* Thumbnail?
   * `thumbnail`
   * `wp-block-ugb-card`
 
 
-* ImageCards
+* ImageCards?
 
 
-* Table
+
 
 
 * Map
