@@ -51,13 +51,13 @@
                 </div>
                 <div class="col-sm-9" style="min-height: 128px; display: flex; align-items: center;">
                   <div class="footerDirectory">
-                    <ul class="list-unstyled colcount-sm-2 colcount-md-3">
+                    <ul class="list-unstyled colcount-sm-2 colcount-md-2">
                       <li><a href="/city-hall/contact-us/">Contact us</a></li>
                       <li><a href="/news/social-media/">Social media</a></li>
                       <li><a href="/privacy-policy">Privacy policy</a></li>
                       <li><a href="/sitemap">Site map</a></li>
-                      <li><a href="/employment-careers/careers-jobs/">Careers / employment</a></li>
-                      <li><a href="/news/">Newsroom</a></li>
+                      <!-- <li><a href="/employment-careers/careers-jobs/">Careers / employment</a></li>
+                      <li><a href="/news/">Newsroom</a></li> -->
                     </ul>
                   </div>
                 </div>

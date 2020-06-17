@@ -116,6 +116,8 @@ a.NDprettylink[href*="forms.guelph"]:after {
   text-decoration: none;
   background-color: #eee;
   color: var(--main-text-color);
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125);
 }
 
 /*Wide, thick, and other modifiers*/
@@ -137,18 +139,24 @@ a.NDprettylink[href*="forms.guelph"]:after {
   background-color: var(--main-text-color);
   text-decoration: none;
   color: #fff !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125);
 }
 
 /*Color options*/
 .NDprettybtn.white, .prettybtn.white{
 	 color: #fff;
    border-color: #fff;
+   background: dimgrey;
 }
 .NDprettybtn.white:hover, .NDprettybtn.white:focus,
 .prettybtn.white:hover, .prettybtn.white:focus {
-  text-decoration: underline;
-  color: var(--main-text-color);
+  color: #fff;
+  border-color: #fff;
+  background: dimgrey;
   text-decoration: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125);
 }
 
 
@@ -167,6 +175,8 @@ a.NDprettylink[href*="forms.guelph"]:after {
   background-color: #00355f;
   text-decoration: none;
   color: #fff !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125);
 }
 
 .NDprettybtn.grey, .prettybtn.grey{
@@ -184,6 +194,8 @@ a.NDprettylink[href*="forms.guelph"]:after {
   background-color: var(--grey-text-color);
   text-decoration: none;
   color: #fff !important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125);
 }
 
 

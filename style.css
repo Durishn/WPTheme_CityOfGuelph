@@ -551,7 +551,7 @@ a {
 	outline: none;
   text-decoration: underline;
   color: var(--link-text-color);
-  font-weight: inherit;
+  font-weight: 600;
 }
 
 a:hover {
@@ -864,6 +864,9 @@ li.mobile-dropdown a:visited {
     border-left: 2px solid white;
     font-size: 110%;
   }
+  #footer-wrapper .footaddress a {
+    font-weight: 400;
+  }
 
   #footer-widgets .footerDirectory{
     padding-left: 15px;
@@ -1044,6 +1047,10 @@ li.mobile-dropdown a:visited {
 
   .widget-title a:visited {
     color: var(--link-text-color);
+  }
+
+  .widget-area .js-wpv-view-layout .btn-success{
+    color: var(--link-text-color) !important;
   }
 
 
@@ -1251,7 +1258,7 @@ li.mobile-dropdown a:visited {
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 0 32px;
-  min-height: 50vh;
+  min-height: 60vh;
 }
 
 .contentPage h1.entry-title, .sitemapPage h1.entry-title {
