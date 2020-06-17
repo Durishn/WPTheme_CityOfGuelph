@@ -24,7 +24,7 @@ class TinyMCE_ABBR {
 	}
 
 	function add_tinymce_abbr( $plugin_array ) {
-		$plugin_array['tinymce_abbr_class'] = get_stylesheet_directory_uri().'/js/tinymce/tinymce-abbr.js';
+		$plugin_array['tinymce_abbr_class'] = get_stylesheet_directory_uri().'/assets/js/tinymce/tinymce-abbr.js';
 		return $plugin_array;
 	}
 
@@ -58,7 +58,7 @@ class TinyMCE_prettylink {
 		add_filter( 'mce_buttons', array( &$this, 'add_tinymce_prettylink_toolbar_button' ) );
 	}
 	function add_tinymce_prettylink( $plugin_array ) {
-		$plugin_array['tinymce_prettylink_class'] = get_stylesheet_directory_uri().'/js/tinymce/tinymce-prettylink.js';
+		$plugin_array['tinymce_prettylink_class'] = get_stylesheet_directory_uri().'/assets/js/tinymce/tinymce-prettylink.js';
 		return $plugin_array;
 	}
 	function add_tinymce_prettylink_toolbar_button( $buttons ) {
@@ -91,7 +91,7 @@ class TinyMCE_prettybtn {
 		add_filter( 'mce_buttons', array( &$this, 'add_tinymce_prettybtn_toolbar_button' ) );
 	}
 	function add_tinymce_prettybtn( $plugin_array ) {
-		$plugin_array['tinymce_prettybtn_class'] = get_stylesheet_directory_uri().'/js/tinymce/tinymce-prettybtn.js';
+		$plugin_array['tinymce_prettybtn_class'] = get_stylesheet_directory_uri().'/assets/js/tinymce/tinymce-prettybtn.js';
 		return $plugin_array;
 	}
 	function add_tinymce_prettybtn_toolbar_button( $buttons ) {

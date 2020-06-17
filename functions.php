@@ -5,8 +5,6 @@
  * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 ob_start("ob_gzhandler");
-
-
 /* ADD TWENTYTWELVE THEME SUPPORT*/
 // if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
 //     function chld_thm_cfg_parent_css() {
@@ -19,24 +17,19 @@ ob_start("ob_gzhandler");
 
 /**
  * Set up theme defaults and registers support for various WordPress features.
- * This function is hooked into the after_setup_theme hook, which
- * runs before the init hook, which may be too late for some features
  */
 function twentytwelveguelph_setup() {
 
   /* Add support for editor-styles w extra custom css*/
   add_theme_support( 'editor-styles' );
   //add_editor_style( 'https://guelph.ca/wp-content/themes/TwentyTwelve-CityOfGuelph/style.css' );
-  add_editor_style( 'css/style-editor.css' );
-  add_editor_style( 'css/colourBlocks.css' );
-  add_editor_style( 'css/COG-components.css' );
-  add_editor_style( 'css/btnStyles.css' );
+  add_editor_style( 'assets/css/style-editor.css' );
+  add_editor_style( 'assets/css/colourBlocks.css' );
+  add_editor_style( 'assets/css/COG-components.css' );
+  add_editor_style( 'assets/css/btnStyles.css' );
 
 }
 add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
-
-// add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
-function disable_gutenberg_editor(){return false;}
 
 /**
  * Return the Google font stylesheet URL if available.
@@ -81,12 +74,12 @@ function load_cog_css_and_js() {
    wp_enqueue_style( 'style', get_stylesheet_uri() );
    //wp_enqueue_style('bootstrap-css', ('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css') );
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-   wp_enqueue_style( 'chld_thm_cfg_ext1', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/colourBlocks.css' );
-   wp_enqueue_style( 'chld_thm_cfg_ext2', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/btnStyles.css' );
-   wp_enqueue_style( 'chld_thm_cfg_ext3', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/COG-components.css' );
+   wp_enqueue_style( 'chld_thm_cfg_ext1', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/assets/css/colourBlocks.css' );
+   wp_enqueue_style( 'chld_thm_cfg_ext2', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/assets/css/btnStyles.css' );
+   wp_enqueue_style( 'chld_thm_cfg_ext3', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/assets/css/COG-components.css' );
 
    // JS
-   wp_register_script('defaultJS', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/js/CoG-default.js', array('jquery'),'1.0', true);
+   wp_register_script('defaultJS', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/assets/js/CoG-default.js', array('jquery'),'1.0', true);
    wp_enqueue_script('defaultJS');
 
    // Admin scripts
@@ -327,7 +320,8 @@ add_filter( 'body_class', 'cog_body_class' );
 
 
 /*      *****       ****      ***     */
-
+// add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
+function disable_gutenberg_editor(){return false;}
 
 
 /*

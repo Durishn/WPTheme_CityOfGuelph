@@ -8,8 +8,8 @@
 ?>
 <?php
 function mypage_head() {
-    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('stylesheet_directory').'/css/faq-page-template.css">'."\n";
-	echo '<script src="'.get_stylesheet_directory_uri().'/js/faq-accordion.js"></script>';
+    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('stylesheet_directory').'/assets/css/faq-page-template.css">'."\n";
+	echo '<script src="'.get_stylesheet_directory_uri().'/assets/js/faq-accordion.js"></script>';
 }
 
 add_action('wp_footer', 'mypage_head');
