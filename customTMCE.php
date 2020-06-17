@@ -107,5 +107,5 @@ class TinyMCE_prettybtn {
 if ( is_admin() ) {
 	$TinyMCE_prettylink = new TinyMCE_prettylink;
 	$TinyMCE_ABBR = new TinyMCE_ABBR;
-	$TinyMCE_prettybtn = new TinyMCE_prettybtn;
+	// $TinyMCE_prettybtn = new TinyMCE_prettybtn;
 }

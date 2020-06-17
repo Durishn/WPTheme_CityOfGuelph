@@ -104,7 +104,7 @@
           </a></span></span>
         </div>
         <div class="col-sm-8">
-          <div class="alignright" style="margin-right:20px;">
+          <div class="searchbarwrapwrap">
             <div class="searchbarwrapper">
               <form>
           			<label for="mainSearch" class="hideStuff">Search:</label>

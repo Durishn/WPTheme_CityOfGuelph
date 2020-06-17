@@ -79,7 +79,7 @@ a.btn-success {
     /* border: 1px solid #474747; */
     margin-top: .5em;
     /* color: #474747; */
-    color: #337ab7;
+    color: var(--link-text-color);
     text-decoration: none;
     font-weight: normal;
     font-size: 120%;
@@ -95,7 +95,7 @@ a.btn-success {
     /* border: 1px solid var(--main-text-color); */
 }
 
-a.btn-success:hover, a.btn-success:focus {
+a.btn-success:hover, a.btn-success:focus, a.btn-success:active {
   background-color: #eee;
   color: var(--main-text-color);
   border: 1px solid #ddd;

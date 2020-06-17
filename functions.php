@@ -48,8 +48,6 @@ function cog_get_font_url() {
 	return $font_url;
 }
 
-
-
 /**
  * Filter TinyMCE CSS path to include Google Fonts.
  *
@@ -322,6 +320,10 @@ add_filter( 'body_class', 'cog_body_class' );
 /*      *****       ****      ***     */
 // add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
 function disable_gutenberg_editor(){return false;}
+
+
+
+add_filter( 'wpseo_remove_reply_to_com', '__return_false' );
 
 
 /*

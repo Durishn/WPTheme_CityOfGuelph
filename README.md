@@ -38,6 +38,7 @@ We aim to use [SemVer](http://semver.org/) for versioning. For the versions avai
 * Global Edge Security Cache - WPEngine
 * Page Cache - WPEngine
 * Object Cache - WPEngine
+* Toolset Cache
 
 ## Authors
 * **[Durish, Nic](https://github.com/Durishn)**

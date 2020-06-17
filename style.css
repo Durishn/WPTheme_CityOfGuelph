@@ -48,6 +48,7 @@ Updated: 2020-2-24 11:53:24
   --site-primary: #00a6e5;
   --site-darktone: #282828;
   --main-text-color: #474747;
+  --grey-text-color: #595959;
   /*--link-text-color: #206dbc; FOR AA COMPLIANCE*/
   --link-text-color: #195794; /*FOR AA COMPLIANCE*/
   --link-text-color-hover: #21759b;
@@ -58,7 +59,7 @@ Updated: 2020-2-24 11:53:24
   --main-text-size: 16px;
   --main-text-weight: 400;
   --link-text-size: var(--main-text-size);
-  --grey-text-color: #595959;
+
 
   /*== LAYOUT ==*/
 }
@@ -767,10 +768,13 @@ li.mobile-dropdown a:visited {
   }
 
   #masthead .headtoprow {
-    padding-top: 1.7em;
-    padding-bottom: 1.7em;
+    padding: 1.7em 0.5em;
     /* max-width: 1200px; */
     margin: 0 auto;
+  }
+
+  #masthead .searchbarwrapwrap {
+    float: right;
   }
 
   #masthead .searchbarwrapper {
@@ -824,17 +828,21 @@ li.mobile-dropdown a:visited {
 
   /* 11.2 Footer
 ----------------------------------------------------------------*/
+  .site-info {
+    clear: both;
+  }
+
   #footer-wrapper {
     border-top: none;
-    padding: 0.7rem 32px;
     height: 100%;
     background-color: #282828;
     bottom: 0;
     box-shadow: 0 0 5px grey;
   }
-
-  .site-info {
-    clear: both;
+  #footer-wrapper footer{
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 32px;
   }
 
   #footer-widgets {
@@ -842,47 +850,52 @@ li.mobile-dropdown a:visited {
     border-top: none;
   }
 
+  #footer-widgets a:hover {
+    text-decoration: underline;
+  }
+
   #footer-widgets .widget li {
     list-style-type: none;
   }
 
-  #footer-widgets .footerDirectory li{
-    margin-bottom: 1.6rem;
-  }
-  #footer-widgets {
-    color: #fff;
-    background-color: var(--site-darktone);
+  #footer-wrapper .footaddress{
+    line-height: 1.2;
+    padding-left: 15px;
+    border-left: 2px solid white;
+    font-size: 110%;
   }
 
-  #footer-widgets .textwidget a {
-    color: #f28433;
-    text-decoration: underline;
+  #footer-widgets .footerDirectory{
+    padding-left: 15px;
+    width: 100%;
+  }
+
+  #footer-widgets .footerDirectory li{
+    padding: 0.8rem 0;
   }
 
   #footer-widgets .footerDirectory a {
     color: white;
     background-color: var(--site-darktone);
-    text-decoration: none;
-    font-size:90%;
-  }
-
-  #footer-widgets a:hover {
     text-decoration: underline;
+    font-weight: 600;
   }
 
-  footer.cogFooter, footer[role="contentinfo"] {
-    margin-top: 0;
-    /* line-height: 1.5em; */
-    /* border-top: 0; */
-    /* color: #fff;
-    clear: both;
-    max-width: 960px;
-    max-width: 68.571428571rem;
-    margin-left: auto;
-    margin-right: auto; */
-    padding: 24px 0;
-    padding: 1.714285714rem 0;
+  #footer-widgets {
+    color: #fff;
+    background-color: var(--site-darktone);
   }
+
+  .cogfooter .textwidget a,
+  .cogfooter a,
+  .orange-link a {
+    /* color: #f28433;
+    text-decoration: underline; */
+  }
+
+
+
+
   #top-return-btn {
     display: inline-block;
     background-color: var(--site-primary);
@@ -1230,7 +1243,7 @@ li.mobile-dropdown a:visited {
   overflow: hidden;
   padding-right: 0;
   padding-left: 0;
-  margin: 2px auto;
+  margin: 0 auto;
 }
 
 #main.wrapper, main.tribe-events-pg-template {
@@ -1363,7 +1376,7 @@ section[role="banner"] {
 #main.wrapper-fullwidth {
   max-width: 100%;
   overflow: hidden;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto 0 auto;
 }
 
 #main.wrapper-fullwidth  #bottom-meta{
@@ -1421,12 +1434,6 @@ section[role="banner"] {
 }
 
 @media screen and (max-width: 600px) {
-  #masthead .col-sm-4{
-    text-align: center;
-  }
-  #masthead #site-title{
-    margin-right: 30px;
-  }
   #primary-fullwidth.site-content {
     margin: 0;
     padding: 0;
@@ -1434,6 +1441,22 @@ section[role="banner"] {
   .wrapper-bigger .site-content {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #masthead .col-sm-4{
+    text-align: center;
+  }
+  #masthead #site-title{
+    margin-right: 30px;
+  }
+  #footer-wrapper .footaddress {
+    margin-bottom: 20px;
+  }
+  #masthead .searchbarwrapwrap {
+    float: none;
   }
 }
 
@@ -1490,8 +1513,8 @@ section[role="banner"] {
     font-size: 250%;
   }
   footer .textwidget{
-    max-width: 960px;
-    max-width: 68.571428571rem;
+    /* max-width: 960px; */
+    /* max-width: 68.571428571rem; */
     margin: auto;
   }
 
