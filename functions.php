@@ -326,10 +326,7 @@ function disable_gutenberg_editor(){return false;}
 add_filter( 'wpseo_remove_reply_to_com', '__return_false' );
 
 
-/*
-* Load custom widgets from directory
-*/
-include_once( get_stylesheet_directory() . '/inc/custom-widgets/for-more-information.php');
+
 
 /*
 * Set up excerpt box
@@ -550,4 +547,8 @@ function shapeSpace_check_enum($redirect, $request) {
 	else return $redirect;
 }
 
+/*
+* Load custom widgets from directory
+*/
+include_once( get_stylesheet_directory() . '/partials/custom-widgets/for-more-information.php');
 include "partials/customTMCE.php";
