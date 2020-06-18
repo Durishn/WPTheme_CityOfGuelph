@@ -550,4 +550,4 @@ function shapeSpace_check_enum($redirect, $request) {
 	else return $redirect;
 }
 
-include "customTMCE.php";
+include "partials/customTMCE.php";
