@@ -1,0 +1,20 @@
+:root {
+  /* Colours */
+  --site-primary: #00a6e5;
+  --site-darktone: #282828;
+  --main-text-color: #474747;
+  --grey-text-color: #595959;
+  /*--link-text-color: #206dbc; FOR AA COMPLIANCE*/
+  --link-text-color: #195794; /*FOR AA COMPLIANCE*/
+  --link-text-color-hover: #21759b;
+  --link-text-color-visited: #21759b;
+  --head-text-color: var(--main-text-color);
+
+  /*== Typography ==*/
+  --main-text-size: 16px;
+  --main-text-weight: 400;
+  --link-text-size: var(--main-text-size);
+
+
+  /*== LAYOUT ==*/
+}

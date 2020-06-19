@@ -69,6 +69,7 @@ add_filter( 'mce_css', 'cog_mce_css' );
 */
 function load_cog_css_and_js() {
    // CSS
+   wp_enqueue_style( 'chld_thm_cfg_ext0', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/assets/css/variables.css' );
    wp_enqueue_style( 'style', get_stylesheet_uri() );
    //wp_enqueue_style('bootstrap-css', ('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css') );
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
@@ -331,13 +332,13 @@ add_filter( 'wpseo_remove_reply_to_com', '__return_false' );
 /*
 * Set up excerpt box
 */
-//add_post_type_support( 'page', 'excerpt' );
+add_post_type_support( 'page', 'excerpt' );
 add_filter('excerpt_length', 125);
 // add_action('edit_form_after_title', function () {
 //     echo '<h3>Excerpt</h3>';
 //   }
 // );
-add_action('edit_form_after_title', 'post_excerpt_meta_box');
+//add_action('edit_form_after_title', 'post_excerpt_meta_box');
 
 
 
@@ -533,6 +534,53 @@ function rw_remove_dashboard_widgets() {
 }
 add_action('admin_init','rw_remove_dashboard_widgets');
 
+if ( ! function_exists( 'COG_entry_meta' ) ) :
+	/**
+	 * Set up post entry meta.
+   */
+	function COG_entry_meta() {
+		/* translators: Used between list items, there is a space after the comma. */
+		$categories_list = get_the_category_list( __( ', ', 'twentytwelve' ) );
+
+		/* translators: Used between list items, there is a space after the comma. */
+		$tag_list = get_the_tag_list( '', __( ', ', 'twentytwelve' ) );
+
+		$date = sprintf(
+			'<a href="%1$s" title="%2$s" rel="bookmark"><time class="entry-date" datetime="%3$s">%4$s</time></a>',
+			esc_url( get_permalink() ),
+			esc_attr( get_the_time() ),
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() )
+		);
+
+		$author = sprintf(
+			'<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a></span>',
+			esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+			/* translators: %s: Author display name. */
+			esc_attr( sprintf( __( 'View all posts by %s', 'twentytwelve' ), get_the_author() ) ),
+			get_the_author()
+		);
+
+		if ( $tag_list ) {
+			/* translators: 1: Category name, 2: Tag name, 3: Date, 4: Author display name. */
+			$utility_text = __( 'This entry was posted in %1$s and tagged %2$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		} elseif ( $categories_list ) {
+			/* translators: 1: Category name, 3: Date, 4: Author display name. */
+			$utility_text = __( 'This entry was posted in %1$s on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		} else {
+			/* translators: 3: Date, 4: Author display name. */
+			$utility_text = __( 'This entry was posted on %3$s<span class="by-author"> by %4$s</span>.', 'twentytwelve' );
+		}
+
+		printf(
+			$utility_text,
+			$categories_list,
+			$tag_list,
+			$date,
+			$author
+		);
+	}
+endif;
 
 // block WP enum scans
 // https://m0n.co/enum

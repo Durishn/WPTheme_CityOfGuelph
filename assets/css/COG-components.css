@@ -162,7 +162,7 @@ a.NDprettylink[href*="forms.guelph"]:after {
 }
 .NDprettybtn.blue:hover, .NDprettybtn.blue:focus,
 .prettybtn.blue:hover, .prettybtn.blue:focus {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .NDprettybtn.blue.fill:hover,
 .NDprettybtn.blue.fill:focus,
@@ -179,7 +179,7 @@ a.NDprettylink[href*="forms.guelph"]:after {
 }
 .NDprettybtn.grey:hover, .NDprettybtn.blue:focus,
 .prettybtn.grey:hover, .prettybtn.blue:focus {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .NDprettybtn.grey.fill:hover,
 .NDprettybtn.grey.fill:focus,
