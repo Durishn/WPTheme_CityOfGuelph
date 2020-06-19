@@ -1147,7 +1147,7 @@ li.mobile-dropdown a:visited {
   .entry-content table,
   .comment-content table {
   	border-bottom: 1px solid #ededed;
-  	color: #757575;
+  	/* color: #757575; */
   	font-size: 12px;
   	font-size: 0.857142857rem;
   	line-height: 2;
@@ -1242,7 +1242,7 @@ li.mobile-dropdown a:visited {
   min-height: 60vh;
 }
 
-.contentPage h1.entry-title, .sitemapPage h1.entry-title {
+.archivePage h1.entry-title, .contentPage h1.entry-title, .sitemapPage h1.entry-title {
   border-bottom: 1px solid var(--site-primary);
 }
 
@@ -2044,7 +2044,9 @@ h3.homeheader {
   padding-top: 30px;
   padding-bottom: 65.25%;
   height: 0;
-  border: solid black 1px;
+  /* border: solid black 1px; */
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
   -webkit-overflow-scrolling: touch;
 }
 

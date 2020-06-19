@@ -339,8 +339,7 @@ add_filter('excerpt_length', 125);
 //   }
 // );
 //add_action('edit_form_after_title', 'post_excerpt_meta_box');
-
-
+// Changing excerpt more
 
 
 
