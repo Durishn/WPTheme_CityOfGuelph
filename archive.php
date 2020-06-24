@@ -23,7 +23,7 @@ get_header(); ?>
 		line-height: 1.5;
 	}
 </style>
-<div id="main" class="wrapper">
+<div id="main" class="wrapper archivePage">
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 

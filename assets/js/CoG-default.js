@@ -1,13 +1,11 @@
 /**
- * AODAfixes.js
+ * CoG-default.js
  * Licensed under the MIT license - http://opensource.org/licenses/MIT
  *
- *   WARNING: If links have scripts attached to their id, things may break!
- *
- * @summary Quickfixes for WCAG errors.
+ * @summary Baseline javascript for City of Guelph WP Theme.
  * @author Nic Durish <nic.durish@guelph.com>
  * @author_uri nicdurish.ca
- * @date 2020-03-17
+ * @date 2020-06-04
  *
  * Copyright (c) 2020 Nic Durish
  */
@@ -30,6 +28,8 @@ topbtn.on('click', function(e) {
   $root.animate({scrollTop:0}, '500');
   return false;
 });
+
+
 
 
 
@@ -122,6 +122,9 @@ $('#secondary').attr('aria-label', 'Sidebar');
 $('.widget_bu_pages').attr('aria-label', 'BU navigation');
 //TWITTER EMBED
 $('#text-147').attr('aria-label', 'Twitter Widget');
+//TOC
+$('#ez-toc-container nav').attr('aria-label', 'Table of Contents')
+$('#ubermenu-main-76-primary').attr('aria-label', 'Primary Navigation')
 
 /* A 3.2.2
 * Missing button in form

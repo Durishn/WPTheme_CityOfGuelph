@@ -1,20 +1,15 @@
 <?php
 /**
- * Template Name: Page with FAQs
+ * Template Name: FAQ Template
  * The template for displaying pages with structured data faqs
  *
-
- *
- * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
  */
 
 ?>
 <?php
 function mypage_head() {
-    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('stylesheet_directory').'/css/faq-page-template.css">'."\n";
-	echo '<script src="'.get_stylesheet_directory_uri().'/js/faq-accordion.js"></script>';
+    echo '<link rel="stylesheet" type="text/css" href="'.get_bloginfo('stylesheet_directory').'/assets/css/faq-page-template.css">'."\n";
+	echo '<script src="'.get_stylesheet_directory_uri().'/assets/js/faq-accordion.js"></script>';
 }
 
 add_action('wp_footer', 'mypage_head');
@@ -23,11 +18,10 @@ add_action('wp_footer', 'mypage_head');
 
 
 <div id="main" class="wrapper">
+  <?php if ( function_exists('yoast_breadcrumb') )
+{yoast_breadcrumb('<div id="top-meta"><p id="breadcrumbs">','</p></div>');} ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-			<?php if ( function_exists('yoast_breadcrumb') )
-	{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
-
 			<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', 'page' ); ?>
 

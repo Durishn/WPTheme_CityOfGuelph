@@ -8,24 +8,17 @@
  * different template.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage TwentyTwelve-CityOfGuelph
+ * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 
 get_header(); ?>
 
-<div id="main" class="wrapper">
+<div id="main" class="wrapper contentPage">
+	<?php if ( function_exists('yoast_breadcrumb') ){yoast_breadcrumb('<div id="top-meta"><p id="breadcrumbs">','</p></div>');} ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-			<?php if ( function_exists('yoast_breadcrumb') )
-	{yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
-			&nbsp;
-			<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'content', 'page' ); ?>
-			<?php comments_template( '', true ); ?>
-
-			<?php endwhile; // end of the loop. ?>
-
+			<?php while ( have_posts() ) : the_post(); get_template_part( 'content', 'page' ); endwhile; ?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
 	<?php get_sidebar(); ?>

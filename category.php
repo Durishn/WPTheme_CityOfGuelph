@@ -4,7 +4,7 @@
 */
 
 get_header(); ?>
-<div id="main" class="wrapper">
+<div id="main" class="wrapper archivePage">
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
@@ -13,7 +13,7 @@ get_header(); ?>
 	if ( have_posts() ) : ?>
 
 			<header class="archive-header">
-				<h1 class="entry-title"><?php printf( __( 'Category Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
+				<header class="entry-header" style="margin-bottom:3rem;"><h1 class="entry-title"><?php printf( __( 'Category Archives: %s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
 
 				<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
@@ -24,7 +24,7 @@ get_header(); ?>
 
 	// The Loop
 	while ( have_posts() ) : the_post(); ?>
-			<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+			<h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 			<small><?php the_time('F j, Y') ?></small>
 
 			<div class="entry-content" style="margin-top:10px;">

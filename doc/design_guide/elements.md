@@ -4,23 +4,20 @@
 
 * Breadcrumb
 * Page Title
-* Page Notice/Alert
+* Page Excerpt - Optional?
+* Page Notice/Alert - Optional
 * Subsite Navigation
-* Table of Contents
-* Page Feature Image
+* Table of Contents - Optional?
+* Page Feature Image - Optional
 * Page Content
-* Recent News
-* Recent Events
-* Related Resources
+* For more information - Optional
+* Recent News - OptionalOnLanding?
+* Recent Events - OptionalOnLanding?
+* Related Resources - Optional?
 
 
-
-
-
-
-
-## Post Snippets / WYSIWYG Blocks
-* paragraphs (`<p>`, )
+## WYSIWYG Blocks
+* Paragraphs `<p>` & Headings `<h1>`-`<h6>`
   * `<strong>`
   * `<abbr>`
   * etc.
@@ -30,15 +27,20 @@
   * Listed Links
   * Pretty Links
 * Button
-  * `btn btn-success`
-  * `kt-button`
-  * `custom-block`
-  * `ugb-button`
-* Thumbnail
+  * `COGprettybtn`
+  * `learn-more`
+  * `link-request`, `link-report` etc.
+  * `btn btn-success`?
+  * `kt-button`?
+  * `custom-block`?
+  * `ugb-button`?
+* Well
+* Percentage Bar
+* Lead?
+* Thumbnail?
   * `thumbnail`
   * `wp-block-ugb-card`
-* ImageCards
-* Table
+* ImageCards?
 * Map
 
 

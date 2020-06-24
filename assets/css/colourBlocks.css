@@ -1,4 +1,8 @@
 /*
+* WARNING THIS FILE IS DEPRECATED AND DUE FOR REMOVAL
+*/
+
+/*
 Theme Name: Twenty Twelve Guelph
 Theme URI: htp://guelph.ca
 Description: Child theme of Twenty Twelve theme
@@ -6,6 +10,10 @@ Author: Nic, Greg and Kim
 Author URI: http://guelph.ca
 Template: twentytwelve
 Version: 1.0
+
+LETS AIM TO REMOVE THIS FILE IF POSSIBLE
+
+
 */
 
 .colourBox .btn {
@@ -155,9 +163,7 @@ Version: 1.0
 
 .custom-block {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 12px;
   font-weight: normal;
   text-decoration: none;
   color: #fff !important;

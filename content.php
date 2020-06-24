@@ -3,8 +3,8 @@
  * The default template for displaying content. Used for both single and index/archive/search.
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage TwentyTwelve-CityOfGuelph
+ * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 ?>
 
@@ -17,23 +17,19 @@
 	<header class="entry-header">
 
 		<?php if ( is_single() ) : ?>
-		<h1 class="entry-title"><?php the_title(); ?></h1>
-		<?php $my_post_meta = get_post_meta($post->ID, 'wpcf-read-time', true); ?>
-		<?php if ( ! empty ( $my_post_meta ) ) { ?>
-		Reading time: <?php echo get_post_meta($post->ID, 'wpcf-read-time', true); ?> minutes
-		<?php } ?>
-
+			<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php $my_post_meta = get_post_meta($post->ID, 'wpcf-read-time', true); ?>
+			<?php if ( ! empty ( $my_post_meta ) ) { ?>
+				Reading time: <?php echo get_post_meta($post->ID, 'wpcf-read-time', true); ?> minutes
+			<?php } ?>
 		<?php else : ?>
-		<h1 class="entry-title">
-			<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-		</h1>
-		<?php $my_post_meta = get_post_meta($post->ID, 'wpcf-read-time', true); ?>
-		<?php if ( ! empty ( $my_post_meta ) ) { ?>
-		Reading time: <?php echo get_post_meta($post->ID, 'wpcf-read-time', true); ?> minutes
-		<?php } ?>
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			<?php if ( ! empty ( $my_post_meta ) ) { ?>
+			Reading time: <?php echo get_post_meta($post->ID, 'wpcf-read-time', true); ?> minutes
+			<?php } ?>
 		<?php endif; // is_single() ?>
 
-		<p style="padding-top:15px;"><?php the_post_thumbnail(); ?></p>
+		<!-- <p style="padding-top:15px;"><?php the_post_thumbnail(); ?></p> -->
 		<?php if ( comments_open() ) : ?>
 		<div class="comments-link">
 			<?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
@@ -52,8 +48,8 @@
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 
-	<footer class="entry-meta">
-		<?php twentytwelve_entry_meta(); ?>
+	<div class="entry-meta">
+		<?php COG_entry_meta(); ?>
 		<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
 		<?php if ( is_singular() && get_the_author_meta( 'description' ) && is_multi_author() ) : // If a user has filled out their description and this is a multi-author blog, show a bio on their entries. ?>
 		<div class="author-info">
@@ -71,5 +67,6 @@
 			</div><!-- .author-description -->
 		</div><!-- .author-info -->
 		<?php endif; ?>
-	</footer><!-- .entry-meta -->
+	</div><!-- .entry-meta -->
+
 </article><!-- #post -->
