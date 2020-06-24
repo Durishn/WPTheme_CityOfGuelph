@@ -69,8 +69,8 @@ a.NDprettylink[href$=".pptx"]:after, a.NDprettylink[href$=".ppt"]:after, a.NDpre
 }
 
 a.COGprettylink[href$=".xlsx"]:after, a.COGprettylink[type="application/excel"]:after, a.COGprettylink[type="application/x-excel"]:after,
-a.NDprettylink[href$=".xlsx"]:after, a.NDprettylink[type="application/excel"]:after, a.NDprettylink[type="application/x-excel"]:after
-.wp-block-file a[href$=".xlsx"]:after, , .wp-block-file a[type="application/excel"]:after.wp-block-file a[type="application/x-excel"]:after {
+a.NDprettylink[href$=".xlsx"]:after, a.NDprettylink[type="application/excel"]:after, a.NDprettylink[type="application/x-excel"]:after,
+.wp-block-file a[href$=".xlsx"]:after, .wp-block-file a[type="application/excel"]:after, .wp-block-file a[type="application/x-excel"]:after {
   content:url(https://img.icons8.com/color/24/000000/ms-excel.png);
 }
 
@@ -83,6 +83,11 @@ a.NDprettylink[href*=".pdf"]:after, a.NDprettylink[type="application/pdf"]:after
 a.COGprettylink[href*="forms.guelph"]:after, .wp-block-file a[href*="forms.guelph"]:after,
 a.NDprettylink[href*="forms.guelph"]:after {
   content:url(https://img.icons8.com/color/24/000000/google-forms.png);
+}
+
+a.COGprettylink[href*="docs.google.com/spreadsheet"]:after, .wp-block-file a[href*="docs.google.com/spreadsheet"]:after,
+a.NDprettylink[href*="docs.google.com/spreadsheet"]:after {
+  content:url(https://img.icons8.com/color/24/000000/google-sheets.png);
 }
 
 

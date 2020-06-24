@@ -30,7 +30,8 @@
           onPostRender : function() {
               this.getEl().innerHTML =
                  "Supports strings that contain:<br/>"+
-                 ".mp3, .docx, .pptx, .ppt, .xlsx, .pdf, forms.guelph.ca<br/>";},
+                 ".mp3, .docx, .pptx, .ppt, .xlsx, .pdf, forms.guelph.ca,<br/>"+
+								 "docs.google.com/spreadsheet";},
         },
 				{
 					type   : 'textbox',
