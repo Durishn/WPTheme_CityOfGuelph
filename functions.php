@@ -597,5 +597,5 @@ function shapeSpace_check_enum($redirect, $request) {
 /*
 * Load custom widgets from directory
 */
-include_once( get_stylesheet_directory() . '/partials/custom-widgets/for-more-information.php');
+// include_once( get_stylesheet_directory() . '/partials/custom-widgets/for-more-information.php');
 include "partials/customTMCE.php";
