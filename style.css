@@ -1742,6 +1742,10 @@ background-color: #E1F1F9;
 	color: #f28433;
 }
 
+.price li.header h3{
+	color: white;
+}
+
 .pagecontentwrapper{
 	  max-width: 1400px;
     overflow: hidden;
