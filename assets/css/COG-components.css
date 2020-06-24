@@ -81,10 +81,7 @@ a.NDprettylink[href*=".pdf"]:after, a.NDprettylink[type="application/pdf"]:after
 }
 
 a.COGprettylink[href*="forms.guelph"]:after, .wp-block-file a[href*="forms.guelph"]:after,
-a.NDprettylink[href*="forms.guelph"]:after {
-  content:url(https://img.icons8.com/color/24/000000/google-forms.png);
-}
-
+a.NDprettylink[href*="forms.guelph"]:after,
 a.COGprettylink[href*="docs.google.com/spreadsheet"]:after, .wp-block-file a[href*="docs.google.com/spreadsheet"]:after,
 a.NDprettylink[href*="docs.google.com/spreadsheet"]:after {
   content:url(https://img.icons8.com/color/24/000000/google-sheets.png);
