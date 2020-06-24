@@ -54,7 +54,7 @@ LETS AIM TO REMOVE THIS FILE IF POSSIBLE
   padding-bottom: 15px;
   padding-left: 15px;
   color: #fff;
-  font-size: 120%;
+  /* font-size: 120%; */
   -webkit-transition: 0.1s all;
   -moz-transition: 0.1s all;
   -ms-transition: 0.1s all;

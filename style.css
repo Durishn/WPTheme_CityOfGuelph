@@ -1642,7 +1642,7 @@ ul#contentnavlist a:visited {
 }
 #ubermenu-main-0-primary.ubermenu-main .ubermenu-item-normal > a.ubermenu-target:hover,
 #ubermenu-main-0-primary.ubermenu-main .ubermenu-submenu .ubermenu-item-header > a.ubermenu-target:hover{
-  color: #f7f7f7
+  color: black;
 }
 
 
