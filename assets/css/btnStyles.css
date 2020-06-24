@@ -96,7 +96,8 @@ a.btn-success, a.btn-success.active {
 }
 
 a.btn-success:hover, a.btn-success:focus, a.btn-success:active,
-a.btn-success.active:hover, a.btn-success.active:focus, a.btn-success.active:active {
+a.btn-success.active:hover, a.btn-success.active:focus, a.btn-success.active:active,
+a.btn-success:hover:visited {
   background-color: #eee;
   color: var(--main-text-color);
   border: 1px solid #474747;

@@ -163,9 +163,7 @@ LETS AIM TO REMOVE THIS FILE IF POSSIBLE
 
 .custom-block {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 15px;
+  padding: 12px;
   font-weight: normal;
   text-decoration: none;
   color: #fff !important;

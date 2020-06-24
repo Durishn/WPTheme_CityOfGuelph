@@ -743,13 +743,18 @@ li.mobile-dropdown a:visited {
     margin-top: 0px;
   }
 
+	.main-navigation li ul li a:hover, .main-navigation li ul li a:focus {
+    background: #e3e3e3;
+    color: #444;
+	}
+
   #masthead.site-header {
     padding: 0;
     margin: 0;
   }
 
   #masthead .headtoprow {
-    padding: 1.7em 0.5em;
+    padding: 1em 0.6em;
     /* max-width: 1200px; */
     margin: 0 auto;
   }
@@ -820,10 +825,10 @@ li.mobile-dropdown a:visited {
     bottom: 0;
     box-shadow: 0 0 5px grey;
   }
-  #footer-wrapper footer{
+  #footer-wrapper #colophon{
     max-width: 1300px;
     margin: auto;
-    padding: 20px 32px;
+    padding: 24px 32px;
   }
 
   #footer-widgets {
@@ -840,14 +845,20 @@ li.mobile-dropdown a:visited {
   }
 
   #footer-wrapper .footaddress{
-    line-height: 1.2;
+    line-height: 1.1;
     padding-left: 15px;
     border-left: 2px solid white;
-    font-size: 110%;
+    font-size: 95%;
   }
   #footer-wrapper .footaddress a {
     font-weight: 400;
   }
+
+	#footer-widgets .footerDirectoryWrapper{
+		min-height: 116px;
+		display: flex;
+		align-items: center;
+	}
 
   #footer-widgets .footerDirectory{
     padding-left: 15px;
@@ -1727,6 +1738,10 @@ background-color: #E1F1F9;
 /********************************
  * MISCELLANEOUS ... PLS CLEAN ME
  ********************************/
+.orange-link a{
+	color: #f28433;
+}
+
 .pagecontentwrapper{
 	  max-width: 1400px;
     overflow: hidden;

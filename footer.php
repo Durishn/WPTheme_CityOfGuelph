@@ -34,22 +34,22 @@
       <!-- <p class="well margin0" aria-label="Website Update Feedback">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p> -->
 
       <!--==================== FOOTER ====================-->
-      <div id="footer-wrapper" aria-hidden="true">
-        <footer id="colophon" class="cogFooter">
+      <footer id="footer-wrapper" aria-hidden="true">
+        <div id="colophon" class="cogFooter">
             <a id="top-return-btn" title="back to top"><span class="sr-only">Back to top</span></a>
             <div id="footer-widgets">
-              <!-- <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+              <?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
                 <?php dynamic_sidebar( 'sidebar-4' ); ?>
-              <?php endif; ?> -->
+              <?php endif; ?>
 
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-sm-3">
                     <div class="footaddress">
-                      <span><strong>Guelph City Hall</strong><br>1 Carden Street<br>Guelph, ON<br>N1H 3A1<br>519-822-1260<br>
-                      <a style="color:white; " href="mailto:info@guelph.ca">info@guelph.ca</a>
+                      <p><strong>Guelph City Hall</strong><br>1 Carden Street<br>Guelph, ON<br>N1H 3A1<br>519-822-1260<br>TTY 519-826-9771<br>
+                      <a style="color:white; " href="mailto:info@guelph.ca">info@guelph.ca</a></p>
                     </div>
                 </div>
-                <div class="col-sm-9" style="min-height: 128px; display: flex; align-items: center;">
+                <div class="col-sm-9 footerDirectoryWrapper">
                   <div class="footerDirectory">
                     <ul class="list-unstyled colcount-sm-2 colcount-md-2">
                       <li><a href="/city-hall/contact-us/">Contact us</a></li>
@@ -57,18 +57,18 @@
                       <li><a href="/privacy-policy">Privacy policy</a></li>
                       <li><a href="/sitemap">Site map</a></li>
                       <!-- <li><a href="/employment-careers/careers-jobs/">Careers / employment</a></li>
-                      <li><a href="/news/">Newsroom</a></li> -->
+                      <li><a href="/news/">Newsroom</a></li> --/>
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
 
 
 
             </div>
-        </footer>
-      </div>
+        </div>
+      </footer>
     </div>
 
     <aside aria-hidden="true" aria-label="Footer Scripts"><?php wp_footer(); ?></aside>

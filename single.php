@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div id="main" class="wrapper contentPage">
-	<?php if ( function_exists('yoast_breadcrumb') ) {yoast_breadcrumb('<p id="breadcrumbs">','</p>');} ?>
+	<?php if ( function_exists('yoast_breadcrumb') ){yoast_breadcrumb('<div id="top-meta"><p id="breadcrumbs">','</p></div>');} ?>
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 			<?php while ( have_posts() ) : the_post(); ?>
