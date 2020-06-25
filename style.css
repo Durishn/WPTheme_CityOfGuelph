@@ -540,7 +540,7 @@ a:hover {
 }
 .entry-content a:visited,
 .comment-content a:visited {
-	color: var(--link-text-color-hover);
+	/* color: var(--link-text-color-hover); */
 }
 .entry-content .more-link {
 	white-space: nowrap;
@@ -1216,7 +1216,7 @@ li.mobile-dropdown a:visited {
     line-height: 1.714285714;
   }
   .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a, .custom-entry-content a {
-    color: var(--link-text-color);
+    /* color: var(--link-text-color); */
   }
   .entry-page-image {
   	margin-bottom: 14px;
