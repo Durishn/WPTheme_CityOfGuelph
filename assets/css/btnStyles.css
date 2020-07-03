@@ -223,7 +223,7 @@ h2.blue-header a, h2.blue-header a:visited {
 .bs-callout-green a, .bs-callout-red a, .bs-callout-aqua a, .bs-callout-black a, .bs-callout-blue a, .bs-callout-orange a {
   margin-top: 0;
   margin-bottom: 5px;
-  font-size: 150%;
+  /* font-size: 150%; */
   font-weight: 400;
 }
 
@@ -235,10 +235,15 @@ h2.red-header a, h2.red-header a:visited {
   color: #d4403a;
 }
 
-.bs-callout-red h2.red-header, h3.red-header, h4.red-header, h5.red-header, p.red-lead, .bs-callout-red a, h2.red-header a, h3.red-header a, h4.red-header a, h5.red-header a, p.red-lead a, .bs-callout-red a:visited, h2.red-header a:visited, h3.red-header a:visited, h4.red-header a:visited, h5.red-header a:visited, p.red-lead a:visited {
+.bs-callout-red h2.red-header, .bs-callout-red h2, h3.red-header, h4.red-header, h5.red-header, p.red-lead, h2.red-header a, h3.red-header a, h4.red-header a, h5.red-header a {
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 150%;
+  color: #d4403a;
+  font-weight: 400;
+}
+
+.bs-callout-red a, h2.red-header a, p.red-lead a, .bs-callout-red a:visited, h2.red-header a:visited, h3.red-header a:visited, h4.red-header a:visited, h5.red-header a:visited, p.red-lead a:visited {
   color: #d4403a;
   font-weight: 400;
 }

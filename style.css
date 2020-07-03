@@ -540,7 +540,7 @@ a:hover {
 }
 .entry-content a:visited,
 .comment-content a:visited {
-	color: var(--link-text-color-hover);
+	/* color: var(--link-text-color-hover); */
 }
 .entry-content .more-link {
 	white-space: nowrap;
@@ -1216,7 +1216,7 @@ li.mobile-dropdown a:visited {
     line-height: 1.714285714;
   }
   .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a, .custom-entry-content a {
-    color: var(--link-text-color);
+    /* color: var(--link-text-color); */
   }
   .entry-page-image {
   	margin-bottom: 14px;
@@ -1311,13 +1311,15 @@ section[role="banner"] {
 	margin-bottom: 0.5rem;
 }
 #secondary .widget p,
+#secondary .custom-sidebar-content p,
 #secondary .widget li,
 #secondary .widget .textwidget {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
 }
-#secondary .widget p {
+#secondary .widget p,
+#secondary .custom-sidebar-content p {
 	margin-bottom: 0.5rem;
 }
 #secondary .textwidget ul,
@@ -1642,7 +1644,7 @@ ul#contentnavlist a:visited {
 }
 #ubermenu-main-0-primary.ubermenu-main .ubermenu-item-normal > a.ubermenu-target:hover,
 #ubermenu-main-0-primary.ubermenu-main .ubermenu-submenu .ubermenu-item-header > a.ubermenu-target:hover{
-  color: #f7f7f7
+  color: black;
 }
 
 
@@ -1740,6 +1742,10 @@ background-color: #E1F1F9;
  ********************************/
 .orange-link a{
 	color: #f28433;
+}
+
+.price li.header h3{
+	color: white;
 }
 
 .pagecontentwrapper{

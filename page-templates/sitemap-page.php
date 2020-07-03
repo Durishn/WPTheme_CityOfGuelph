@@ -28,7 +28,7 @@ get_header(); ?>
           }
 
           /* LIST EXPLICIT EXCLUSIONS HERE*/
-          $exclude = array_merge($exclude, ['9, 87037']);
+          $exclude = array_merge($exclude, ['9, 87037', '63770', '64751', '44105', '93316']);
 
           $html = wp_list_pages(
             array(
