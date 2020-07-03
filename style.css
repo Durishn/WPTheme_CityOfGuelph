@@ -3,7 +3,8 @@ Theme Name: TwentyTwelve - CityOfGuelph
 Theme URI: https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
 Author: Nic Durish, Greg Hahn, and Kim Lawrence
 Author URI: https://github.com/orgs/Guelph-Digital-Service/people
-Description: Theme designed and built by the WebServices team at the City Of Guelph to run Guelph.ca, the citys municipal website
+Description: Theme designed and built by the WebServices team at the City
+		Of Guelph to run Guelph.ca, the citys municipal website
 Tags: Guelph, CityOfGuelph, Ender
 Version: 1.0.158
 Updated: 2020-2-24 11:53:24
@@ -14,34 +15,19 @@ Updated: 2020-2-24 11:53:24
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-1.0 Site Variables
-2.0 Reset
-3.0 Override Classes
-4.0 General Purpose Classes
-5.0 Accessibility
-6.0 Typography
-  6.1 Headings & Paragraphs
-  6.2 Lists
-7.0 Links
-8.0 Media
-9.0 Navigation
-10.0 Page Structure
-10.0 Partials
-  10.1 Header
-  10.2 Footer
-  10.3 Widgets/Sidebar
-  10.4 Content Template
-11.0 Page Templates
-  11.1 Default Page Template
-  11.2 Front Page Template
-  11.3 New Full Width Template
-12.0 Media Queries
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-1.0 Site Variables
+- Site Variables
+- Reset
+- Override Classes
+- General Purpose Classes
+- Accessibility
+- Typography
+- Links
+- Media
+- Navigation
+- Page Structure
+- Partials
+- Page Templates
+- Media Queries
 --------------------------------------------------------------*/
 
 
@@ -50,7 +36,13 @@ Updated: 2020-2-24 11:53:24
 2.0 Reset
 Based off WP twentytwelve reset v5.0.0
 --------------------------------------------------------------*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p
+, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em
+, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i
+, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption
+, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed
+, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section
+, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -250,6 +242,9 @@ img {
 }
 .bg-grey {
   background-color: #eee;
+}
+.txtcenter{
+	text-align: center;
 }
 
 
@@ -559,7 +554,7 @@ embed,
 iframe,
 object,
 video {
-	max-width: 100%;/* Make sure videos and embeds fit their containers */
+	max-width: 100%; /* Make sure videos and embeds fit their containers */
 }
 
 .entry-content img,
@@ -574,7 +569,8 @@ video {
 img.header-image,
 .author-avatar img,
 img.wp-post-image {
-	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
+	/* Add fancy borders to all WordPress-added images but not things like badges
+	and icons and the like */
 	border-radius: 3px;
 	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
@@ -582,7 +578,7 @@ img.wp-post-image {
 img[class*="align"],
 img[class*="wp-image-"],
 img[class*="attachment-"] {
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	height: auto;
 }
 
 img.size-full,
@@ -590,7 +586,7 @@ img.size-large,
 img.header-image,
 img.wp-post-image {
 	max-width: 100%;
-	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+	height: auto; /* Make images with WP-added height/width attributes are scaled*/
 }
 
 img.wp-smiley,
@@ -647,7 +643,8 @@ img.wp-smiley,
 .gallery-columns-1 .gallery-icon img {
 	padding: 3%;
 }
-.wp-block-image .aligncenter, .wp-block-image .alignleft, .wp-block-image .alignright, .wp-block-image.is-resized, .centerimg {
+.wp-block-image .aligncenter, .wp-block-image .alignleft
+, .wp-block-image .alignright, .wp-block-image.is-resized, .centerimg {
   margin: auto;
 }
 
@@ -776,7 +773,8 @@ li.mobile-dropdown a:visited {
     transition: all 200ms ease-in-out;
     margin-top: 15px;
   }
-  #masthead .searchbarwrapper.hovered, .searchbbarwrapper:hover, .searchbbarwrapper:active {
+  #masthead .searchbarwrapper.hovered, .searchbbarwrapper:hover
+	, .searchbbarwrapper:active {
     border: 1px solid #888;
   }
   #masthead .searchbarwrapper input[type=text] {
@@ -791,7 +789,9 @@ li.mobile-dropdown a:visited {
     height: 36px;
     max-width: calc(100vw - 70px);
   }
-  #masthead .searchbarwrapper input[type=text]:hover, .searchbbarwrapper input[type=text]:focus, .searchbbarwrapper input[type=text]:active {
+  #masthead .searchbarwrapper input[type=text]:hover
+	, .searchbbarwrapper input[type=text]:focus
+	, .searchbbarwrapper input[type=text]:active {
     box-shadow: none;
   }
   #masthead .searchbarwrapper .search-btn {
@@ -1215,7 +1215,8 @@ li.mobile-dropdown a:visited {
   .custom-entry-content{
     line-height: 1.714285714;
   }
-  .entry-content a:visited, .comment-content a:visited, .entry-content a, .comment-content a, .custom-entry-content a {
+  .entry-content a:visited, .comment-content a:visited, .entry-content a
+	, .comment-content a, .custom-entry-content a {
     /* color: var(--link-text-color); */
   }
   .entry-page-image {
@@ -1253,7 +1254,8 @@ li.mobile-dropdown a:visited {
   min-height: 60vh;
 }
 
-.archivePage h1.entry-title, .contentPage h1.entry-title, .sitemapPage h1.entry-title {
+.archivePage h1.entry-title, .contentPage h1.entry-title
+, .sitemapPage h1.entry-title {
   border-bottom: 1px solid var(--site-primary);
 }
 
@@ -1349,7 +1351,7 @@ section[role="banner"] {
 	/* color: var(--link-text-color-visited); */
 }
 #secondary #s {
-	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
+	width: 53.66666666666%; /* define width to avoid  a wider submit button */
 }
 
 #bottom-meta{
@@ -1582,7 +1584,8 @@ section[role="banner"] {
  * Plugin Overrides
  ********************************/
  /*Event Calendar*/
-.tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
+.tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4
+, .tt_event_theme_page h5 {
   padding-bottom: 25px;
   padding-top: 25px;
 }
@@ -1592,11 +1595,21 @@ section[role="banner"] {
 .tribe-events-widget-link a {
   margin-top: 0;
 }
-.tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+.tribe-events-calendar div[id*=tribe-events-daynum-]
+, .tribe-events-calendar div[id*=tribe-events-daynum-] a {
   background-color: #666;
   color: #fff;
 }
-#tribe-events-content a, .tribe-events-adv-list-widget .tribe-events-widget-link a, .tribe-events-adv-list-widget .tribe-events-widget-link a:hover, .tribe-events-back a, .tribe-events-back a:hover, .tribe-events-event-meta a, .tribe-events-list-widget .tribe-events-widget-link a, .tribe-events-list-widget .tribe-events-widget-link a:hover, ul.tribe-events-sub-nav a, ul.tribe-events-sub-nav a:hover { text-decoration: underline;}
+#tribe-events-content a
+, .tribe-events-adv-list-widget .tribe-events-widget-link a
+, .tribe-events-adv-list-widget .tribe-events-widget-link a:hover
+, .tribe-events-back a, .tribe-events-back a:hover, .tribe-events-event-meta a
+, .tribe-events-list-widget .tribe-events-widget-link a
+, .tribe-events-list-widget .tribe-events-widget-link a:hover
+, ul.tribe-events-sub-nav a
+, ul.tribe-events-sub-nav a:hover {
+	text-decoration: underline;
+}
 
 
 /*DIVI*/
@@ -1688,15 +1701,20 @@ ul#contentnavlist a:visited {
 /*******************
 * WCAG QUICK FIXES *
 *******************/
-#main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3, #main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+#main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3
+, #main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
   background-color: #f5f5f6;
   color: #666;
 }
-.table>tbody>tr.info>td, .table>tbody>tr.info>th, .table>tbody>tr>td.info, .table>tbody>tr>th.info, .table>tfoot>tr.info>td, .table>tfoot>tr.info>th, .table>tfoot>tr>td.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>thead>tr.info>th, .table>thead>tr>td.info, .table>thead>tr>th.info {
+.table>tbody>tr.info>td, .table>tbody>tr.info>th, .table>tbody>tr>td.info
+, .table>tbody>tr>th.info, .table>tfoot>tr.info>td, .table>tfoot>tr.info>th
+, .table>tfoot>tr>td.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td
+, .table>thead>tr.info>th, .table>thead>tr>td.info, .table>thead>tr>th.info {
 background-color: #E1F1F9;
 }
 /*  AAA Compliance*/
-.page_item .current_page_item .level_2.active, .page_item .current_page_item .level_2.active:hover{
+.page_item .current_page_item .level_2.active
+, .page_item .current_page_item .level_2.active:hover{
   background-color: #005F85;
 }
 
