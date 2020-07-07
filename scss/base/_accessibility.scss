@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------
+  ## Accessibility
+--------------------------------------------------------------*/
+.assistive-text,
+.site .screen-reader-text, .sr-only, .hideStuff {
+	position: absolute !important;
+  clip: rect(0,0,0,0);
+  border: 0;
+	overflow: hidden;
+  padding: 0;
+  margin: -1px;
+	height: 1px;
+	width: 1px;
+}
+.main-navigation .assistive-text:focus,
+.site .screen-reader-text:hover,
+.site .screen-reader-text:active,
+.site .screen-reader-text:focus {
+	background: $color-white;
+	border: 2px solid $color-gray-80;
+	border-radius: 3px;
+	clip: auto !important;
+	color: $color-black;
+	display: block;
+	font-size: 12px;
+	height: auto;
+	padding: 12px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}

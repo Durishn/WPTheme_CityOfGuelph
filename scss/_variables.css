@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+
+/**
+ * COLORS
+ * TYPOGRAPHY
+ * LAYOUT/BREAKPOINTS
+ * SPACING
+ * BORDERS
+ * ANIMATION
+ */
+
+
+
+
+:root {
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+/* Site Colours */
+--site-primary: var(--cog-primary);
+--site-darktone: var(--color-gray-86);
+
+/* Typographic Colours */
+--main-text-color: var(--color-gray-73);
+--grey-text-color: var(--color-gray-67);
+--link-text-color: var(--color-navy-dark);
+--link-text-color-hover: var(--color-navy);
+--link-text-color-visited: var(--color-navy);
+--head-text-color: var(--main-text-color);
+
+
+/*------------------------------------*\
+    #TYPOGRAPHY
+\*------------------------------------*/
+--main-text-size: 16px;
+--main-text-weight: 400;
+--link-text-size: var(--main-text-size);
+
+
+/*------------------------------------*\
+    #LAYOUT/BREAKPOINTS
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+    #SPACING
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #BORDERS
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #ANIMATION
+\*------------------------------------*/
+
+
+}

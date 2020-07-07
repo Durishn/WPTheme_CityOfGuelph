@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+  ## Sidebar
+--------------------------------------------------------------*/
+#secondary {
+  margin: 24px 0 0;
+  margin: 2rem 0 1rem 0;
+
+  // h1, h2, h3, h4, h5 {
+	// 	margin-top:0.5em;
+	// 	margin-bottom: 0.5em;
+	// }
+  ol, ul{
+  	list-style: none;
+  }
+
+  .custom-sidebar-content {
+    line-height: 1;
+    p {
+      margin: 0;
+      padding: 5px;
+      font-size: 13px;
+      font-size: 0.928571429rem;
+      line-height: 1.846153846;
+      margin-bottom: 0.5rem;
+    }
+
+    h3{
+      margin: 0 0 0.8rem 0;
+    }
+  }
+
+  #s {
+  	width: 53.66666666666%; /* define a width to avoid dropping a wider submit button */
+  }
+}

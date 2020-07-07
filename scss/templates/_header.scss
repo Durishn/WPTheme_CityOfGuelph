@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+  ## Header
+--------------------------------------------------------------*/
+#masthead {
+  background-color: $site-primary;
+	padding: 0;
+	margin: 0;
+
+	#site-logo {
+    padding-left: 10px;
+  }
+
+	.main-navigation {
+    text-align: center;
+    margin-top: 0px;
+
+		li ul li a:hover, li ul li a:focus {
+	    background: #e3e3e3;
+	    color: #444;
+		}
+  }
+
+	.headtoprow {
+    padding: 1em 0.6em;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+  }
+
+	.searchbarwrapwrap {
+    float: right;
+
+		.searchbarwrapper {
+	    display: inline-block;
+	    width: 100%;
+	    border-radius: 6px;
+	    padding: 4px 4px 4px 4px;
+	    position: relative;
+	    background: #fff;
+	    border: 1px solid #bbb;
+	    -webkit-transition: all 200ms ease-in-out;
+	    -moz-transition: all 200ms ease-in-out;
+	    transition: all 200ms ease-in-out;
+	    margin-top: 15px;
+
+			&:hover, &:active, &.hovered {
+		    border: 1px solid #888;
+		  }
+
+			input[type=text] {
+		    width: 420px;
+		    font-size: 18px;
+		    border: 0px;
+		    line-height: inherit;
+		    padding: .4em 42px .4em .2em;
+		    font-weight: 100;
+		    box-sizing: border-box;
+		    background: #fff;
+		    height: 36px;
+		    max-width: calc(100vw - 70px);
+				&:hover, &:focus, &:active {
+					box-shadow: none;
+				}
+		  }
+
+			.search-btn {
+		    position: absolute;
+		    right: 2px;
+		    top: 2px;
+		    color: #aaa;
+		    border-radius: 3px;
+		    font-size: 21px;
+		    padding: 5px 10px 1px;
+		    -webkit-transition: all 200ms ease-in-out;
+		    -moz-transition: all 200ms ease-in-out;
+		    transition: all 200ms ease-in-out;
+				&:hover {
+			    color: #fff;
+			    background-color: $site-primary;
+			    background-image: none;
+			  }
+		  }
+	  }
+  }
+}
