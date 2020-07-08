@@ -19,7 +19,7 @@
 }
 
 #main.wrapper{
-  max-width: 1300px;
+  max-width: $default-max-width;
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 0 32px;

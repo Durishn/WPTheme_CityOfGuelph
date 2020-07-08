@@ -21,7 +21,7 @@ ob_start("ob_gzhandler");
 function twentytwelveguelph_setup() {
   /* Add support for editor-styles w extra custom css*/
   add_theme_support( 'editor-styles' );
-  add_editor_style( 'css/style-editor.css' );
+  add_editor_style( 'css/style-editor.min.css' );
 }
 add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
 
