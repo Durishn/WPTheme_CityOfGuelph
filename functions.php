@@ -61,7 +61,7 @@ add_filter( 'mce_css', 'cog_mce_css' );
 function load_cog_css_and_js() {
    // CSS
    wp_enqueue_style( 'style', get_stylesheet_uri() );
-   wp_enqueue_style( 'gds-design-system', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/gds-design-system.css' );
+   wp_enqueue_style( 'gds-design-system', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/gds-design-system.min.css' );
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
    // JS
