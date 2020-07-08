@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------
+  ## Page - Default
+--------------------------------------------------------------*/
+// .site {
+//   clear: both !important;
+//   display: block !important;
+//   float: none !important;
+//   max-width: 100%;
+//   position: relative !important;
+//   overflow: hidden;
+//   padding-right: 0;
+//   padding-left: 0;
+//   margin: 0 auto;
+// }
+
+.site-content{
+  width: auto;
+  margin-top: 0px;
+}
+
+#main.wrapper{
+  max-width: $default-max-width;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  padding: 0 32px;
+  min-height: 60vh;
+}
+
+#top-meta  {
+  margin: 24px 0 0;
+	margin: 2rem 0 0;
+}
+
+#bottom-meta{
+  padding: 1rem 0 0;
+  margin: 0 0 1rem 0;
+  width: 100%;
+
+  .site-feedback {
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .post-date {
+    color: $grey-text-color;
+    padding: 5px 0;
+    font-size: 90%
+  }
+}
+
+.entry-title, .contentPage .entry-title, .sitemapPage .entry-title {
+	border-bottom: 1px solid $site-primary;
+}

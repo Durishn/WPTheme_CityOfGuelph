@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+	## Override Classes (! Be Careful !)
+--------------------------------------------------------------*/
+.thinborder {
+  border: 1px solid #021a40 !important;
+}
+
+.defaultfont, .defaultfontsize {
+  font-size: 100% !important;
+}
+
+.margin0 {
+  margin: 0 !important;
+}
+
+.padround {
+  padding: 20px !important;
+}
+
+.padded10-content {
+  padding: 0px 10px 0px 10px !important;
+}
+
+.txtcenter{
+	text-align: center !important;
+}
+
+.width100, .fullwidth {
+  width: 100% !important;
+}
+
+.width12 {
+  width: 12% !important;
+}
+
+.width25 {
+  width: 25% !important;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none !important;
+}
+
+.smallerheader {
+  font-size: 14px !important;
+  margin: 3px !important;
+}
+
+
+/*------------------------------------*\
+    ## General Purpose Classes
+\*------------------------------------*/
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+.aligncenter, .centerimg {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.has-text-align-center{
+  text-align: center;
+}
+.wrapper {
+  border-top: none;
+  box-shadow: none;
+}
+.bg-grey {
+  background-color: $color-gray-07;
+}
+.txtcenter{
+	text-align: center;
+}
+.row {
+  margin-right: -3px;
+  margin-left: -3px;
+}
+.nobullet li {
+  margin-left: 5px;
+  list-style: none;
+  ul li {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,14 @@
+/********************************
+  ## WCAG Quickfixes
+ ********************************/
+ #main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3, #main .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+   background-color: #f5f5f6;
+   color: #666;
+ }
+ .table>tbody>tr.info>td, .table>tbody>tr.info>th, .table>tbody>tr>td.info, .table>tbody>tr>th.info, .table>tfoot>tr.info>td, .table>tfoot>tr.info>th, .table>tfoot>tr>td.info, .table>tfoot>tr>th.info, .table>thead>tr.info>td, .table>thead>tr.info>th, .table>thead>tr>td.info, .table>thead>tr>th.info {
+ background-color: #E1F1F9;
+ }
+ /*  AAA Compliance*/
+ .page_item .current_page_item .level_2.active, .page_item .current_page_item .level_2.active:hover{
+   background-color: #005F85;
+ }

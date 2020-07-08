@@ -1,0 +1,51 @@
+/* Site Colours */
+$site-primary: $cog-primary;
+$site-darktone: $color-gray-86;
+$site-border: $color-gray-10;
+
+/* Typographic Colours */
+$main-text-color: $color-gray-73;
+$grey-text-color: $color-gray-67;
+$link-text-color: $color-navy-dark;
+$link-text-color-hover: $color-navy;
+$link-text-color-visited: $color-navy;
+$head-text-color: $main-text-color;
+
+
+/*TYPOGRAPHY*/
+$font: "Open Sans", Helvetica, Arial, sans-serif;
+$font-code: Consolas, Monaco, Lucida Console, monospace;
+
+$main-text-size: 16px;
+$main-text-weight: 400;
+$link-text-size: $main-text-size;
+$link-text-weight: 600;
+
+/*SPACING*/
+$site-marg: 24px;
+
+
+/*MaxWdiths*/
+$default-max-width: 1300px;
+
+
+// /*Breakpoints*/
+// $bp-small: 24em;
+// $bp-small-2: 29.75em;
+// $bp-small-3: 39.8em;
+// $bp-med: 46.8em;
+// $bp-med-2: 48em;
+// $bp-large: 50em;
+// $bp-large-2: 56em;
+// $bp-xl: 62em;
+// $bp-xl-2: 67em;
+// $bp-xl-3: $l-max-width;
+//
+/* Animation */
+// $fade-quick: 0.15s;
+// $fade-long: 0.4s;
+// $anim-ease: ease-in-out;
+$anim-base-easing: ease;
+$anim-time-short: 0.1s;
+$anim-time: 0.2s;
+$anim-time-long: 0.3s;

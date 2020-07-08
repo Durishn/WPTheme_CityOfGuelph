@@ -1,0 +1,115 @@
+/********************************
+  ## Buttons
+ ********************************/
+a.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cog-btn{
+  padding:8px 16px;
+  z-index:1;
+  position:relative;
+  cursor:pointer;
+  font-size:18px;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  display:flex;
+  line-height:1.6;
+  text-decoration:none;
+  text-align:center;
+  -webkit-box-pack:center;
+  -webkit-justify-content:center;
+  -ms-flex-pack:center;
+  justify-content:center;
+  border-style:solid;
+  -webkit-transition:all .3s ease-in-out;
+  transition:all .3s ease-in-out;
+  border-width:2px;
+  border-radius:3px;
+  border-color:#555555;
+  overflow:hidden;
+  background:transparent;
+  color:#555555;
+}
+
+a.btn-success, a.btn-success.active {
+    /* border: 1px solid #ddd; */
+    border: 1px solid #474747;
+    margin-top: .5em;
+    /* color: #474747; */
+    color: $link-text-color;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 120%;
+    line-height: 1.42857143;
+    background-color: #fff;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -ms-transition: 0.1s all;
+    transition: 0.1s all;
+    /* background-image: none !important; */
+    /* background-color: white !important; */
+    /* color: var(--main-text-color) !important; */
+    /* border: 1px solid var(--main-text-color); */
+}
+
+a.btn-success:hover, a.btn-success:focus, a.btn-success:active,
+a.btn-success.active:hover, a.btn-success.active:focus, a.btn-success.active:active,
+a.btn-success:hover:visited {
+  background-color: #eee;
+  color: $main-text-color;
+  border: 1px solid #474747;
+}
+
+a.btn.btn-footer {
+  color: #fff !important;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-weight: normal;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  -webkit-transition: 0.1s all;
+  -moz-transition: 0.1s all;
+  -ms-transition: 0.1s all;
+  transition: 0.1s all;
+  margin-top: .5em;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 4px;
+}
+
+/* reCollect overrides */
+a#rCbtn-search.btn.btn-success {
+  color: #fff !important;
+}

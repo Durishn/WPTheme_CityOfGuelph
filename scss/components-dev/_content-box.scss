@@ -1,0 +1,97 @@
+/********************************
+ * THUMBNAIL
+ ********************************/
+.thumbnail {
+  display: block;
+  padding: 15px;
+  margin: 0;
+  margin-bottom: 15px;
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.26);
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -moz-transition: 0.1s all;
+  -webkit-transition: 0.1s all;
+  -o-transition: 0.1s all;
+  transition: 0.1s all;
+  line-height: 1.35;
+  border: 1px solid #e5e5e5;
+
+  .post-date {
+    color: $grey-text-color;
+    padding: 5px 0;
+    font-size: 90%
+  }
+
+  h2.homeheader, h3.homeheader {
+    font-size: 200%;
+    font-weight: 400;
+    margin: 0 0 10px;
+  }
+
+  h3.homeheader {
+    margin: 20px 0 10px;
+  }
+}
+
+
+
+
+
+/********************************
+ * WELL
+ ********************************/
+.well {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+p.well {
+  background-color: #fefefe !important;
+}
+
+div.well ul li {
+  margin-bottom: .5em;
+}
+
+
+
+
+/********************************
+ * LANDING BOX
+ ********************************/
+.landingBox{
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  border-left: 1px solid
+  #eee;
+  -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.26);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.26);
+  -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.26);
+  -moz-border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 10px;
+  border-right: 1px solid
+  #eee;
+  -moz-transition: .1s all;
+  -webkit-transition: .1s all;
+  -o-transition: .1s all;
+  transition: .1s all;
+  background:
+  #fdfdfd;
+}
