@@ -19,17 +19,14 @@ ob_start("ob_gzhandler");
  * Set up theme defaults and registers support for various WordPress features.
  */
 function twentytwelveguelph_setup() {
-
   /* Add support for editor-styles w extra custom css*/
   add_theme_support( 'editor-styles' );
-  add_editor_style( 'style-editor.css' );
-
+  add_editor_style( 'css/style-editor.css' );
 }
 add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
 
 /**
  * Return the Google font stylesheet URL if available.
- *
  * The use of Open Sans by default is localized. For languages that use
  * characters not supported by the font, the font can be disabled.
  */
@@ -40,7 +37,6 @@ function cog_get_font_url() {
 		'display' => urlencode( 'fallback' ),
 	);
 	$font_url   = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
-
 	return $font_url;
 }
 
@@ -59,13 +55,13 @@ function cog_mce_css( $mce_css ) {
 add_filter( 'mce_css', 'cog_mce_css' );
 
 
-
 /**
 * Enqueue styles and scripts
 */
 function load_cog_css_and_js() {
    // CSS
    wp_enqueue_style( 'style', get_stylesheet_uri() );
+   wp_enqueue_style( 'gds-design-system', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/gds-design-system.css' );
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
    // JS

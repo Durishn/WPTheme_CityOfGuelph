@@ -15,6 +15,19 @@ Please note we have a code of conduct, please follow it in all your interactions
 4. You may merge the Pull Request in once you have the sign-off of one other developer, or if you
    do not have permission to do that, you may request the second reviewer to merge it for you.
 
+## Tips for Development
+
+### SCSS
+
+Styling a website is a an art, as is structuring those styles. Take consideration
+in the priviledge level of your styles and their files location within the
+SCSS. We are currently trying to seperate guelph.ca specific styles from
+those within the Guelph Design System - so keep components, templates, and
+overrides seperated! To compile your scss after making a change, use a Sass compiler
+with minification such as `sass scss/style.scss css/gds-design-system.css --style compressed`.
+
+
+
 ## Code of Conduct
 
 ### Our Pledge
