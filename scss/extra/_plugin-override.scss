@@ -23,8 +23,18 @@
   background-color: #666;
   color: #fff;
  }
- #tribe-events-content a, .tribe-events-adv-list-widget .tribe-events-widget-link a, .tribe-events-adv-list-widget .tribe-events-widget-link a:hover, .tribe-events-back a, .tribe-events-back a:hover, .tribe-events-event-meta a, .tribe-events-list-widget .tribe-events-widget-link a, .tribe-events-list-widget .tribe-events-widget-link a:hover, ul.tribe-events-sub-nav a, ul.tribe-events-sub-nav a:hover { text-decoration: underline;}
-
+ #tribe-events-content a, .tribe-events-adv-list-widget .tribe-events-widget-link a
+ , .tribe-events-adv-list-widget .tribe-events-widget-link a:hover, .tribe-events-back a
+ , .tribe-events-back a:hover, .tribe-events-event-meta a, .tribe-events-list-widget .tribe-events-widget-link a
+ , .tribe-events-list-widget .tribe-events-widget-link a:hover, ul.tribe-events-sub-nav a, ul.tribe-events-sub-nav a:hover {
+   text-decoration: underline;
+ }
+.tribe-mini-calendar-event .list-date{
+  background: $color-gray-73 !important;
+}
+.tribe-mini-calendar-event .list-date .list-dayname{
+  color: $color-gray-73 !important;
+}
 
  /*DIVI*/
  .et_divi_builder #et_builder_outer_content .et_pb_title_container h1 {
