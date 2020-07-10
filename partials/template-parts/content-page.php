@@ -23,6 +23,12 @@
 				)
 			);
 			?>
+
+			<!-- ACF View Support -->
+			<?php if ( get_post_meta( get_the_ID(), 'latest_updates_visibility', true ) == 'bottom') : ?>
+				<?php get_template_part( 'partials/template-parts/latest-updates', 'entry' ); ?>
+			<?php endif;?>
+
 		</div><!-- .entry-content -->
 		<footer class="entry-meta">
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>

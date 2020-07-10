@@ -45,6 +45,12 @@
 	<div class="entry-content">
 		<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?>
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'twentytwelve' ), 'after' => '</div>' ) ); ?>
+
+		<!-- ACF View Support -->
+		<?php if ( get_post_meta( get_the_ID(), 'latest_updates_visibility', true ) == 'bottom') : ?>
+			<?php get_template_part( 'partials/template-parts/latest-updates', 'entry' ); ?>
+		<?php endif;?>
+
 	</div><!-- .entry-content -->
 	<?php endif; ?>
 

@@ -14,7 +14,14 @@
 		<div id="secondary" class="widget-area" role="complementary">
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 
-			<?php get_template_part( 'partials/template-parts/for-more-information', 'sidebar' ); ?>
+			<!-- ACF View Support -->
+			<?php if ( get_post_meta( get_the_ID(), 'latest_updates_visibility', true ) == 'sidebar') : ?>
+				<?php get_template_part( 'partials/template-parts/latest-updates', 'sidebar' ); ?>
+			<?php endif;?>
+			<?php if ( get_post_meta( get_the_ID(), 'contact_visibility', true ) == 'sidebar') : ?>
+				<?php get_template_part( 'partials/template-parts/for-more-information', 'sidebar' ); ?>
+			<?php endif;?>
+
 
 		</div><!-- #secondary -->
 	<?php endif; ?>
