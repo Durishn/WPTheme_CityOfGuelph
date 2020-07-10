@@ -2105,3 +2105,32 @@ h3.homeheader {
     display: none;
   }
 }
+
+
+
+
+
+.thumbnail .post-date, .well .post-date {
+  color: dimgrey;
+  padding: 5px 0;
+  font-size: 85%
+}
+#secondary .custom-sidebar-content {
+  line-height: 1.6 !important;
+}
+
+#secondary .custom-sidebar-content p {
+	padding: 5px 0 !important;
+}
+
+.cog-post-excerpt-preview .cog-post-excerpt-item {
+	margin: 12px 0;
+	line-height: 1.4;
+}
+.cog-post-excerpt-preview p {
+  padding: 5px 0;
+	margin: 0 0 10px !important;
+}
+.well h2, .well h3 {
+    margin-top: 0;
+}

@@ -10,9 +10,6 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header class="entry-header">
-			<?php if ( ! is_page_template( 'page-templates/front-page.php' ) ) : ?>
-				<?php the_post_thumbnail(); ?>
-			<?php endif; ?>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 		</header>
 
@@ -26,6 +23,12 @@
 				)
 			);
 			?>
+
+			<!-- ACF View Support -->
+			<?php if ( get_post_meta( get_the_ID(), 'latest_updates_visibility', true ) == 'bottom') : ?>
+				<?php get_template_part( 'partials/template-parts/latest-updates', 'entry' ); ?>
+			<?php endif;?>
+
 		</div><!-- .entry-content -->
 		<footer class="entry-meta">
 			<?php edit_post_link( __( 'Edit', 'twentytwelve' ), '<span class="edit-link">', '</span>' ); ?>
