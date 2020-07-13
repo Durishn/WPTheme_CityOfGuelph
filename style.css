@@ -1068,8 +1068,9 @@ li.mobile-dropdown a:visited {
   	margin-bottom: 1.714285714rem;
   }
   .entry-header .entry-title {
-  	font-size: 20px;
+
   	font-size: 1.428571429rem;
+  	font-size: 225%;
   	line-height: 1.2;
   	font-weight: normal;
   }
