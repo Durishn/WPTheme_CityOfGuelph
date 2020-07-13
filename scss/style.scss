@@ -106,7 +106,7 @@
   }
 
 	.entry-header .entry-title {
-		font-size: 225%;
+		// font-size: 225%;
 	}
 }
 
@@ -128,7 +128,7 @@
 
 
 /* Minimum width of 600 pixels. */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.site-content {
 		float: left;
 		width: 65.104166667%;
@@ -136,7 +136,7 @@
 	}
 	#main{
 		.entry-header .entry-title {
-			font-size: 250%;
+			// font-size: 250%;
 		}
 	}
   .colcount-sm-2 {
@@ -232,11 +232,5 @@
 
   .site-content {
     margin: 15px;
-  }
-}
-
-@media only screen and (max-width : 480px) {
-  .widget-area {
-    display: none;
   }
 }

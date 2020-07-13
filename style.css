@@ -230,6 +230,7 @@ addition to the GDS Design System or are waiting for approval. */
 }
 #secondary .custom-sidebar-content {
   line-height: 1.6 !important;
+	word-break: break-word;
 }
 
 #secondary .custom-sidebar-content p {
