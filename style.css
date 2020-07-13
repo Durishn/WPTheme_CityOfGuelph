@@ -1460,7 +1460,7 @@ section[role="banner"] {
 }
 
 /* Minimum width of 600 pixels. */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 	.site-content {
 		float: left;
 		width: 65.104166667%;
@@ -2100,15 +2100,20 @@ h3.homeheader {
 }
 
 
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width : 480px) {
-  .widget-area {
-    display: none;
+  .widget-area .widget_bu_pages{
+    /* display: none; */
   }
 }
-
-
-
-
 
 .thumbnail .post-date, .well .post-date {
   color: dimgrey;
@@ -2117,6 +2122,7 @@ h3.homeheader {
 }
 #secondary .custom-sidebar-content {
   line-height: 1.6 !important;
+	word-break: break-word;
 }
 
 #secondary .custom-sidebar-content p {
