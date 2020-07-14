@@ -14,7 +14,7 @@
 	border-radius: 3px;
 	text-decoration: none;
   color: $link-text-color;
-  border: 1px solid #ddd;
+  border: 1px solid $site-border-dark;
   /* border-color: $main-text-color; */
 
   &.padwide{
@@ -25,6 +25,9 @@
   }
   &.borderthick{
     border: 2px solid;
+  }
+  &.bordernone{
+    border: none;
   }
 
   &:hover, &:focus{

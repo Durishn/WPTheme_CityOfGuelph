@@ -54,6 +54,10 @@ function cog_mce_css( $mce_css ) {
 }
 add_filter( 'mce_css', 'cog_mce_css' );
 
+/**
+ * Disable XML-RPC access
+ */
+add_filter('xmlrpc_enabled', '__return_false');
 
 /**
 * Enqueue styles and scripts
