@@ -18,19 +18,6 @@
   overflow: hidden;
   transition: color 0.5s ease 0s;
 
-  &.padwide{
-    padding: 1em 2em;
-  }
-  &.padnarrow{
-    padding: 0.2em 0.7em;
-  }
-  &.borderthick{
-    border: 2px solid;
-  }
-  &.bordernone{
-    border: none;
-  }
-
   &:hover, &:focus{
     text-decoration: none;
     transition: color 0.5s ease 0s;
@@ -58,9 +45,45 @@
     transform: translateY(-50%) translateX(-50%) rotate(90deg);
   }
 
-  &.grey{
+  /********************
+  * PRETTYBTN MODIFIERS
+  *********************/
+  &.padwide{
+    padding: 1em 2em;
+  }
+  &.padnarrow{
+    padding: 0.2em 0.7em;
+  }
+  &.borderthick{
+    border: 2px solid;
+  }
+  &.bordernone{
+    border: none;
+  }
+
+  /********************
+  * PRETTYBTN COLOURS
+  *********************/
+
+  &.prettybtn-green{
+    color: $color-green-dark !important;
+    border-color: $grey-text-color !important;
+
+    &:hover, &:focus{
+      color: white !important;
+      background-color: $color-green-dark;
+      transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
+    }
+
+    &:after{
+      background-color: $color-green-dark;
+    }
+  }
+
+  &.prettybtn-grey {
     color: $grey-text-color !important;
     border-color: $grey-text-color !important;
+
     &:hover, &:focus{
       color: white !important;
       background-color: $grey-text-color;
@@ -71,28 +94,39 @@
     }
   }
 
-  &.white{
-    color: white;
-    border-color: white;
-    background: dimgrey;
+  &.prettybtn-blue{
+    color: $color-navy-dark !important;
+    border-color: $color-navy-dark !important;
 
     &:hover, &:focus{
-      color: #fff;
-      border-color: #fff;
-      background: dimgrey;
-      text-decoration: none;
+      color: white !important;
+      background-color: $color-navy-dark;
+      transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
+    }
+    &:after{
+      background-color: $color-navy-dark;
     }
   }
 
-  &.blue{
-    color: #00355f !important;
-    border-color: #00355f !important;
 
-    &:hover, &:focus{
-      background-color: #00355f;
-      text-decoration: none;
-      color: #fff !important;
+  /********************
+  * PRETTYBTN FLAVOURS
+  *********************/
+  &.learn-more{
+    @extend .prettybtn-green;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'info';
     }
   }
 
+  &.link-feedback{
+    @extend .prettybtn-grey;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'feedback';
+    }
+  }
 }

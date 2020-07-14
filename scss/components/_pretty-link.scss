@@ -25,56 +25,44 @@ a.COGprettylink, a.NDprettylink, .wp-block-file a, .wp-block-file__content-wrapp
   padding: 10px 10px 10px 40px;
   position: relative;
   text-decoration: none !important;
-}
 
-a.COGprettylink:after, a.NDprettylink:after, .wp-block-file a:after{
-  content: "";
-  display: block;
-  height: 20px;
-  left: 10px;
-  margin-right: 2px;
-  position: absolute;
-  top: 8px;
-  width: 20px;
-}
+  &:hover{
+    text-decoration: none;
+    border: solid 1px #aaa;
+    color: #206dbc;
+  }
 
-a.COGprettylink:hover, a.NDprettylink:hover, .wp-block-file a:hover{
-  text-decoration: none;
-  border: solid 1px #aaa;
-  color: #206dbc;
-}
+  &:after{
+    content: "";
+    display: block;
+    height: 20px;
+    left: 10px;
+    margin-right: 2px;
+    position: absolute;
+    top: 8px;
+    width: 20px;
+  }
+  &[href$=".mp3"]:after{
+    content:url(https://img.icons8.com/color/24/000000/video-file.png);
+  }
 
-a.NDprettylink[href$=".mp3"]:after, a.NDprettylink[href$=".mp4"]:after,
-a.COGprettylink[href$=".mp3"]:after, a.COGprettylink[href$=".mp4"]:after{
-  content:url(https://img.icons8.com/color/24/000000/video-file.png);
-}
+  &[type="application/msword"]:after, &[href$=".docx"]:after {
+    content:url(https://img.icons8.com/color/24/000000/ms-word.png);
+  }
 
-a.NDprettylink[href$=".docx"]:after, a.NDprettylink[type="application/msword"]:after, .wp-block-file a[href$=".docx"]:after, .wp-block-file a[type="application/msword"]:after,
-a.COGprettylink[href$=".docx"]:after, a.COGprettylink[type="application/msword"]:after {
-  content:url(https://img.icons8.com/color/24/000000/ms-word.png);
-}
+  &[type="application/powerpoint"]:after, &[type="application/mspowerpoint"]:after, &[href$=".ppt"]:after, [href$=".pptx"]:after {
+      content:url(https://img.icons8.com/color/24/000000/ms-powerpoint--v1.png);
+  }
 
-a.COGprettylink[href$=".pptx"]:after, a.COGprettylink[href$=".ppt"]:after, a.COGprettylink[type="application/mspowerpoint"]:after, a.COGprettylink[type="application/powerpoint"]:after,
-.wp-block-file a[href$=".pptx"]:after, .wp-block-file a[href$=".ppt"]:after, .wp-block-file a[type="application/mspowerpoint"]:after, .wp-block-file a[type="application/powerpoint"]:after,
-a.NDprettylink[href$=".pptx"]:after, a.NDprettylink[href$=".ppt"]:after, a.NDprettylink[type="application/mspowerpoint"]:after, a.NDprettylink[type="application/powerpoint"]:after {
-    content:url(https://img.icons8.com/color/24/000000/ms-powerpoint--v1.png);
-}
+  &[type="application/x-excel"]:after, &[href$=".xlsx"]:after, &[type="application/excel"]:after {
+    content:url(https://img.icons8.com/color/24/000000/ms-excel.png);
+  }
 
-a.COGprettylink[href$=".xlsx"]:after, a.COGprettylink[type="application/excel"]:after, a.COGprettylink[type="application/x-excel"]:after,
-a.NDprettylink[href$=".xlsx"]:after, a.NDprettylink[type="application/excel"]:after, a.NDprettylink[type="application/x-excel"]:after,
-.wp-block-file a[href$=".xlsx"]:after, .wp-block-file a[type="application/excel"]:after, .wp-block-file a[type="application/x-excel"]:after {
-  content:url(https://img.icons8.com/color/24/000000/ms-excel.png);
-}
+  &[href*=".pdf"]:after, [type="application/pdf"]:after {
+    content:url(https://img.icons8.com/color/24/000000/pdf-2.png);
+  }
 
-a.COGprettylink[href*=".pdf"]:after, a.COGprettylink[type="application/pdf"]:after,
-a.NDprettylink[href*=".pdf"]:after, a.NDprettylink[type="application/pdf"]:after,
-.wp-block-file a[type="application/pdf"]:after, .wp-block-file a[href*=".pdf"]:after {
-  content:url(https://img.icons8.com/color/24/000000/pdf-2.png);
-}
-
-a.COGprettylink[href*="forms.guelph"]:after, .wp-block-file a[href*="forms.guelph"]:after,
-a.NDprettylink[href*="forms.guelph"]:after,
-a.COGprettylink[href*="docs.google.com/spreadsheet"]:after, .wp-block-file a[href*="docs.google.com/spreadsheet"]:after,
-a.NDprettylink[href*="docs.google.com/spreadsheet"]:after {
-  content:url(https://img.icons8.com/color/24/000000/google-sheets.png);
+  &[href*="docs.google.com/spreadsheet"]:after, &[href*="forms.guelph"]:after {
+    content:url(https://img.icons8.com/color/24/000000/google-sheets.png);
+  }
 }

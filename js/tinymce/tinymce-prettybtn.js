@@ -54,13 +54,12 @@
             name: 'prettybtntype',
             label: 'Type',
             'values': [
-                {text: 'Default', value: ''}
-                // {text: 'Grey', value: 'grey'},
-                // {text: 'Blue', value: 'blue'}
-								//{text: 'White', value: 'white'}
+                {text: 'Default', value: ''},
+                {text: 'Learn more', value: 'learn-more'},
+                {text: 'Feedback', value: 'link-feedback'}
             ],
 						onPostRender: function( ){
-                    prettybtncolor = this;
+                    prettybtntype = this;
                 }
         },
 				{
@@ -70,7 +69,8 @@
             'values': [
                 {text: 'Medium', value: 'medium'},
                 {text: 'Small', value: 'small'},
-								{text: 'Large', value: 'x-large'}
+								{text: 'Large', value: 'large'},
+								{text: 'X-Large', value: 'x-large'}
             ],
 						onPostRender: function( ){
                     prettybtnsize = this;
@@ -95,7 +95,7 @@
             // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
 						// }
 						// else{
-							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + '" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
+							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
 						// }
 					}
           else {
@@ -103,7 +103,7 @@
             // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
           	// }
 						// else{
-							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
+							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
 						// }
 					}
           editor.windowManager.close();

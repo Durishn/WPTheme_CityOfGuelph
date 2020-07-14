@@ -15,8 +15,7 @@
         <?php if ( ! is_404() ) : ?>
           <div role="complementary" aria-label="Page Details" id="bottom-meta" style="float: left;">
             <div class="site-feedback">
-              <a class="NDprettybtn grey" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">
-                <span class="material-icons" style="font-size: 1em; top: 2px; position: relative; margin: 0 6px 0 0; line-height: inherit; border: none; padding: 0;">feedback</span>Report a problem or provide feedback on this page</a>
+              <a class="NDprettybtn link-feedback" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a problem or provide feedback on this page</a>
             </div>
             <div class="post-date">
               <?php if ( ! is_single() ) : ?>
