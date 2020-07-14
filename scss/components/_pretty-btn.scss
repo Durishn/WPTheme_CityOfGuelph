@@ -16,82 +16,64 @@
   color: $link-text-color;
   border: 1px solid #ddd;
   /* border-color: $main-text-color; */
-}
-.NDprettybtn:hover, .NDprettybtn:focus,
-.prettybtn:hover, .prettybtn:focus {
-  text-decoration: none;
-  background-color: #eee;
-  color: $main-text-color;
-  /* -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-  box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125); */
-}
 
-/*Wide, thick, and other modifiers*/
-.NDprettybtn.padwide, .prettybtn.padwide{
-  padding: 1em 2em;
-}
-.NDprettybtn.padnarrow, .prettybtn.padnarrow{
-  padding: 0.2em 0.7em;
-}
-.NDprettybtn.borderthick, .prettybtn.borderthick{
-  border: 2px solid;
-}
+  &.padwide{
+    padding: 1em 2em;
+  }
+  &.padnarrow{
+    padding: 0.2em 0.7em;
+  }
+  &.borderthick{
+    border: 2px solid;
+  }
 
-/*base animation*/
-.NDprettybtn.fill:hover,
-.NDprettybtn.fill:focus,
-.prettybtn.fill:hover,
-.prettybtn.fill:focus {
-  background-color: $main-text-color;
-  text-decoration: none;
-  color: #fff !important;
-}
+  &:hover, &:focus{
+    text-decoration: none;
+    background-color: #eee;
+    color: $main-text-color;
+    /* -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    box-shadow: inset 0 1.5px 10px rgba(0,0,0,.125); */
+  }
 
-/*Color options*/
-.NDprettybtn.white, .prettybtn.white{
-	 color: #fff;
-   border-color: #fff;
-   background: dimgrey;
-}
-.NDprettybtn.white:hover, .NDprettybtn.white:focus,
-.prettybtn.white:hover, .prettybtn.white:focus {
-  color: #fff;
-  border-color: #fff;
-  background: dimgrey;
-  text-decoration: none;
-}
+  &.fill:hover{
+    background-color: $main-text-color;
+    text-decoration: none;
+    color: #fff !important;
+  }
 
+  &.white{
+    color: #fff;
+    border-color: #fff;
+    background: dimgrey;
 
-.NDprettybtn.blue, .prettybtn.blue{
-	 color: #00355f !important;
-   border-color: #00355f !important;
-}
-.NDprettybtn.blue:hover, .NDprettybtn.blue:focus,
-.prettybtn.blue:hover, .prettybtn.blue:focus {
-  /* text-decoration: underline; */
-}
-.NDprettybtn.blue.fill:hover,
-.NDprettybtn.blue.fill:focus,
-.prettybtn.blue.fill:hover,
-.prettybtn.blue.fill:focus {
-  background-color: #00355f;
-  text-decoration: none;
-  color: #fff !important;
-}
+    &:hover, &:focus{
+      color: #fff;
+      border-color: #fff;
+      background: dimgrey;
+      text-decoration: none;
+    }
+  }
 
-.NDprettybtn.grey, .prettybtn.grey{
-	 color: $grey-text-color !important;
-   border-color: $grey-text-color !important;
-}
-.NDprettybtn.grey:hover, .NDprettybtn.blue:focus,
-.prettybtn.grey:hover, .prettybtn.blue:focus {
-  /* text-decoration: underline; */
-}
-.NDprettybtn.grey.fill:hover,
-.NDprettybtn.grey.fill:focus,
-.prettybtn.grey.fill:hover,
-.prettybtn.grey.fill:focus {
-  background-color: $grey-text-color;
-  text-decoration: none;
-  color: #fff !important;
+  &.blue{
+    color: #00355f !important;
+    border-color: #00355f !important;
+
+    &:hover, &:focus{
+      background-color: #00355f;
+      text-decoration: none;
+      color: #fff !important;
+    }
+  }
+
+  &.grey{
+    color: $grey-text-color !important;
+    border-color: $grey-text-color !important;
+
+    &:hover, &:focus{
+      background-color: $grey-text-color;
+      text-decoration: none;
+      color: #fff !important;
+    }
+  }
+
 }
