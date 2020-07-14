@@ -40,7 +40,12 @@ h1, h2, h3, h4, h5, h6 {
   color: $head-text-color;
 	margin: 24px 0;
 	margin: 2em 0 0.6rem 0;
-	small {
+
+  &.homeheader{
+    margin: 0 0 10px;
+  }
+
+  small {
 		font-size: 80%;
 	}
 }
@@ -54,7 +59,6 @@ h2 {
   &.homeheader{
     font-size: 200%;
     font-weight: 400;
-    margin: 0 0 10px;
   }
 }
 
@@ -63,7 +67,6 @@ h3 {
   &.homeheader{
     font-size: 180%;
     font-weight: 400;
-    margin: 0 0 10px;
   }
 }
 
