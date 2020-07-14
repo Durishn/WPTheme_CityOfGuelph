@@ -22,7 +22,7 @@ in the priviledge level of your styles and their files location within the
 SCSS. We are currently trying to seperate guelph.ca specific styles from
 those within the Guelph Design System - so keep components, templates, and
 overrides seperated! To compile your scss after making a change, use a Sass compiler
-with minification such as `sass scss/style.scss css/gds-design-system.css --style compressed`.
+with minification such as `sass scss/style.scss css/gds-design-system.min.css --style compressed`.
 
 
 
@@ -54,7 +54,7 @@ further defined and clarified by project maintainers.
 Instances of abusive, harassing, or otherwise unacceptable behaviour may be
 reported by contacting [WebServices](mailto:webservices@guelph.ca). All
 complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. 
+is deemed necessary and appropriate to the circumstances.
 
 Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
