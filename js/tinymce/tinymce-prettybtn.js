@@ -51,12 +51,12 @@
         },
 				{
             type: 'listbox',
-            name: 'prettybtncolor',
-            label: 'Color',
+            name: 'prettybtntype',
+            label: 'Type',
             'values': [
-                {text: 'Default', value: ''},
-                {text: 'Grey', value: 'grey'},
-                {text: 'Blue', value: 'blue'}
+                {text: 'Default', value: ''}
+                // {text: 'Grey', value: 'grey'},
+                // {text: 'Blue', value: 'blue'}
 								//{text: 'White', value: 'white'}
             ],
 						onPostRender: function( ){
@@ -82,29 +82,29 @@
           name   : 'prettybtnexternal',
           text   : 'Open in new tab',
         },
-				{
-          type   : 'checkbox',
-          id     : 'tinymce-prettybtn-hover',
-          name   : 'prettybtnhover',
-          text   : 'Hover animation',
-        },
+				// {
+        //   type   : 'checkbox',
+        //   id     : 'tinymce-prettybtn-hover',
+        //   name   : 'prettybtnhover',
+        //   text   : 'Hover animation',
+        // },
         ],
         onsubmit: function(e) {
           if (jQuery('#tinymce-prettybtn-external').hasClass("mce-checked")){
-						if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
-            	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						}
-						else{
+						// if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
+            // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
+						// }
+						// else{
 							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + '" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						}
+						// }
 					}
           else {
-						if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
-            	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-          	}
-						else{
+						// if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
+            // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
+          	// }
+						// else{
 							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						}
+						// }
 					}
           editor.windowManager.close();
         }

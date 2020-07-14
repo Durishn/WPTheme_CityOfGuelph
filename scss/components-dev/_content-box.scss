@@ -27,15 +27,22 @@
     font-size: 90%;
   }
 
-  h2.homeheader, h3.homeheader {
-    font-size: 200%;
-    font-weight: 400;
+  h2{
     margin: 0 0 10px;
+    &.homeheader{
+      font-size: 200%;
+      font-weight: 400;
+    }
   }
 
-  h3.homeheader {
+  h3{
     margin: 20px 0 10px;
+    &.homeheader{
+      font-size: 200%;
+      font-weight: 400;
+    }
   }
+
   .lead {
     margin: 0.5em 0 0.7em;
     font-size: 1.5em;
