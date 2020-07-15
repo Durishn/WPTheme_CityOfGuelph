@@ -15,9 +15,12 @@
 
   .custom-sidebar-content {
     line-height: 1;
+    line-height: 1.6 !important;
+    word-break: break-word;
     p {
       margin: 0;
       padding: 5px;
+      padding: 5px 0 !important;
       font-size: 13px;
       font-size: 0.928571429rem;
       line-height: 1.846153846;

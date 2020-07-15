@@ -24,7 +24,8 @@
   .post-date {
     color: $grey-text-color;
     padding: 0 0 1.2em;
-    font-size: 90%;
+    padding: 5px 0;
+    font-size: 85%
   }
 
   h2{
@@ -65,16 +66,25 @@
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+
+    h2, h3 {
+        margin-top: 0;
+    }
+
+    ul li {
+     margin-bottom: .5em;
+   }
+   .post-date {
+     color: $grey-text-color;
+     padding: 5px 0;
+     font-size: 85%
+   }
+
 }
 
 p.well {
   background-color: #fefefe !important;
 }
-
-div.well ul li {
-  margin-bottom: .5em;
-}
-
 
 
 
