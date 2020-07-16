@@ -54,9 +54,10 @@
             name: 'prettybtntype',
             label: 'Type',
             'values': [
-                {text: 'Default', value: ''},
-                {text: 'Learn more', value: 'learn-more'},
-                {text: 'Feedback', value: 'link-feedback'}
+								{text: 'Default', value: ''},
+								{text: 'Learn more', value: 'learn-more'},
+								{text: 'View', value: 'link-view'},
+								{text: 'Feedback', value: 'link-feedback'}
             ],
 						onPostRender: function( ){
                     prettybtntype = this;

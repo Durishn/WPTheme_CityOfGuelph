@@ -120,6 +120,14 @@
       content: 'info';
     }
   }
+  &.link-view{
+    @extend .prettybtn-blue;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'preview';
+    }
+  }
 
   &.link-feedback{
     @extend .prettybtn-grey;
