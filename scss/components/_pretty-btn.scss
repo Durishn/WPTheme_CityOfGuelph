@@ -113,7 +113,7 @@
   * PRETTYBTN FLAVOURS
   *********************/
   &.learn-more{
-    @extend .prettybtn-green;
+    // @extend .prettybtn-green;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -121,7 +121,7 @@
     }
   }
   &.link-view{
-    @extend .prettybtn-blue;
+    // @extend .prettybtn-blue;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -130,7 +130,7 @@
   }
 
   &.link-feedback{
-    @extend .prettybtn-grey;
+    // @extend .prettybtn-grey;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
