@@ -1,0 +1,232 @@
+/*--------------------------------------------------------------
+  ## WP-Content
+--------------------------------------------------------------*/
+.site-content{
+  width: auto;
+  margin-top: 0px;
+
+	nav {
+		clear: both;
+		line-height: 2;
+		overflow: hidden;
+	}
+
+  article {
+    border-bottom: 0;
+    margin-bottom: 72px;
+    margin-bottom: 5.142857143rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.714285714rem;
+    word-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+.entry-header {
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+
+	img.wp-post-image {
+  	margin-bottom: 24px;
+  	margin-bottom: 1.714285714rem;
+  }
+
+	.entry-title {
+  	font-size: 1.428571429rem;
+  	font-size: 225%;
+  	line-height: 1.2;
+  	font-weight: bold;
+    padding-bottom: .2em;
+  	margin-top: 0;
+		a {
+	  	text-decoration: none;
+	  }
+  }
+
+	.entry-format {
+  	margin-top: 24px;
+  	margin-top: 1.714285714rem;
+  	font-weight: normal;
+  }
+
+	.comments-link {
+	 margin-top: 24px;
+	 margin-top: 1.714285714rem;
+	 font-size: 13px;
+	 font-size: 0.928571429rem;
+	 line-height: 1.846153846;
+	 color: $color-gray-50;
+ }
+}
+
+.home .entry-title {
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    margin-bottom: -1px;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.entry-content{
+	line-height: 1.714285714;
+	img{
+    margin-bottom: 10px;
+    -moz-box-shadow: 0 0 0 0;
+    -webkit-box-shadow: 0 0 0 0;
+    -o-box-shadow: 0 0 0 0;
+    box-shadow: 0 0 0 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+
+	}
+	embed,iframe, object,video {
+  	margin-bottom: 24px;
+  	margin-bottom: 1.714285714rem;
+  }
+  dl{
+  	margin: 0 24px;
+  	margin: 0 1.714285714rem;
+  }
+  dt{
+  	font-weight: bold;
+  	line-height: 1.714285714;
+  }
+  dd {
+  	line-height: 1.714285714;
+  	margin-bottom: 24px;
+  	margin-bottom: 1.714285714rem;
+  }
+  table{
+  	border-bottom: 1px solid #ededed;
+  	font-size: 12px;
+  	font-size: 0.857142857rem;
+  	line-height: 2;
+  	margin: 0 0 24px;
+  	margin: 0 0 1.714285714rem;
+  	width: 100%;
+
+		caption {
+	  	font-size: 16px;
+	  	font-size: 1.142857143rem;
+	  	margin: 24px 0;
+	  	margin: 1.714285714rem 0;
+	  }
+  }
+	td {
+  	border-top: 1px solid #ededed;
+  	padding: 6px 10px 6px 0;
+  }
+  th {
+    color: $main-text-color;
+    text-transform: none !important;
+  }
+	p {
+		margin: 0 0 24px;
+		margin: 0 0 1.714285714rem;
+		line-height: 1.714285714;
+	}
+	ol, ul {
+		margin: 0 0 24px;
+		margin: 0 0 1.714285714rem;
+		line-height: 1.714285714;
+
+		ul, ol {
+			margin-bottom: 0;
+		}
+	}
+	a, a:visited {
+		color: $link-text-color;
+	}
+	.more-link {
+		white-space: nowrap;
+	}
+	.has-white-color,  .has-white-color:visited {
+      color: #fff;
+  }
+}
+
+.custom-entry-content{
+	line-height: 1.714285714;
+	a, a:visited {
+		color: $link-text-color;
+	}
+}
+
+
+.entry-meta {
+	clear: both;
+	margin-top: 24px;
+	margin-top: 1.714285714rem;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
+	color: $color-gray-50;
+
+	a {
+		color: $color-gray-50;
+		&:hover {
+	  	color: $link-text-color-hover;
+	  }
+
+		article.sticky .featured-post {
+	  	border-top: 4px double #ededed;
+	  	border-bottom: 4px double #ededed;
+	  	color: #757575;
+	  	font-size: 13px;
+	  	font-size: 0.928571429rem;
+	  	line-height: 3.692307692;
+	  	margin-bottom: 24px;
+	  	margin-bottom: 1.714285714rem;
+	  	text-align: center;
+	  }
+	}
+	h2 {
+  	color: $color-gray-50;
+  	font-weight: normal;
+  }
+
+	.by-author {
+  	display: none;
+  }
+
+}
+
+.page-links {
+  clear: both;
+  line-height: 1.714285714;
+}
+
+
+#primary {
+	margin: 24px 0 0;
+	margin: 2rem 0 1rem 0;
+
+  article{
+    margin-bottom: 1em;
+  }
+}
+
+
+.entry-summary{
+	line-height: 1.714285714;
+}
+.entry-page-image {
+	margin-bottom: 14px;
+	margin-bottom: 1rem;
+}
+.site-info {
+	clear: both;
+
+	span[role=separator] {
+		padding: 0 0.3em 0 0.6em;
+		&::before {
+			content: '\002f';
+		}
+	}
+}

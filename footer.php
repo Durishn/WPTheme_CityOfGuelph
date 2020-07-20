@@ -11,12 +11,11 @@
 */
 ?>
 
-
+        <!--==================== PAGE BOTTOM META ====================-->
         <?php if ( ! is_404() ) : ?>
           <div role="complementary" aria-label="Page Details" id="bottom-meta" style="float: left;">
             <div class="site-feedback">
-              <a class="NDprettybtn grey thin fill" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">
-                <span class="material-icons" style="font-size: 1em; top: 2px; position: relative; margin: 0 6px 0 0; line-height: inherit; border: none; padding: 0;">feedback</span>Report a problem or provide feedback on this page</a>
+              <a class="NDprettybtn link-feedback" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a problem or provide feedback on this page</a>
             </div>
             <div class="post-date">
               <?php if ( ! is_single() ) : ?>
@@ -30,8 +29,6 @@
           </div>
         <?php endif; ?>
       </div> <!-- #main -->
-
-      <!-- <p class="well margin0" aria-label="Website Update Feedback">We’re updating parts of our website. <a href="https://forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">How can we make it better?</a></p> -->
 
       <!--==================== FOOTER ====================-->
       <footer id="footer-wrapper" aria-hidden="true">
@@ -56,15 +53,10 @@
                       <li><a href="/news/social-media/">Social media</a></li>
                       <li><a href="/city-hall/access-to-information/privacy-policy/">Privacy policy</a></li>
                       <li><a href="/sitemap">Site map</a></li>
-                      <!-- <li><a href="/employment-careers/careers-jobs/">Careers / employment</a></li>
-                      <li><a href="/news/">Newsroom</a></li> -->
                     </ul>
                   </div>
                 </div>
               </div>
-
-
-
 
             </div>
         </div>

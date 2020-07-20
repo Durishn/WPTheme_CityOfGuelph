@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sitemap Template
+ * Template Name: Page - Sitemap
  * The template for displaying the Sitemap page
  * Author: Nic Durish
  *
@@ -11,7 +11,7 @@
 
 get_header(); ?>
 
-<div id="main" class="wrapper sitemapPage">
+<div id="main" class="wrapper contentPage sitemapPage">
   <?php if ( function_exists('yoast_breadcrumb') ){yoast_breadcrumb('<div id="top-meta"><p id="breadcrumbs">','</p></div>');} ?>
 	<div id="primary">
 		<div id="content" role="main">

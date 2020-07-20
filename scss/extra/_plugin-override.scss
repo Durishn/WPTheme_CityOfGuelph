@@ -1,0 +1,129 @@
+/********************************
+  ## Plugin Overrides
+ ********************************/
+ /*Event Calendar*/
+ main.tribe-events-pg-template {
+   max-width: $default-max-width;
+   overflow: hidden;
+   margin: 0 auto 0 auto;
+   padding: 0 32px;
+   min-height: 60vh;
+ }
+ .tt_event_theme_page h2, .tt_event_theme_page h3, .tt_event_theme_page h4, .tt_event_theme_page h5 {
+  padding-bottom: 25px;
+  padding-top: 25px;
+ }
+ .tt_event_page_left {
+  width: inherit;
+ }
+ .tribe-events-widget-link a {
+  margin-top: 0;
+ }
+ .tribe-events-calendar div[id*=tribe-events-daynum-], .tribe-events-calendar div[id*=tribe-events-daynum-] a {
+  background-color: #666;
+  color: #fff;
+ }
+ #tribe-events-content a, .tribe-events-adv-list-widget .tribe-events-widget-link a
+ , .tribe-events-adv-list-widget .tribe-events-widget-link a:hover, .tribe-events-back a
+ , .tribe-events-back a:hover, .tribe-events-event-meta a, .tribe-events-list-widget .tribe-events-widget-link a
+ , .tribe-events-list-widget .tribe-events-widget-link a:hover, ul.tribe-events-sub-nav a, ul.tribe-events-sub-nav a:hover {
+   text-decoration: underline;
+ }
+.tribe-mini-calendar-event .list-date{
+  background: $color-gray-73 !important;
+}
+.tribe-mini-calendar-event .list-date .list-dayname{
+  color: $color-gray-73 !important;
+}
+
+ /*DIVI*/
+ .et_divi_builder #et_builder_outer_content .et_pb_title_container h1 {
+  font-size: 64px !important;
+ }
+
+ /*Prettylinks*/
+ a.prettylink, a.prettylink:visited {
+  margin: 20px 0 !important;
+ }
+ a.prettylink {
+  color: $link-text-color !important;
+  font-weight: 600;
+ }
+
+ /*BU Navigation*/
+ ul#contentnavlist a:visited {
+  color: $link-text-color;
+ }
+ #contentnav h3.widget-title {
+  display: none;
+ }
+ #contentnav {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  margin: 5px 0 0;
+  padding: 0;
+ }
+
+ #contentnavlist li ul {
+  margin-left: 0;
+ }
+ #contentnavlist li a {
+  font-weight: 600;
+  text-decoration:none;
+ }
+
+ /* UberMenu */
+ .ubermenu .ubermenu-target-text {
+  font-size: $main-text-size;
+ }
+ #ubermenu-main-0-primary.ubermenu-main .ubermenu-item-normal > a.ubermenu-target,
+ #ubermenu-main-0-primary.ubermenu-main .ubermenu-submenu .ubermenu-item-header > a.ubermenu-target:hover{
+  color: #f7f7f7
+ }
+ #ubermenu-main-0-primary.ubermenu-main .ubermenu-item-normal > a.ubermenu-target:hover,
+ #ubermenu-main-0-primary.ubermenu-main .ubermenu-submenu .ubermenu-item-header > a.ubermenu-target:hover{
+  color: black;
+ }
+
+ /* SwiftType*/
+ @media screen and (min-width: 960px) {
+  .st-ui-search-input, .st-default-search-input {
+    font-size: 24px !important;
+  }
+ }
+
+ /* Gutenberg */
+ .wp-block-file__button{display:none !important;}
+ .wp-block-button__link {
+  background-color: #fff;
+  background-image: none !important;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  font-weight: normal;
+  color: #474747;
+  border: 1px solid #474747;
+  font-size: 120%;
+  -webkit-transition: 0.1s all;
+  -moz-transition: 0.1s all;
+  -ms-transition: 0.1s all;
+  transition: 0.1s all;
+  margin-top: .5em;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.26);
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 4px;
+ }
+
+ /*Twitter Embed*/
+ .entry-content .twitter-tweet-rendered {
+ 	max-width: 100% !important; /* Override the Twitter embed fixed width */
+ }
+
+ /*Post Snippets*/
+ #post-snippets-dialog label {
+   width: 100px !important;
+ }

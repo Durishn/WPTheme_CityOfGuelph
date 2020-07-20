@@ -1,0 +1,234 @@
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Abstract
+2.0 Reset
+3.0 General Purpose Classes & Override Classes
+4.0 Accessibility
+5.0 Typography
+6.0 Media
+7.0 Navigation
+8.0 Templates
+  8.1 Header
+  8.2 Footer
+  8.3 Sidebar
+	8.4 WP - Widgets
+  8.5 WP - Content
+9.0 Page Templates
+  9.1 Default Page Template
+  9.2 Front Page Template
+  9.3 New Full Width Template
+10.0 Media Queries
+/*############################################################################*/
+
+@charset "utf-8";
+
+/*############################################################################*\
+# ABSTRACTS
+/*############################################################################*/
+@import "abstracts/_colour-palette.scss";
+@import "abstracts/_variables.scss";
+
+
+/*############################################################################*\
+# BASE
+/*############################################################################*/
+@import "base/_reset.scss";
+@import "base/_generalstyles.scss";
+@import "base/_accessibility.scss";
+@import "base/_typography.scss";
+@import "base/_iconography.scss";
+@import "base/_media.scss";
+@import "base/_navigation.scss";
+
+
+
+/*############################################################################*\
+# TEMPLATES
+/*############################################################################*/
+@import "templates/_header.scss";
+@import "templates/_footer.scss";
+@import "templates/_sidebar.scss";
+@import "templates/_wp-widgets.scss";
+@import "templates/_wp-content.scss";
+
+/* > PAGE TEMPLATES
+/*############################################################################*/
+@import "templates/page-templates/_page-default.scss";
+@import "templates/page-templates/_page-new-full-width.scss";
+@import "templates/page-templates/_page-sitemap.scss";
+@import "templates/page-templates/_page-faq.scss";
+@import "templates/page-templates/_page-empty.scss";
+
+
+/*############################################################################*\
+# COMPONENTS
+/*############################################################################*/
+@import "components-dev/_top-return-btn.scss";
+@import "components-dev/_breadcrumbs.scss";
+@import "components-dev/_content-box.scss";
+
+@import "components/_accordian.scss";
+@import "components/_banner.scss";
+@import "components/_colour-blocks.scss";
+@import "components/_pretty-link.scss";
+@import "components/_pretty-btn.scss";
+@import "components/_bs-callout.scss";
+@import "components/_btn.scss";
+
+
+
+
+/*############################################################################*\
+# MISCELLANEOUS
+/*############################################################################*/
+@import "extra/_plugin-override.scss";
+@import "extra/_wcag-quickfixes.scss";
+
+
+/*--------------------------------------------------------------
+13.0 Media Queries
+--------------------------------------------------------------*/
+@-ms-viewport {
+	width: device-width;
+}
+@viewport {
+	width: device-width;
+}
+
+
+@media screen and (max-width: 600px) {
+  #primary-fullwidth.site-content {
+    margin: 0;
+    padding: 0;
+	}
+  .wrapper-bigger .site-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+	.entry-header .entry-title {
+		// font-size: 225%;
+	}
+}
+
+
+@media (max-width: 768px) {
+  #masthead .col-sm-4{
+    text-align: center;
+  }
+  #masthead #site-title{
+    margin-right: 30px;
+  }
+  #footer-wrapper .footaddress {
+    margin-bottom: 20px;
+  }
+  #masthead .searchbarwrapwrap {
+    float: none;
+  }
+}
+
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 768px) {
+	.site-content {
+		float: left;
+		width: 65.104166667%;
+
+	}
+	#main{
+		.entry-header .entry-title {
+			// font-size: 250%;
+		}
+	}
+  .colcount-sm-2 {
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+	body.attachment .site-content,
+	body.full-width .site-content {
+		width: 100%;
+	}
+	.widget-area {
+		float: right;
+		width: 26.041666667%;
+	}
+	.site-header h1,
+	.site-header h2 {
+		text-align: left;
+	}
+	.site-header h1 {
+		font-size: 26px;
+		font-size: 1.857142857rem;
+		line-height: 1.846153846;
+		margin-bottom: 0;
+	}
+	.menu-toggle {
+		display: none;
+	}
+	.entry-page-image {
+		float: right;
+		margin-bottom: 0;
+		width: 47.916666667%;
+	}
+
+  footer .textwidget{
+    /* max-width: 960px; */
+    /* max-width: 68.571428571rem; */
+    margin: auto;
+  }
+
+  #footer-widgets.three .widget {
+    float: left;
+    width: 30.85%;
+    margin-right: 3.7%;
+    clear: none;
+  }
+
+  #footer-widgets.three .widget+.widget+.widget {
+    margin-right: 0;
+  }
+  #primary-fullwidth {
+    float: none;
+    width: 100%;
+  }
+  #primary-bigwidth {
+    float: none;
+    width: 100%;
+  }
+
+}
+
+
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	body .site {
+    margin: 0;
+    padding: 0;
+		box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+	}
+	body.custom-background-empty {
+		background-color: #fff;
+	}
+	body.custom-background-empty .site,
+	body.custom-background-white .site {
+		padding: 0;
+		margin-top: 0;
+		margin-bottom: 0;
+		box-shadow: none;
+	}
+  .colcount-md-3{
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-device-width: 640px) {
+  .myIframe {
+    overflow: auto;
+  }
+
+  .site-content {
+    margin: 15px;
+  }
+}

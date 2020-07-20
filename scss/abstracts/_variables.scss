@@ -1,0 +1,36 @@
+/* Site Colours */
+$site-primary: $cog-primary;
+$site-darktone: $color-gray-86;
+$site-border: $color-gray-10;
+$site-border-dark: $color-gray-50;
+
+/* Typographic Colours */
+$main-text-color: $color-gray-80;
+$head-text-color: $color-gray-73;
+$grey-text-color: $color-gray-67;
+$link-text-color: $color-navy-dark;
+$link-text-color-hover: $color-navy;
+$link-text-color-visited: $color-navy;
+
+
+/*TYPOGRAPHY*/
+$font: "Open Sans", Helvetica, Arial, sans-serif;
+$font-code: Consolas, Monaco, Lucida Console, monospace;
+
+$main-text-size: 16px;
+$main-text-weight: 400;
+$link-text-size: $main-text-size;
+$link-text-weight: 600;
+
+/*SPACING*/
+$site-marg: 24px;
+
+/*BREAKPOINTS & WIDTHS*/
+// $bp-small: 24em;
+$default-max-width: 1300px;
+
+/* ANIMATION */
+$anim-base-easing: ease;
+$anim-time-short: 0.1s;
+$anim-time: 0.2s;
+$anim-time-long: 0.3s;

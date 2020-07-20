@@ -18,20 +18,22 @@
 
 <head>
 
-  <!--==================== EXTERNAL LINKS ====================-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--==================== META ====================-->
   <meta charset="<?php bloginfo( 'charset' ); ?>" />
   <meta name="viewport" content="width=device-width" />
   <title><?php wp_title( '|', true, 'right' ); ?></title>
   <link rel="profile" href="http://gmpg.org/xfn/11" />
 
+  <!--==================== FAVICONS/ICONS ====================-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
   <?php wp_head(); ?>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+
+  <!--==================== EXTERNAL LINKS ====================-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <meta name="google-site-verification" content="U72oytUFHuNuKTIQxRh46jAFknFIb8b1fiurKbNNRQ4" />
 
   <!--==================== SWIFTYPE ====================-->
@@ -67,6 +69,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+
   <!--==================== GOOGLE TAG MANAGER ====================-->
   <aside aria-label="TagManager">
     <noscript>
@@ -91,8 +94,6 @@
   </aside>
 
   <div id="page" class="hfeed site" role="region" aria-label="page wrapper">
-
-
     <header id="masthead" class="site-header">
       <?php do_action( 'before' ); ?>
 
@@ -107,12 +108,12 @@
           <div class="searchbarwrapwrap">
             <div class="searchbarwrapper">
               <form>
-          			<label for="mainSearch" class="hideStuff">Search:</label>
-          			<input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
+                <label for="mainSearch" class="hideStuff">Search:</label>
+                <input type="text" class="st-default-search-input" id="mainSearch" name="textfield" placeholder="What are you looking for?">
                 <button type="submit" title="Submit" class='btn btn-link search-btn'>
                   <span class='glyphicon glyphicon-search'></span>
                 </button>
-        		  </form>
+              </form>
             </div>
           </div>
         </div>
@@ -121,7 +122,7 @@
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
       </div><!-- #site-navigation -->
       <?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) ) : ?>
+    if ( ! empty( $header_image ) ) : ?>
       <img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" />
       <?php endif; ?>
     </header>

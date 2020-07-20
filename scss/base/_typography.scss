@@ -1,0 +1,162 @@
+/*--------------------------------------------------------------
+  ## Typography
+--------------------------------------------------------------*/
+body {
+  font-size: $main-text-size;
+  font-weight: $main-text-weight;
+	font-family: $font;
+	text-rendering: optimizeLegibility;
+	color: $main-text-color;
+}
+
+blockquote{
+	margin-bottom: 24px;
+	margin-bottom: 1.715rem;
+	margin: 15px 0 15px 15px;
+	padding: 24px;
+	padding: 1.715rem;
+	padding-left: 15px;
+	font-style: italic;
+	font-size: 1.2em;
+	color: $site-darktone;
+
+	p {
+		margin-bottom: 0;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.small, footer, small{
+		color: $site-darktone;
+	}
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-variant-ligatures: no-common-ligatures;
+	font-weight: bold;
+	line-height: 1.846153846;
+  color: $head-text-color;
+	margin: 24px 0;
+	margin: 2em 0 0.6rem 0;
+
+  &.homeheader{
+    margin: 0 0 10px;
+  }
+
+  small {
+		font-size: 80%;
+	}
+}
+
+h1 {
+  font-size: 160%;
+}
+
+h2 {
+  font-size: 150%;
+  &.homeheader{
+    font-size: 200%;
+    font-weight: 400;
+  }
+}
+
+h3 {
+  font-size: 130%;
+  &.homeheader{
+    font-size: 180%;
+    font-weight: 400;
+  }
+}
+
+h4 {
+  font-size: 115%;
+}
+
+h5 {
+  font-size: 105%;
+}
+
+h6 {
+  font-size: 100%;
+}
+
+code{
+	font-family: $font-code;
+	font-size: 85%;
+	line-height: 2;
+}
+
+pre{
+	font-family: $font-code;
+	border: 1px solid $site-border;
+	color: $site-darktone;
+	font-size: 85%;
+	line-height: 1.714285714;
+	overflow: auto;
+	margin: 24px 0;
+	margin: 1.714285714rem 0;
+	padding: 24px;
+	padding: 1.714285714rem;
+
+	code{
+		display: block;
+	}
+}
+
+abbr, dfn, acronym {
+	border-bottom: 1px dotted $site-darktone;
+	cursor: help;
+}
+
+address{
+	display: block;
+	line-height: 1.714285714;
+	margin: 0 0 24px;
+	margin: 0 0 1.714285714rem;
+}
+
+a {
+	outline: none;
+  text-decoration: underline;
+  color: $link-text-color;
+  font-weight: $link-text-weight;
+	:hover{
+		color: $link-text-color-hover;
+	}
+	:visited{
+		color: $link-text-color;
+	}
+}
+
+ul {
+	list-style: disc outside;
+}
+
+ol {
+	list-style: decimal outside;
+}
+
+li {
+	margin: 0 0 0 36px;
+	margin: 0 0 0 2.571428571rem;
+}
+
+table, table caption {
+	color: $main-text-color;
+}
+
+.table>thead>tr>th {
+  font-size: $main-text-size - 2px;
+  color: $color-white;
+  background-color: $color-black;
+}
+
+.table>tbody>tr>th {
+  font-size: $main-text-size - 2px;
+}
+
+td {
+  font-size: $main-text-size - 2px;
+}

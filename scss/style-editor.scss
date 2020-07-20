@@ -1,0 +1,86 @@
+/*
+Theme Name: TwentyTwelve - CityOfGuelph
+Theme URI: https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
+Author: Nic Durish, Greg Hahn, and Kim Lawrence
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Abstract
+2.0 Reset
+3.0 General Purpose Classes & Override Classes
+4.0 Accessibility
+5.0 Typography
+6.0 Media
+7.0 Navigation
+8.0 Templates
+  8.1 Header
+  8.2 Footer
+  8.3 Sidebar
+	8.4 WP - Widgets
+  8.5 WP - Content
+9.0 Page Templates
+  9.1 Default Page Template
+  9.2 Front Page Template
+  9.3 New Full Width Template
+10.0 Media Queries
+/*############################################################################*/
+
+@charset "utf-8";
+
+/*############################################################################*\
+# ABSTRACTS
+/*############################################################################*/
+@import "abstracts/_colour-palette.scss";
+@import "abstracts/_variables.scss";
+
+
+/*############################################################################*\
+# BASE
+/*############################################################################*/
+@import "base/_generalstyles.scss";
+@import "base/_iconography.scss";
+@import "base/_accessibility.scss";
+
+/*############################################################################*\
+# COMPONENTS
+/*############################################################################*/
+@import "components-dev/_content-box.scss";
+
+@import "components/_banner.scss";
+@import "components/_colour-blocks.scss";
+@import "components/_pretty-link.scss";
+@import "components/_pretty-btn.scss";
+@import "components/_bs-callout.scss";
+@import "components/_btn.scss";
+
+
+
+/*############################################################################*\
+# MISCELLANEOUS
+/*############################################################################*/
+tr th {
+		text-transform: none;
+}
+
+/* fonts */
+body {
+	color: #474747;
+	font-weight:400;
+}
+
+/* Main column width */
+.wp-block {
+    max-width: none;
+}
+
+/* Width of "wide" blocks */
+.wp-block[data-align="wide"] {
+    max-width: none;
+}
+
+/* Width of "full-wide" blocks */
+.wp-block[data-align="full"] {
+    max-width: none;
+}

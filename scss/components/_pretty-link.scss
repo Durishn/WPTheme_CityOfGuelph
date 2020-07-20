@@ -1,0 +1,68 @@
+/********************************
+ * PRETTY LINKS
+ *
+ * these links automatically create a linkage button with the icon indicating the file type.
+ * Files currently supported include; mp3, docx, pptx, xlsx, pdf, and forms.guelph
+ *
+ * restrictions: they take up an entire line, and lack an icon if missing the proper prefix or suffix
+ ********************************/
+a.COGprettylink, a.NDprettylink, .wp-block-file a, .wp-block-file__content-wrapper{
+  margin: 20px 0 !important;
+  font-weight: 600;
+  background: #fafafa;
+  /*background: -webkit-linear-gradient(top, #ffffff 0%,#f6f6f6 47%,#ededed 100%);*/
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 0px 2px 0px #fff;
+  border: solid 1px #ccc;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  line-height: 1.2em;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+  text-decoration: none !important;
+
+  &:hover{
+    text-decoration: none;
+    border: solid 1px #aaa;
+    color: #206dbc;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    height: 20px;
+    left: 10px;
+    margin-right: 2px;
+    position: absolute;
+    top: 8px;
+    width: 20px;
+  }
+  &[href$=".mp3"]:after{
+    content:url(https://img.icons8.com/color/24/000000/video-file.png);
+  }
+
+  &[type="application/msword"]:after, &[href$=".docx"]:after {
+    content:url(https://img.icons8.com/color/24/000000/ms-word.png);
+  }
+
+  &[type="application/powerpoint"]:after, &[type="application/mspowerpoint"]:after, &[href$=".ppt"]:after, [href$=".pptx"]:after {
+      content:url(https://img.icons8.com/color/24/000000/ms-powerpoint--v1.png);
+  }
+
+  &[type="application/x-excel"]:after, &[href$=".xlsx"]:after, &[type="application/excel"]:after {
+    content:url(https://img.icons8.com/color/24/000000/ms-excel.png);
+  }
+
+  &[href*=".pdf"]:after, [type="application/pdf"]:after {
+    content:url(https://img.icons8.com/color/24/000000/pdf-2.png);
+  }
+
+  &[href*="docs.google.com/spreadsheet"]:after, &[href*="forms.guelph"]:after {
+    content:url(https://img.icons8.com/color/24/000000/google-sheets.png);
+  }
+}
