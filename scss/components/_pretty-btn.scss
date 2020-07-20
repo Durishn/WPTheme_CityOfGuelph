@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
   ## Pretty Button
 --------------------------------------------------------------*/
-a.NDprettybtn, a.prettybtn {
+a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   position: relative;
   display: inline-block;
   margin: 0.5rem 0;
@@ -16,6 +16,7 @@ a.NDprettybtn, a.prettybtn {
   border: 1px solid $site-border-dark;
   overflow: hidden;
   transition: color 0.5s ease 0s;
+  z-index: 5;
   // color: $grey-text-color;
   border-color: $grey-text-color;
 
