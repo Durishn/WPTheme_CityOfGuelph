@@ -5,7 +5,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   position: relative;
   display: inline-block;
   margin: 0.5rem 0;
-  padding: 0.6em 1em 0.6em 3em;
+  padding: 0.6em 1em;
   background: none;
   font: inherit;
   text-align: center;
@@ -133,8 +133,13 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   /********************
   * PRETTYBTN FLAVOURS
   *********************/
+  &.link-withicon{
+    padding: 0.6em 1em 0.6em 3em;
+  }
+
   &.link-learn, &.learn-more{
     // @extend .prettybtn-green;
+    @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -143,6 +148,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   }
   &.link-view{
     // @extend .prettybtn-blue;
+    @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -151,6 +157,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   }
 
   &.link-feedback{
+    @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -163,6 +170,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   }
 
   &.link-request{
+    @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -171,6 +179,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   }
 
   &.link-pay{
+    @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
