@@ -5,7 +5,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   position: relative;
   display: inline-block;
   margin: 0.5rem 0;
-  padding: 0.6em 1em;
+  padding: 0.6em 1em 0.6em 3em;
   background: none;
   font: inherit;
   text-align: center;
@@ -23,7 +23,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   &:hover, &:focus{
     text-decoration: none;
     color: white;
-    background-color: $grey-text-color;
+    background-color: $site-darktone;
     transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
     &:after{
       width: 120%;
@@ -47,7 +47,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
     -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
     -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
     transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    background-color: $grey-text-color;
+    background-color: $site-darktone;
   }
 
   /********************
