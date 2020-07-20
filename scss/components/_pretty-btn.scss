@@ -112,8 +112,8 @@
   /********************
   * PRETTYBTN FLAVOURS
   *********************/
-  &.learn-more{
-    @extend .prettybtn-green;
+  &.link-learn, &.learn-more{
+    // @extend .prettybtn-green;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -121,7 +121,7 @@
     }
   }
   &.link-view{
-    @extend .prettybtn-blue;
+    // @extend .prettybtn-blue;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
@@ -130,11 +130,34 @@
   }
 
   &.link-feedback{
-    @extend .prettybtn-grey;
+    // @extend .prettybtn-grey;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
       content: 'feedback';
     }
+  }
+
+  &.link-report{
+    @extend .link-feedback;
+  }
+
+  &.link-request{
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'help_center';
+    }
+  }
+
+  &.link-pay{
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'payment';
+    }
+  }
+  &.link-purchase{
+    @extend .link-pay;
   }
 }
