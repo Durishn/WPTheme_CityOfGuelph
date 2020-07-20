@@ -38,25 +38,16 @@
         },
 				{
             type: 'listbox',
-            name: 'prettybtnalign',
-            label: 'Alignment',
-            'values': [
-                {text: 'Left', value: 'left'},
-                {text: 'Center', value: 'center'},
-                {text: 'Right', value: 'right'},
-            ],
-						onPostRender: function( ){
-                    prettybtnalign = this;
-                }
-        },
-				{
-            type: 'listbox',
             name: 'prettybtntype',
             label: 'Type',
             'values': [
 								{text: 'Default', value: ''},
-								{text: 'Learn more', value: 'learn-more'},
+								{text: 'Learn more', value: 'link-learn'},
 								{text: 'View', value: 'link-view'},
+								{text: 'Request', value: 'link-request'},
+								{text: 'Report', value: 'link-report'},
+								{text: 'Purchase', value: 'link-purchase'},
+								{text: 'Pay', value: 'link-pay'},
 								{text: 'Feedback', value: 'link-feedback'}
             ],
 						onPostRender: function( ){
@@ -68,10 +59,9 @@
             name: 'prettybtnsize',
             label: 'Size',
             'values': [
-                {text: 'Medium', value: 'medium'},
+                {text: 'Default', value: 'medium'},
                 {text: 'Small', value: 'small'},
-								{text: 'Large', value: 'large'},
-								{text: 'X-Large', value: 'x-large'}
+								{text: 'Large', value: 'x-large'}
             ],
 						onPostRender: function( ){
                     prettybtnsize = this;
@@ -79,33 +69,17 @@
         },
         {
           type   : 'checkbox',
-          id     : 'tinymce-prettybtn-external',
-          name   : 'prettybtnexternal',
-          text   : 'Open in new tab',
+          id     : 'tinymce-prettybtn-center',
+          name   : 'prettybtncenter',
+          text   : 'Center the button',
         },
-				// {
-        //   type   : 'checkbox',
-        //   id     : 'tinymce-prettybtn-hover',
-        //   name   : 'prettybtnhover',
-        //   text   : 'Hover animation',
-        // },
         ],
         onsubmit: function(e) {
-          if (jQuery('#tinymce-prettybtn-external').hasClass("mce-checked")){
-						// if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
-            // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						// }
-						// else{
-							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" rel="noopener" target=”_blank” href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						// }
+          if (jQuery('#tinymce-prettybtn-center').hasClass("mce-checked")){
+							editor.execCommand('mceReplaceContent', false, '<div style="text-align:center;"><a class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
 					}
           else {
-						// if (jQuery('#tinymce-prettybtn-hover').hasClass("mce-checked")){
-            // 	editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtncolor.value() + ' ' + prettybtnsize.value() + ' fill" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-          	// }
-						// else{
-							editor.execCommand('mceReplaceContent', false, '<div style="text-align:' + prettybtnalign.value() + ';"><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
-						// }
+							editor.execCommand('mceReplaceContent', false, '<div><a style="font-size:' + prettybtnsize.value() + '" class="prettybtn ' + prettybtntype.value() + ' ' + prettybtnsize.value() + '" href="' + jQuery('#tinymce-prettybtn-url').val() + '">' + jQuery('#tinymce-prettybtn-title').val() + '</a></div>');
 					}
           editor.windowManager.close();
         }

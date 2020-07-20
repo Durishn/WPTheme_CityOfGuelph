@@ -6,7 +6,6 @@
   display: inline-block;
   margin: 0.5rem 0;
   padding: 0.6em 1em;
-  color: $link-text-color;
   background: none;
   font: inherit;
   text-align: center;
@@ -17,32 +16,37 @@
   border: 1px solid $site-border-dark;
   overflow: hidden;
   transition: color 0.5s ease 0s;
+  // color: $grey-text-color;
+  border-color: $grey-text-color;
 
   &:hover, &:focus{
     text-decoration: none;
-    transition: color 0.5s ease 0s;
+    color: white;
+    background-color: $grey-text-color;
+    transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
     &:after{
-      height: 1300%;
+      width: 120%;
     }
   }
 
   &:after {
     content: "";
     position: absolute;
-    height: 0%;
+    display: block;
+    height: 150%;
     left: 50%;
     top: 50%;
-    width: 150%;
+    width: 0%;
     z-index: -1;
     -webkit-transition: all 0.5s ease 0s;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
-    background-color: #eee;
-    -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
-    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+    -moz-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+    -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+    transform: translateY(-50%) translateX(-50%) rotate(0deg);
+    background-color: $grey-text-color;
   }
 
   /********************
@@ -60,10 +64,42 @@
   &.bordernone{
     border: none;
   }
+  &.x-large{
+    font-size: x-large;
+  }
+  &.small{
+    font-size: small;
+  }
 
   /********************
   * PRETTYBTN COLOURS
   *********************/
+  &.prettybtn-grey {
+    color: $grey-text-color !important;
+    border-color: $grey-text-color !important;
+
+    &:hover, &:focus{
+      color: white !important;
+      background-color: $grey-text-color;
+    }
+    &:after{
+      background-color: $grey-text-color;
+    }
+  }
+
+  &.prettybtn-light-grey {
+    color: $link-text-color !important;
+    border-color: $site-border-dark !important;
+
+    &:hover, &:focus{
+      color: $link-text-color !important;
+      background-color: $color-gray-07;
+    }
+    &:after{
+      background-color: $color-gray-07;
+    }
+  }
+
 
   &.prettybtn-green{
     color: $color-green-dark !important;
@@ -72,25 +108,10 @@
     &:hover, &:focus{
       color: white !important;
       background-color: $color-green-dark;
-      transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
     }
 
     &:after{
       background-color: $color-green-dark;
-    }
-  }
-
-  &.prettybtn-grey {
-    color: $grey-text-color !important;
-    border-color: $grey-text-color !important;
-
-    &:hover, &:focus{
-      color: white !important;
-      background-color: $grey-text-color;
-      transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
-    }
-    &:after{
-      background-color: $grey-text-color;
     }
   }
 
@@ -101,7 +122,6 @@
     &:hover, &:focus{
       color: white !important;
       background-color: $color-navy-dark;
-      transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
     }
     &:after{
       background-color: $color-navy-dark;
@@ -130,7 +150,6 @@
   }
 
   &.link-feedback{
-    // @extend .prettybtn-grey;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
