@@ -20,7 +20,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   // color: $grey-text-color;
   border-color: $grey-text-color;
 
-  &:hover, &:focus{
+  &:hover, &:hover:visited, &:focus{
     text-decoration: none;
     color: white;
     background-color: $site-darktone;
