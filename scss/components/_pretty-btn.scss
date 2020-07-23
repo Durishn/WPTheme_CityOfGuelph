@@ -23,7 +23,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   &:hover, &:hover:visited, &:focus{
     text-decoration: none;
     color: white;
-    background-color: $site-darktone;
+    background-color: $grey-text-color;
     transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
     &:after{
       width: 120%;
@@ -47,7 +47,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
     -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
     -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
     transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    background-color: $site-darktone;
+    background-color: $grey-text-color;
   }
 
   /********************
@@ -81,10 +81,10 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
 
     &:hover, &:focus{
       color: white !important;
-      background-color: $grey-text-color;
+      background-color: $site-darktone;
     }
     &:after{
-      background-color: $grey-text-color;
+      background-color: $site-darktone;
     }
   }
 
