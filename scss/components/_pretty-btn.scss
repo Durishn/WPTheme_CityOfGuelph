@@ -15,40 +15,42 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
 	border-radius: 3px;
   border: 1px solid $site-border-dark;
   overflow: hidden;
-  transition: color 0.5s ease 0s;
+  // transition: color 0.5s ease 0s;
+  transition: $anim-time-long ease 0s;
   z-index: 5;
-  // color: $grey-text-color;
+  color: $site-darktone;
   border-color: $grey-text-color;
 
   &:hover, &:hover:visited, &:focus{
     text-decoration: none;
     color: white;
     background-color: $grey-text-color;
-    transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
+    // transition: color 0.5s ease 0s, background-color 0s ease-in 0.5s;
+
     &:after{
       width: 120%;
     }
   }
 
-  &:after {
-    content: "";
-    position: absolute;
-    display: block;
-    height: 150%;
-    left: 50%;
-    top: 50%;
-    width: 0%;
-    z-index: -1;
-    -webkit-transition: all 0.5s ease 0s;
-    -moz-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-    -moz-transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    transform: translateY(-50%) translateX(-50%) rotate(0deg);
-    background-color: $grey-text-color;
-  }
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   display: block;
+  //   height: 150%;
+  //   left: 50%;
+  //   top: 50%;
+  //   width: 0%;
+  //   z-index: -1;
+  //   -webkit-transition: all 0.5s ease 0s;
+  //   -moz-transition: all 0.5s ease 0s;
+  //   -o-transition: all 0.5s ease 0s;
+  //   transition: all 0.5s ease 0s;
+  //   -moz-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  //   -ms-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  //   -webkit-transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  //   transform: translateY(-50%) translateX(-50%) rotate(0deg);
+  //   background-color: $grey-text-color;
+  // }
 
   /********************
   * PRETTYBTN MODIFIERS
