@@ -39,9 +39,15 @@ Author: Nic Durish, Greg Hahn, and Kim Lawrence
 /*############################################################################*\
 # BASE
 /*############################################################################*/
+@import "base/_reset.scss";
 @import "base/_generalstyles.scss";
 @import "base/_iconography.scss";
 @import "base/_accessibility.scss";
+@import "base/_typography.scss";
+@import "base/_iconography.scss";
+
+@import "templates/_wp-content.scss";
+
 
 /*############################################################################*\
 # COMPONENTS
@@ -64,12 +70,6 @@ tr th {
 		text-transform: none;
 }
 
-/* fonts */
-body {
-	color: #474747;
-	font-weight:400;
-}
-
 /* Main column width */
 .wp-block {
     max-width: none;
@@ -83,4 +83,8 @@ body {
 /* Width of "full-wide" blocks */
 .wp-block[data-align="full"] {
     max-width: none;
+}
+
+.wp-editor{
+	@extend .entry-content
 }
