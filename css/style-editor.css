@@ -2068,6 +2068,8 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   /********************
   * PRETTYBTN FLAVOURS
   *********************/ }
+  a.btn.btn-success:visited, a.NDprettybtn:visited, a.prettybtn:visited {
+    color: #282828; }
   a.btn.btn-success:hover, a.btn.btn-success:hover:visited, a.btn.btn-success:focus, a.NDprettybtn:hover, a.NDprettybtn:hover:visited, a.NDprettybtn:focus, a.prettybtn:hover, a.prettybtn:hover:visited, a.prettybtn:focus {
     text-decoration: none;
     color: white;
@@ -2086,6 +2088,9 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
     font-size: x-large; }
   a.btn.btn-success.small, a.NDprettybtn.small, a.prettybtn.small {
     font-size: small; }
+  a.btn.btn-success.full-width, a.NDprettybtn.full-width, a.prettybtn.full-width {
+    display: block;
+    width: 100%; }
   a.btn.btn-success.prettybtn-grey, a.NDprettybtn.prettybtn-grey, a.prettybtn.prettybtn-grey {
     color: #595959 !important;
     border-color: #595959 !important; }
