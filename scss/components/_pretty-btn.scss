@@ -1,7 +1,9 @@
 /*--------------------------------------------------------------
   ## Pretty Button
 --------------------------------------------------------------*/
-a.btn.btn-success, a.NDprettybtn, a.prettybtn {
+a.btn.btn-success, a.btn.btn-success:visited
+, a.NDprettybtn,  a.NDprettybtn:visited
+, a.prettybtn, a.prettybtn:visited {
   position: relative;
   display: inline-block;
   margin: 0.5rem 0;
