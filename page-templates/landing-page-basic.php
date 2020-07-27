@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Landing Page
+ * Template Name: Landing Page (Basic)
  * The template for displaying all landing pages with subchildren.
  * Author: Nic Durish
  *
