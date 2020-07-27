@@ -1,9 +1,7 @@
 /*--------------------------------------------------------------
   ## Pretty Button
 --------------------------------------------------------------*/
-a.btn.btn-success, a.btn.btn-success:visited
-, a.NDprettybtn,  a.NDprettybtn:visited
-, a.prettybtn, a.prettybtn:visited {
+a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   position: relative;
   display: inline-block;
   margin: 0.5rem 0;
@@ -22,6 +20,10 @@ a.btn.btn-success, a.btn.btn-success:visited
   z-index: 5;
   color: $site-darktone;
   border-color: $grey-text-color;
+
+  &:visited{
+    color: $site-darktone;
+  }
 
   &:hover, &:hover:visited, &:focus{
     text-decoration: none;
