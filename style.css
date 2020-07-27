@@ -10,139 +10,23 @@ Version: 1.0.159
 Updated: 2020-2-24 11:53:24
 */
 
-
-
-
-
-
-
-
-
-
 /* This theme utilizes the Guelph Digital Service Design System. The SCSS
-files are used to generate the respective minified CSS. Styles in this file
-are reserved for plugin fixes and wordperss overrides that are needed in
-addition to the GDS Design System or are waiting for approval. */
+files are used to generate the respective minified CSS found in the css
+directory. Styles in this file are reserved for plugin fixes and wordperss
+overrides that are needed in addition to the GDS Design System or are awaiting
+approval. */
 
 
 
-
-
-
-
-
-
-
-
-
-
-/********************************
- * Junk??
- ********************************/
-  /* .schema-faq-question {
-    font-size: 22px;
-  }
-  .crumbwrapper{
-  	position: absolute;
-  	z-index: 10;
-  	font-size: 25px;
-  }
- .orange-link a{
- 	color: #f28433;
- }
- .pagecontentwrapper{
- 	  max-width: 1400px;
-     overflow: hidden;
-     margin: 0 auto;
- 	  padding: 20px;
- }
-
- h2.panel-title {
-   font-size: 140% !important;
-   margin: 12px 24px;
- }
-
- .panel-default {
-   background-color: #f0f0f0;
- }
-
- .panel-default>.panel-heading {
-   color: #333;
-   background-color: #f0f0f0;
-   border-color: #ddd;
-   padding: 0 15px !important;
- }
-
- .panel-heading a:after {
-   float: right;
-   margin-top: 5px;
-   color: #000;
-   content: "\e114";
-   font-family: 'Glyphicons Halflings';
- }
-
- .panel-heading a.collapsed:after {
-   content: "\e080";
- }
-
- .panel-title a {
-   text-decoration: none;
-   color: #1b6181 !important;
- }
- ol.d {
-   list-style-type: lower-alpha;
- }
- .home .entry-title {
-   height: 1px;
-   width: 1px;
-   margin: -1px;
-   padding: 0;
-   overflow: hidden;
-   position: absolute;
- }
-
- ul#home_menu {
-   margin-top: 0;
-   margin-top: 2px solid #ccc;
-   margin-right: 0;
-   margin-bottom: 0;
-   margin-left: 0;
-   padding-top: 12px;
-   padding-bottom: 12px;
-   background-color: #e8e8ee;
- }
- ul#home_menu li:first-child {
-   margin-left: 10px;
-   padding: 0;
- }
- ul#home_menu li:first-child a {
-   font-size: 1.2rem;
-   color: #000;
- }
- ul#home_menu li:first-child a:hover {
-   background-color: transparent;
- }
- ul#home_menu li {
-   display: inline;
- }
- ul#home_menu li a {
-   font-size: 1rem;
-   text-decoration: none;
-   color: #000;
-   -moz-border-radius: 4px;
-   -webkit-border-radius: 4px;
-   -o-border-radius: 4px;
-   border-radius: 4px;
-   padding: 5px;
- }
- ul#home_menu li a:hover {
-   border: 1px solid #000;
- } */
 
 
 /********************************
  * MISCELLANEOUS ... PLS CLEAN ME
  ********************************/
+ .for-more-information-section p{
+   line-height: 1.3em;
+ }
+ 
 .price li.header h3{
 	color: white;
 }

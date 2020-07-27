@@ -2145,9 +2145,11 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   -o-border-radius: 3px;
   border-radius: 3px;
   border: 1px solid #eee;
+  border-left-color: #00a5e1;
   border-left-width: 5px;
   margin: 15px 0;
-  padding: 20px; }
+  padding: 20px;
+  line-height: 125%; }
   .bs-callout h2.homeheader {
     margin-top: 0;
     margin-bottom: 5px;
