@@ -24,9 +24,9 @@ approval. */
  * MISCELLANEOUS ... PLS CLEAN ME
  ********************************/
  .for-more-information-section p{
-   line-height: 1.3em;
+   /* line-height: 1.3em; */
  }
- 
+
 .price li.header h3{
 	color: white;
 }

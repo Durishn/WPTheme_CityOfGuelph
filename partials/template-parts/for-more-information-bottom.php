@@ -1,6 +1,6 @@
 <?php if( have_rows('contact_information_repeater') ): ?>
   <div class="custom-acf-view for-more-information-section">
-    <h3>For more information</h3>
+    <h2>For more information</h2>
     <?php if (get_field('contact_starter_text')):echo "<p>";the_field('contact_starter_text');echo "</p><hr>";endif;?>
       <?php $loopflag = FALSE;?>
       <?php while( have_rows('contact_information_repeater') ): the_row(); ?>
