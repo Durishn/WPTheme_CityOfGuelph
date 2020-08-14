@@ -21,7 +21,8 @@ ob_start("ob_gzhandler");
 function twentytwelveguelph_setup() {
   /* Add support for editor-styles w extra custom css*/
   add_theme_support( 'editor-styles' );
-  add_editor_style( 'css/style-editor.min.css' );
+  add_editor_style( 'css/style-editor.css');
+  add_editor_style( 'https://fonts.googleapis.com/icon?family=Material+Icons' );
 }
 add_action( 'after_setup_theme', 'twentytwelveguelph_setup' );
 
@@ -261,7 +262,7 @@ function cog_body_class( $classes ) {
 	$background_color = get_background_color();
 	$background_image = get_background_image();
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) || is_page_template( 'page-templates/full-width.php' ) ) {
+	if ( ! is_active_sidebar( 'sidebar-1' ) || is_page_template( 'page-templates/full-width.php' )  || is_page_template( 'page-templates/landing-page-basic.php' ) ) {
 		$classes[] = 'full-width';
 	}
 
@@ -327,16 +328,11 @@ add_filter( 'wpseo_remove_reply_to_com', '__return_false' );
 
 
 /*
-* Set up excerpt box
+* Set up excerpt box functions to be called by templates
 */
 add_post_type_support( 'page', 'excerpt' );
 add_filter('excerpt_length', 125);
-// add_action('edit_form_after_title', function () {
-//     echo '<h3>Excerpt</h3>';
-//   }
-// );
-//add_action('edit_form_after_title', 'post_excerpt_meta_box');
-// Changing excerpt more
+
 
 
 

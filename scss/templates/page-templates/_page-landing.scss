@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------
+  ## Page - Default
+--------------------------------------------------------------*/
+#main.landingPage{
+
+
+
+
+  .pagechildren-nav-display{
+    margin: 3em 0;
+
+    .pagechildren-nav-display-header{
+    	text-align: center;
+      font-weight: 400;
+    	font-size: 400%;
+      margin: 0 0 10px;
+    }
+
+    .pagechildren-nav-display-list{
+    	display: flex;
+    	flex-flow: row wrap;
+    	justify-content: space-around;
+      list-style: none;
+      align-content: flex-start;
+      align-items: flex-start;
+
+    	li{
+    		margin:0;
+    		max-width: 24rem;
+    		min-height: 12em;
+    		margin-top: 10px;
+    		padding: 5px;
+
+    		h3{
+    			margin-top: 0;
+    			margin-bottom: 5px;
+
+    			&:after {
+    				content: "";
+    				display: block;
+    				width: 12%;
+    				padding: 0;
+    				border-bottom: 4px solid $site-primary;
+    				margin: 4px 0 8px 0;
+    			}
+
+    			a {
+    				text-decoration:none;
+
+    				&:hover{
+    						text-decoration:underline;
+    				}
+    			}
+    		}
+
+    		p {
+    			line-height: 1.71em;
+    		}
+    	}
+    }
+  }
+}

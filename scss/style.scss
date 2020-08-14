@@ -59,6 +59,7 @@
 @import "templates/page-templates/_page-sitemap.scss";
 @import "templates/page-templates/_page-faq.scss";
 @import "templates/page-templates/_page-empty.scss";
+@import "templates/page-templates/_page-landing.scss";
 
 
 /*############################################################################*\
@@ -146,7 +147,8 @@
     column-count: 2;
   }
 	body.attachment .site-content,
-	body.full-width .site-content {
+	body.full-width .site-content,
+	body.landing-page .site-content {
 		width: 100%;
 	}
 	.widget-area {
