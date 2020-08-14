@@ -230,18 +230,30 @@ img {
 .bg-grey {
   background-color: #eee; }
 
-.txtcenter {
+.txtcenter, .center {
   text-align: center; }
 
 .row {
   margin-right: -3px;
   margin-left: -3px; }
 
+.row-padding {
+  padding: 5em 0 3em 0; }
+
 .nobullet li {
   margin-left: 5px;
   list-style: none; }
   .nobullet li ul li {
     margin-left: 10px; }
+
+/*--------------------------------------------------------------
+	## Colour Classes
+--------------------------------------------------------------*/
+.cog-white {
+  color: white; }
+
+.cog--bg-purple {
+  background-color: #075A12; }
 
 .material-icons, a.btn.btn-success.link-learn:before, a.btn.btn-success.learn-more:before, a.NDprettybtn.link-learn:before, a.NDprettybtn.learn-more:before, a.prettybtn.link-learn:before, a.prettybtn.learn-more:before, a.btn.btn-success.link-view:before, a.NDprettybtn.link-view:before, a.prettybtn.link-view:before, a.btn.btn-success.link-feedback:before, a.btn.btn-success.link-report:before, a.NDprettybtn.link-feedback:before, a.NDprettybtn.link-report:before, a.prettybtn.link-feedback:before, a.prettybtn.link-report:before, a.btn.btn-success.link-request:before, a.NDprettybtn.link-request:before, a.prettybtn.link-request:before, a.btn.btn-success.link-pay:before, a.btn.btn-success.link-purchase:before, a.NDprettybtn.link-pay:before, a.NDprettybtn.link-purchase:before, a.prettybtn.link-pay:before, a.prettybtn.link-purchase:before {
   font-family: 'Material Icons';
@@ -710,11 +722,49 @@ p.well {
   background: #fdfdfd; }
 
 /*--------------------------------------------------------------
+  ## Hero Image
+--------------------------------------------------------------*/
+.hero-image {
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
+
+.hero-text-top {
+  text-align: center;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
+
+.hero-image:hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1); }
+
+/*--------------------------------------------------------------
   ## Banner
 --------------------------------------------------------------*/
 section[role="banner"] {
   margin-bottom: 48px;
   margin-bottom: 3.428571429rem; }
+
+.banner-text {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem; }
 
 /********************************
   ## Coloured Blocks

@@ -41,6 +41,7 @@ Author: Nic Durish, Greg Hahn, and Kim Lawrence
 /*############################################################################*/
 @import "base/_reset.scss";
 @import "base/_generalstyles.scss";
+@import "base/_colours.scss";
 @import "base/_iconography.scss";
 @import "base/_accessibility.scss";
 @import "base/_typography.scss";
@@ -53,6 +54,7 @@ Author: Nic Durish, Greg Hahn, and Kim Lawrence
 # COMPONENTS
 /*############################################################################*/
 @import "components-dev/_content-box.scss";
+@import "components-dev/_hero-image.scss";
 
 @import "components/_banner.scss";
 @import "components/_colour-blocks.scss";

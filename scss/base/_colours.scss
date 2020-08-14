@@ -1,7 +1,10 @@
 /*--------------------------------------------------------------
-  ## Banner
+	## Colour Classes
 --------------------------------------------------------------*/
-section[role="banner"] {
-	margin-bottom: 48px;
-	margin-bottom: 3.428571429rem;
+.cog-white {
+ color: white;
+}
+
+.cog--bg-purple {
+background-color: $color-purple;
 }

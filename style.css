@@ -27,6 +27,42 @@ approval. */
    /* line-height: 1.3em; */
  }
 
+.project-page-title {
+ color: #fff;
+ text-align: center;
+ font-size: 380% !important;
+ font-weight: bold;
+ padding-top: 0px;
+ padding-bottom: 0px;
+ margin-top:10px;
+}
+
+.project-page-header {
+ font-size:340% !important;
+ font-weight:normal !important;
+ line-height: 1.4 !important;
+ text-align:center;
+ margin: 1rem 0 1rem 0;
+}
+
+.small-project-page-header {
+ font-size:240% !important;
+ font-weight:normal !important;
+ line-height: 1.2 !important;
+ text-align:center;
+ margin: 1rem 0 1rem 0;
+}
+
+.project-text {
+ font-size: 1.3rem;
+ line-height:1.8;
+}
+
+.huge-text {
+font-size:6rem;
+color:#ffffff;
+}
+
 .price li.header h3{
 	color: white;
 }
