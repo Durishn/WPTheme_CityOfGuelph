@@ -72,13 +72,17 @@
 .bg-grey {
   background-color: $color-gray-07;
 }
-.txtcenter{
+.txtcenter, .center{
 	text-align: center;
 }
 .row {
   margin-right: -3px;
   margin-left: -3px;
 }
+.row-padding {
+  padding:5em 0 3em 0;
+}
+
 .nobullet li {
   margin-left: 5px;
   list-style: none;
