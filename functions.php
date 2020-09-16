@@ -5,15 +5,6 @@
  * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 ob_start("ob_gzhandler");
-/* ADD TWENTYTWELVE THEME SUPPORT*/
-// if ( !function_exists( 'chld_thm_cfg_parent_css' ) ):
-//     function chld_thm_cfg_parent_css() {
-//         wp_enqueue_style( 'chld_thm_cfg_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array(  ) );
-//     }
-// endif;
-// add_action( 'wp_enqueue_scripts', 'chld_thm_cfg_parent_css', 10 );
-
-
 
 /**
  * Set up theme defaults and registers support for various WordPress features.
@@ -319,9 +310,6 @@ wp_deregister_script( 'autosave' );
 /*      *****       ****      ***     */
 // add_filter("use_block_editor_for_post_type", "disable_gutenberg_editor");
 function disable_gutenberg_editor(){return false;}
-
-
-
 add_filter( 'wpseo_remove_reply_to_com', '__return_false' );
 
 
@@ -588,7 +576,11 @@ function shapeSpace_check_enum($redirect, $request) {
 }
 
 /*
-* Load custom widgets from directory
+* Load function.php partials
+*/
+include "partials/customTMCE.php";
+
+/*
+* Load custom widgets
 */
 // include_once( get_stylesheet_directory() . '/partials/custom-widgets/for-more-information.php');
-include "partials/customTMCE.php";

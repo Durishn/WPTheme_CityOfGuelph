@@ -165,7 +165,6 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
       content: 'preview';
     }
   }
-
   &.link-feedback{
     @extend .link-withicon;
     &:before{
@@ -194,6 +193,15 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
       @extend .material-icons;
       @extend .material-icon-btn-extender;
       content: 'payment';
+    }
+  }
+
+  &.link-fill{
+    @extend .link-withicon;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'create';
     }
   }
   &.link-purchase{

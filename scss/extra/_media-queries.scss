@@ -60,7 +60,8 @@
   }
 	body.attachment .site-content,
 	body.full-width .site-content,
-	body.landing-page .site-content {
+	body.landing-page .site-content,
+	#primary.full-width {
 		width: 100%;
 	}
 	.widget-area {

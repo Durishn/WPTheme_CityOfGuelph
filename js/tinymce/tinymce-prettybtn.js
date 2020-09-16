@@ -44,11 +44,11 @@
 								{text: 'Default', value: ''},
 								{text: 'Learn more', value: 'link-learn'},
 								{text: 'View', value: 'link-view'},
-								{text: 'Request', value: 'link-request'},
+								{text: 'Help', value: 'link-request'},
 								{text: 'Report', value: 'link-report'},
-								{text: 'Purchase', value: 'link-purchase'},
 								{text: 'Pay', value: 'link-pay'},
-								{text: 'Feedback', value: 'link-feedback'}
+								{text: 'Feedback', value: 'link-feedback'},
+								{text: 'Fill', value: 'link-fill'}
             ],
 						onPostRender: function( ){
                     prettybtntype = this;
