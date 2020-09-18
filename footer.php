@@ -13,7 +13,7 @@
 
         <!--==================== PAGE BOTTOM META ====================-->
         <?php if ( ! is_404() ) : ?>
-          <div role="complementary" aria-label="Page Details" id="bottom-meta" style="float: left;">
+          <div role="complementary" aria-label="Page Details" id="bottom-meta">
             <div class="site-feedback">
               <a class="NDprettybtn link-feedback" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a problem or provide feedback on this page</a>
             </div>
