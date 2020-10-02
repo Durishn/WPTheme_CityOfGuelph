@@ -11,3 +11,22 @@ section[role="banner"] {
 	text-align: center;
 	font-size: 2rem;
 }
+
+.gds-banner {
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+	img{
+		width: 100%;
+		opacity: 80%;
+	}
+
+	.gds-banner-container {
+		position: absolute;
+		width: 80%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
