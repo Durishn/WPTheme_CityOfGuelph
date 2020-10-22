@@ -33,7 +33,7 @@ a.COGprettylink, a.NDprettylink, .wp-block-file a, .wp-block-file__content-wrapp
   }
 
   &:after{
-    content: "";
+    content:url(https://img.icons8.com/fluent-systems-filled/24/000000/external-link.png);
     display: block;
     height: 20px;
     left: 10px;
