@@ -9,6 +9,19 @@
 	width: device-width;
 }
 
+@media print {
+	body * {
+	    visibility: hidden;
+	  }
+	  #main, #main * {
+	    visibility: visible;
+	  }
+	  #main {
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	  }
+}
 
 @media screen and (max-width: 600px) {
   #primary-fullwidth.site-content {

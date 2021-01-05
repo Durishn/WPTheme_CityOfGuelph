@@ -22,7 +22,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   border-color: $grey-text-color;
 
   &:visited{
-    color: $site-darktone;
+    color: $site-darktone !important;
   }
 
   &:hover, &:hover:visited, &:focus{
@@ -91,10 +91,10 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
 
     &:hover, &:focus{
       color: white !important;
-      background-color: $site-darktone;
+      // background-color: $site-darktone;
     }
     &:after{
-      background-color: $site-darktone;
+      // background-color: $site-darktone;
     }
   }
 
@@ -165,6 +165,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
       content: 'preview';
     }
   }
+
   &.link-feedback{
     @extend .link-withicon;
     &:before{
@@ -187,21 +188,30 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
     }
   }
 
+  &.link-share{
+    @extend .link-withicon;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'share';
+    }
+  }
+
+  &.link-print{
+    @extend .link-withicon;
+    &:before{
+      @extend .material-icons;
+      @extend .material-icon-btn-extender;
+      content: 'print';
+    }
+  }
+
   &.link-pay{
     @extend .link-withicon;
     &:before{
       @extend .material-icons;
       @extend .material-icon-btn-extender;
       content: 'payment';
-    }
-  }
-
-  &.link-fill{
-    @extend .link-withicon;
-    &:before{
-      @extend .material-icons;
-      @extend .material-icon-btn-extender;
-      content: 'create';
     }
   }
   &.link-purchase{

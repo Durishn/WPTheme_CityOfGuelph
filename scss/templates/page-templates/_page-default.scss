@@ -38,7 +38,11 @@
 
   .site-feedback {
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 0.5rem 0;
+
+    div {
+      padding: 5px;
+    }
   }
 
   .post-date {

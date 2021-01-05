@@ -14,9 +14,6 @@
         <!--==================== PAGE BOTTOM META ====================-->
         <?php if ( ! is_404() ) : ?>
           <div role="complementary" aria-label="Page Details" id="bottom-meta" style="float: left;">
-            <div class="site-feedback">
-              <a class="NDprettybtn link-feedback" style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a problem or provide feedback on this page</a>
-            </div>
             <div class="post-date">
               <?php if ( ! is_single() ) : ?>
                 <?php if (get_the_modified_time() != get_the_time()) : ?>
@@ -25,6 +22,21 @@
                   <p>Date posted: <?php the_time('F j, Y'); ?> at <?php the_time('g:i a'); ?>. </p>
                 <?php endif; ?>
               <?php endif; ?>
+            </div>
+            <div class="site-feedback row">
+              <div class="col-lg-4 col-md-4 col-sm-4 center">
+                <a class="NDprettybtn prettybtn-grey small link-feedback " style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a mistake or problem on this page</a>
+              </div>
+              <!-- AddToAny BEGIN -->
+                <div  class="col-lg-4 col-md-4 col-sm-4 center">
+                  <a class="a2a_dd NDprettybtn prettybtn-grey small link-share"  style="margin: 0 auto;" href="https://www.addtoany.com/share">Share this page</a>
+                </div>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
+                <div class="col-lg-4 col-md-4 col-sm-4 center">
+                  <a class="NDprettybtn prettybtn-grey small link-print" style="margin: 0 auto;" href="javascript:window.print()">Print this page</a>
+
+                </div>
             </div>
           </div>
         <?php endif; ?>
