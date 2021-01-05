@@ -138,3 +138,6 @@ $('.prettyMapList #Map-List-Search select.distanceSelector').attr('aria-label', 
 $('#twitter-widget-0').attr('title', "Twitter Widget");
 // DARKSKY EMBED
 $('#forecast_embed').attr('title', "Forecast Widget");
+
+//AddToAny Embed
+$('#a2a_overlay').parent().attr('aria-hidden', 'true');
