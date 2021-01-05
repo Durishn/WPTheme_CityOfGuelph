@@ -23,7 +23,7 @@
                 <?php endif; ?>
               <?php endif; ?>
             </div>
-            <div class="site-feedback row">
+            <div role="complementary" aria-label="Page Meta Options" class="site-feedback row">
               <div class="col-lg-4 col-md-4 col-sm-4 center">
                 <a class="NDprettybtn prettybtn-grey small link-feedback " style="margin: 0 auto;" href="//forms.guelph.ca/IT/Website-feedback?Q9=https://guelph.ca/?page_id=<?php the_ID(); ?>&Q8=<?php the_title(); ?>">Report a mistake or problem on this page</a>
               </div>
