@@ -22,7 +22,7 @@ a.btn.btn-success, a.NDprettybtn, a.prettybtn {
   border-color: $grey-text-color;
 
   &:visited{
-    color: $site-darktone !important;
+    color: $site-darktone;
   }
 
   &:hover, &:hover:visited, &:focus{
