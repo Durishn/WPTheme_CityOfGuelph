@@ -2,7 +2,7 @@
 This repository holds all the code for the custom-built WordPress theme which runs the City of Guelph municipal website. The theme was initially built as a child theme of the popular Twenty Twelve Wordpress theme, however received it's emancipation in early 2020 - meaning it's now a stand-alone theme!
 
 This README provides a general overview of the theme and it's basic functions. For more detailed descriptions on how to contribute or make edits to this theme please refer to the
-For information on the usage of this theme as an author, designer, or front-end developer please refer to the [Contributing Documentation](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/develop/doc/contributing.md).
+For information on the usage of this theme as an author, designer, or front-end developer please refer to the [Contributing Documentation](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/master/doc/contributing.md).
 
 ## Installation and Deployment
 The most up-to-date version of this theme will ALWAYS be available as the most recent Master branch of this repository. This will include ALL of the code for the theme, both what a developer would edit (pre-compilation) and what a web-server would read (post-compilation). This however does NOT add bloat to the website, as only necessary sections of the theme should be called on any given page.
@@ -17,7 +17,7 @@ There are two ways to get the most recent version of this theme onto your WordPr
 The most significant thing to remember about how our branching is configured is that the most recent version of `master` is ALWAYS the current theme. It may even be setup to automatically push updates to our WordPress instance, so be careful whenever pushing changes into master! Changes should instead be made on a separate branch (such as `develop`) and then merged into our master branch. Please refer to the following document on [Github Branching Strategies](https://nvie.com/posts/a-successful-git-branching-model/) for more information.
 
 ## Contributing
-Please read [CONTRIBUTING.md](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/develop/doc/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/master/doc/contributing.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 We aim to use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/tags).
@@ -50,4 +50,4 @@ We aim to use [SemVer](http://semver.org/) for versioning. For the versions avai
 See also the list of [contributors](https://github.com/CityOfGuelph-Webservices/TwentyTwelve-CityOfGuelph/contributors) who have participated in the building of this theme.
 
 ## License
-Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](LICENSE) file for details.
+Along with WordPress, this project is licensed under the GNU V3 General License - see the [LICENSE](https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph/blob/master/doc/LICENSE) file for details.
