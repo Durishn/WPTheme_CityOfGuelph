@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">City Of Guelph Wordpress Theme</h3>
+  <h2 align="center">City Of Guelph Wordpress Theme</h2>
 
   <p align="center">
     This repository holds all the code for the custom-built WordPress theme which runs the City of Guelph municipal website.
