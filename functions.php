@@ -5,6 +5,7 @@
  * @link https://github.com/Guelph-Digital-Service/TwentyTwelve-CityOfGuelph
  */
 ob_start("ob_gzhandler");
+$theme_name = wp_get_theme();
 
 /**
  * Set up theme defaults and registers support for various WordPress features.
@@ -57,11 +58,11 @@ add_filter('xmlrpc_enabled', '__return_false');
 function load_cog_css_and_js() {
    // CSS
    wp_enqueue_style( 'style', get_stylesheet_uri() );
-   wp_enqueue_style( 'gds-design-system', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/css/gds-design-system.min.css' );
+   wp_enqueue_style( 'gds-design-system', get_theme_root_uri() . '/' . wp_get_theme() . /css/gds-design-system.min.css' );
    wp_enqueue_style( 'load-fa', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 
    // JS
-   wp_register_script('defaultJS', get_theme_root_uri() . '/TwentyTwelve-CityOfGuelph/js/CoG-default.js', array('jquery'),'1.0', true);
+   wp_register_script('defaultJS',  get_theme_root_uri() . '/' . wp_get_theme() . /js/CoG-default.js', array('jquery'),'1.0', true);
    wp_enqueue_script('defaultJS');
 
    // Admin scripts
